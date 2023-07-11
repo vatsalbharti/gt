@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Google Trends &#8212; Web Scraping with Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Google Trends';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Google Mobility Reports and Popular Times API" href="Google-Mobility-Report.html" />
+    <link rel="prev" title="How to Interact With This Book" href="How-To-Interact-With-This-Book.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    New age sources of data
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">How To</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="How-To-Interact-With-This-Book.html">How To Interact With This Book</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workshop Walkthrough</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Google Trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Google-Mobility-Report.html">Google Mobility Reports and Popular Times API</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Twitter%20Apis.html">Twitter Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Kaggle_Datasets.html">Kaggle Datasets</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Restaurant%20Data.html">Restaurant Data ( Zomato )</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="House%20Listing%20Data.html">House Listing Data (99 Acres , Magic Bricks etc.)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGoogle Trends.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Google Trends.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Google Trends</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heres-a-step-by-step-guide-for-using-google-trends-along-with-examples-and-story-ideas">Here’s a step-by-step guide for using Google Trends, along with examples and story ideas:</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="google-trends">
+<h1>Google Trends<a class="headerlink" href="#google-trends" title="Permalink to this headline">#</a></h1>
+<br>
+<p><em>Google Trends</em> data is a collection of information that represents the relative popularity of search queries entered into Google’s search engine over a specific period of time and across different regions or categories. This data is derived from the vast number of searches conducted on Google and then normalized to account for the total search volume in a given region and time frame.</p>
+<p>Point to Note <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Trends</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">provide</span> <span class="pre">absolute</span> <span class="pre">search</span> <span class="pre">volumes;</span> <span class="pre">instead,</span> <span class="pre">it</span> <span class="pre">assigns</span> <span class="pre">a</span> <span class="pre">value</span> <span class="pre">between</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">100</span> <span class="pre">to</span> <span class="pre">indicate</span> <span class="pre">the</span> <span class="pre">popularity</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">search</span> <span class="pre">term</span> <span class="pre">relative</span> <span class="pre">to</span> <span class="pre">its</span> <span class="pre">peak</span> <span class="pre">popularity</span> <span class="pre">during</span> <span class="pre">the</span> <span class="pre">selected</span> <span class="pre">time</span> <span class="pre">frame.</span> <span class="pre">A</span> <span class="pre">value</span> <span class="pre">of</span> <span class="pre">100</span> <span class="pre">represents</span> <span class="pre">the</span> <span class="pre">peak</span> <span class="pre">popularity,</span> <span class="pre">while</span> <span class="pre">a</span> <span class="pre">value</span> <span class="pre">of</span> <span class="pre">0</span> <span class="pre">indicates</span> <span class="pre">the</span> <span class="pre">term</span> <span class="pre">had</span> <span class="pre">less</span> <span class="pre">than</span> <span class="pre">1%</span> <span class="pre">of</span> <span class="pre">its</span> <span class="pre">peak</span> <span class="pre">popularity</span></code>.</p>
+<p>This data can be used to analyze search trends, identify emerging topics, gauge public interest in specific subjects, and compare the popularity of different search terms. Google Trends data is valuable for various applications, including market research, content creation, sentiment analysis, and tracking the impact of events or news stories on public interest.</p>
+</br><section id="heres-a-step-by-step-guide-for-using-google-trends-along-with-examples-and-story-ideas">
+<h2>Here’s a step-by-step guide for using Google Trends, along with examples and story ideas:<a class="headerlink" href="#heres-a-step-by-step-guide-for-using-google-trends-along-with-examples-and-story-ideas" title="Permalink to this headline">#</a></h2>
+<p><strong>Access Google Trends: Go to <a class="reference external" href="https://trends.google.com/trends/">Google Trends</a> to access the platform</strong></p>
+<img alt="Google Trends" class="centre" src="_images/google_trend_landing_page.png" />
+<br>
+Google Trends measures keyword popularity rather than keyword search volume.
+<p>Here’s how Google explains it: “Each data point is divided by the total searches of the geography and time range it represents, to compare relative popularity.”</p>
+<p>To start using Google Trends, enter a keyword into the search bar or choose one of the provided examples.
+<br></p>
+<br>
+<p><em>On which day do most Indians get a hangover? Lets Find out with the help of Google Trends</em></p>
+<br><img alt="Google Trends_" class="centre" src="_images/hangover.png" />
+<br>
+We can infer from a spike in Google searches related to hangovers, vodka, whiskey, or other alcoholic beverages during weekends that people might be consuming more alcohol on these days. Similarly, an increase in searches for hangover cures or related terms could suggest that more people are experiencing hangovers after these periods of increased alcohol consumption.
+<br><br>
+Google Trends can be a useful tool for this kind of analysis, as it allows you to track the popularity of certain search terms over time and identify patterns or trends. For example, you could compare the search interest for "hangover cure" on weekends versus weekdays, or see how search interest changes around certain events or holidays.
+<br><br>
+<p>You can adjust the region and time frame for your term using the dropdown options below the search bar. You can look at worldwide data or narrow it down to a specific country or even a subregion within a country. You can also adjust the time frame from the past hour up to the past 5 years or you can set a custom time range.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Compare</span> <span class="pre">Multiple</span> <span class="pre">Terms</span></code></p>
+<p>Google Trends allows you to compare the popularity of up to five search terms or groups. Click on the “+ Compare” button and enter your second search term. The chart will now show data for both terms, allowing you to easily compare them.</p>
+<p>Use Categories and Web Search</p>
+<p>With the “All categories” dropdown, you can filter your term by categories like Business, Health, Entertainment, etc. With the “Web Search” dropdown, you can filter by types of searches such as Image Search, News Search, Google Shopping, and YouTube Search.</p>
+<br><img alt="Google Trends_" class="centre" src="_images/hang.png" />
+<br>
+<p>In addition to related queries, you can research related topics.</p>
+<p>The topics marked with percentage increases are “Top” trending topics, while breakout terms are “Rising.” Breakout, or rising, topics have seen a huge increase since the last time period.</p>
+<p>The goal is to identify any gaps to capitalize on popular terms.</p>
+<p>A lot of SEO/Marketing hacks can be picked out from these related terms for running ads in areas/geography/cities or identifying competitor buisness etc.</p>
+<br><img alt="Google Trends_" class="centre" src="_images/hung.png" />
+<br>
+<p><em><strong>How can a journalist leverage related queries and related topics ?</strong></em></p>
+<p>It offer insights into what people are interested in or what they’re searching for in relation to a specific topic. This information can help journalists understand the broader context of a story, identify related issues to explore, or even discover new story ideas.</p>
+<p>Here’s an example:</p>
+<p>Let’s say a journalist is covering the topic of electric vehicles (EVs) in India. They enter “electric vehicles” into Google Trends and set the region to India. Below the interest-over-time graph, they find the sections for Related Topics and Related Queries.</p>
+<p>Related Topics might include:</p>
+<p>Specific electric vehicle models or brands, like the Tata Nexon EV.
+Government incentives for electric vehicles.
+The issue of charging infrastructure for electric vehicles.
+Each of these related topics could provide ideas for more in-depth stories. For instance, the journalist could write a feature on the Tata Nexon EV, investigate the impact of government incentives on EV adoption, or explore the challenges and solutions around EV charging infrastructure in India.</p>
+<p>Related Queries might include:</p>
+<p>“Electric vehicle charging stations in India”
+“Cost of electric vehicles in India”
+“Best electric vehicle in India”
+These queries give the journalist insight into what people want to know about electric vehicles. They could address these queries directly in their reporting, answering the public’s questions and providing valuable information to their audience. For example, they might write an article that compares the costs of different electric vehicles in India, or create a map of charging stations across the country.</p>
+<br><img alt="Google Trends_" class="centre" src="_images/google_terms.png" />
+<br>
+<p><em><strong>Can Google Trends predict GDP Growth in real time?</strong></em></p>
+<p>Introducing <em><strong>OECD Weekly Tracker</strong></em> and other innovative measures of economic activity</p>
+<p>The OECD Weekly Tracker of GDP growth provides a real-time high-frequency indicator of economic activity using machine learning and Google Trends data. It has a wide country coverage of OECD and G20 countries. The Tracker is thus particularly well suited to assessing activity when it is changing very rapidly due to the impact of a major shock. It applies a machine learning model to a panel of Google Trends data for 46 countries, and aggregates together information about search behaviour related to consumption, labour markets, housing, trade, industrial activity and economic uncertainty.</p>
+<br><img alt="Google Trends_" class="centre" src="_images/oced.png" />
+<p><em><strong>Nowcasting with Google Trends</strong></em></p>
+<p>Signals about multiple facets of the economy from Google Trends are extracted and aggregated using machine learning in order to infer a timely picture of the macro economy.</p>
+<p>In the Indian context they might include
+Consumer Confidence: This can be gauged by looking at searches related to big-ticket consumer goods (like cars or houses), luxury goods, or even general retail goods. An increase in searches for these items might indicate increased consumer confidence, while a decrease could suggest the opposite. In India, specific terms might include brand names popular in the country, like “Maruti cars” or “Samsung mobile phones”.</p>
+<p>Unemployment: Searches for terms like “government job vacancies”, “Sarkari result”, or “how to prepare for interview” can give insights into changes in the unemployment rate. An increase in these types of searches might suggest an increase in unemployment.</p>
+<p>Inflation: Searches for price-related terms (like “price of rice” or “petrol price today”) could provide insights into consumer perceptions of inflation. If more people are searching for these terms, it could suggest that prices are rising and inflation is becoming a concern.</p>
+<p>Housing Market: Searches for terms like “property prices in Mumbai”, “home loan interest rates”, or “how to buy a flat” can give insights into the state of the housing market, which is a significant factor in the Indian economy.</p>
+<p>Retail Sales: Searches for specific retail goods or brands can provide insights into retail sales, which are a key indicator of consumer spending. For example, searches for “online shopping”, “Amazon sale”, or “Flipkart offers” could indicate trends in e-commerce, a fast-growing sector in India.</p>
+<p>Business Investment: Searches for business-related terms (like “SME loans” or “coworking spaces in Bangalore”) could provide insights into levels of business investment.</p>
+<p>Stock Market: Searches for stock market-related terms (like “Sensex”, “Nifty”, or specific company names) could provide insights into stock market trends and investor confidence.</p>
+<p>Trade: Searches for terms related to imports and exports (like “import duties” or “export opportunities”) could provide insights into the state of international trade.</p>
+<p><em><strong>Economic paper on how OCED tracks economy in real time - Go to <a class="reference external" href="https://www.oecd-ilibrary.org/economics/tracking-activity-in-real-time-with-google-trends_6b9c7518-en">OCED Google trends</a></strong></em></p>
+<br></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="How-To-Interact-With-This-Book.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">How to Interact With This Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Google-Mobility-Report.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Google Mobility Reports and Popular Times API</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heres-a-step-by-step-guide-for-using-google-trends-along-with-examples-and-story-ideas">Here’s a step-by-step guide for using Google Trends, along with examples and story ideas:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="https://www.linkedin.com/in/vatsal-bharti-a0190911b/">Vatsal Bharti</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,511 @@
+City,Cuisine,May-2023,Apr-2023,Mar-2023,Feb-2023,Jan-2023,Dec-2022,Nov-2022,Oct-2022,Sep-2022,Aug-2022,Jul-2022
+"Mumbai, Maharashtra",Demand: Afghan,,,,100,,,,,,,
+"Hyderabad, Telangana",Demand: Afghan,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Afghan,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Afghan,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Afghan,76.81,100,84.29,70.57,39.15,43.89,59.85,56.11,51.12,45.89,66.83
+"Delhi NCR, Delhi NCR",Demand: Afghan,95.67,98.99,100,94.99,78.8,77.78,78.57,73.68,74.97,76.6,79.02
+"Hyderabad, Telangana",Demand: African,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: African,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: African,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: African,88.89,16.67,38.89,100,66.67,38.89,55.56,66.67,27.78,55.56,33.33
+"Chennai, Tamil Nadu",Demand: African,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: African,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: American,99.45,83.95,80.71,71.81,81.53,89.57,73.17,88.48,100,86.84,90.28
+"Delhi NCR, Delhi NCR",Demand: American,5.69,7.27,7.91,7.77,12.12,100,83.67,80.94,92.84,96.56,99.96
+"Hyderabad, Telangana",Demand: American,97.37,75.57,75.92,74.46,92.23,100,64.06,61.48,76.5,68.73,61.19
+"Bengaluru, Karnataka",Demand: American,66.74,82.24,79.69,72.82,67.4,71.45,68.32,60.69,81.46,88.67,100
+"Kolkata, West Bengal",Demand: American,35.38,13.23,22.89,36.9,82.62,100,81,67.4,66.61,79.32,21.05
+"Chennai, Tamil Nadu",Demand: American,47.32,42.3,50.97,45.43,45.67,65.14,77.45,75.13,100,91.52,9.24
+"Hyderabad, Telangana",Demand: Andhra,100,96.2,95.1,71.65,71.82,75.86,74,74.93,68.67,70.33,74.68
+"Chennai, Tamil Nadu",Demand: Andhra,100,91.56,89.15,73.42,73.26,59.63,57.06,70.25,71.17,69.8,72.78
+"Bengaluru, Karnataka",Demand: Andhra,84.78,97.47,100,88.93,83.48,89.37,86.09,88.85,87.18,91.27,87.97
+"Kolkata, West Bengal",Demand: Andhra,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Andhra,99.37,100,80.32,27.3,38.41,75.08,3.49,10.63,17.94,21.75,42.54
+"Mumbai, Maharashtra",Demand: Andhra,39.03,59.69,52.55,39.29,66.58,72.45,63.27,81.38,100,94.64,57.65
+"Kolkata, West Bengal",Demand: Arabian,46.89,100,79.59,55.82,73.37,60.29,43.54,55.66,59.33,38.6,61.72
+"Delhi NCR, Delhi NCR",Demand: Arabian,90.12,100,92.67,83.83,69.94,77.1,86.92,84.81,80.36,84.32,70.27
+"Mumbai, Maharashtra",Demand: Arabian,100,41.92,42.04,32.8,29.51,36.36,37.3,40.2,40.43,40.51,25.99
+"Chennai, Tamil Nadu",Demand: Arabian,52.11,100,99.23,83.21,77.31,85.19,89.21,96.46,99.32,86.11,81.82
+"Bengaluru, Karnataka",Demand: Arabian,100,87.59,81.94,72.03,66.69,77.12,81.27,79.25,73.52,69.86,79.64
+"Hyderabad, Telangana",Demand: Arabian,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Asian,62.97,64.28,66.32,67.1,65.13,73.92,77.5,85.19,90.12,100,99.86
+"Delhi NCR, Delhi NCR",Demand: Asian,81.17,81.84,83.2,80.91,79.21,87.66,76.39,85.68,90.03,100,88.96
+"Chennai, Tamil Nadu",Demand: Asian,50.05,56.72,58.3,57.37,66.35,74.45,64.3,89.69,78.17,67.09,100
+"Mumbai, Maharashtra",Demand: Asian,100,87.96,89.64,82.23,87.98,87.27,80.2,84.65,80.55,74.54,67.68
+"Hyderabad, Telangana",Demand: Asian,93.17,91.2,100,86.48,63.97,65.07,67.78,64.57,66.55,65.7,71.84
+"Kolkata, West Bengal",Demand: Asian,62.81,59.34,63.19,62.94,60.41,68.2,64.02,68.83,100,87.43,86.19
+"Chennai, Tamil Nadu",Demand: Assamese,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Assamese,33.89,86.95,100,74.53,94.74,88.42,74.53,61.47,21.47,22.32,15.58
+"Kolkata, West Bengal",Demand: Assamese,56.71,72.45,53.24,56.71,70.6,80.79,81.25,87.96,100,96.76,64.81
+"Delhi NCR, Delhi NCR",Demand: Assamese,79.68,85.92,75.89,60.47,60.59,69.65,79.19,94.61,95.35,100,99.51
+"Mumbai, Maharashtra",Demand: Assamese,,,,,,70.28,100,65.09,65.09,54.72,38.68
+"Hyderabad, Telangana",Demand: Assamese,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Australian,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Australian,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Australian,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Australian,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Australian,,,,,,100,,100,,,
+"Mumbai, Maharashtra",Demand: Australian,41.79,70.65,73.63,49.25,42.79,7.46,37.81,100,87.06,80.6,60.2
+"Mumbai, Maharashtra",Demand: Awadhi,,54.61,63.11,100,76.85,87.34,80.2,84.63,87.07,90.78,73.51
+"Chennai, Tamil Nadu",Demand: Awadhi,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Awadhi,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Awadhi,62.16,65.21,79.82,79.78,85.21,67.46,75.32,73.51,73.16,74.88,100
+"Delhi NCR, Delhi NCR",Demand: Awadhi,74.13,63.07,47.14,45.23,46.28,68.01,75.12,98.62,87.89,100,72.22
+"Kolkata, West Bengal",Demand: Awadhi,100,36.11,30.56,29.55,27.78,24.49,11.87,15.15,1.26,,
+"Delhi NCR, Delhi NCR",Demand: Bakery,96.27,88.32,82.27,83.18,75.96,100,76.17,79.43,77.75,81.77,72.5
+"Kolkata, West Bengal",Demand: Bakery,100,73.74,69.37,66.62,63.47,76.29,52.63,51.75,52.56,50.46,45.98
+"Chennai, Tamil Nadu",Demand: Bakery,100,81.6,85.99,74.05,73.26,92.46,74.06,71.08,76.43,71.07,74.26
+"Hyderabad, Telangana",Demand: Bakery,89.56,72.24,73.18,67.17,70.87,93.96,87.34,100,97.08,76.32,62.51
+"Mumbai, Maharashtra",Demand: Bakery,96.94,88.13,92.43,89.75,83.12,100,80.18,79.18,84.27,91.81,95.69
+"Bengaluru, Karnataka",Demand: Bakery,100,86.23,89.67,86.25,73.11,92.77,72.18,65.44,71.5,68.47,71.9
+"Delhi NCR, Delhi NCR",Demand: Bangladeshi,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Bangladeshi,93.5,100,70.6,62.13,60.06,39.8,33.93,49.47,76.13,19.83,
+"Mumbai, Maharashtra",Demand: Bangladeshi,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Bangladeshi,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Bangladeshi,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Bangladeshi,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Bbq,100,45.88,49.64,47.5,77.26,92.46,90.18,67.75,89.91,93.69,90.22
+"Hyderabad, Telangana",Demand: Bbq,100,20.2,24.51,20.77,22.24,10.75,8.99,10.22,9.61,8.79,7.85
+"Kolkata, West Bengal",Demand: Bbq,93.73,6.03,6.13,7.44,9.28,8.32,9.42,45.03,100,57.43,57.07
+"Bengaluru, Karnataka",Demand: Bbq,100,65.27,76.04,70.77,73.44,63.24,63.54,52.39,57.98,58.59,63.19
+"Delhi NCR, Delhi NCR",Demand: Bbq,91.7,27.8,20.83,22.34,14.31,16.3,100,94.18,90.53,99.83,71.58
+"Mumbai, Maharashtra",Demand: Bbq,100,25.8,28.35,25.55,11.14,7.35,42.94,64.68,67.28,67.72,90.13
+"Kolkata, West Bengal",Demand: Belgian,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Belgian,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Belgian,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Belgian,,,,,,50,,50,100,,
+"Bengaluru, Karnataka",Demand: Belgian,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Belgian,100,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Bengali,93.29,100,85.23,80.84,76.39,71.86,73.43,88.33,81.59,85.63,84.4
+"Chennai, Tamil Nadu",Demand: Bengali,95.95,87.56,90.59,76.53,90.62,89.96,92.36,78.18,100,84.83,89.51
+"Hyderabad, Telangana",Demand: Bengali,100,96.53,93.58,75.08,71.71,71.34,72.58,68.49,65.53,60.66,59.2
+"Bengaluru, Karnataka",Demand: Bengali,96.63,100,95.51,84.53,78.98,71.29,67.53,76.62,80.68,83.25,89.51
+"Kolkata, West Bengal",Demand: Bengali,100,97.48,81.86,70.32,74.66,71,67.23,96.26,82.13,85.63,86.21
+"Mumbai, Maharashtra",Demand: Bengali,100,93.15,87.31,86.06,84.05,85.55,81.09,93.45,83.74,80.96,83.44
+"Hyderabad, Telangana",Demand: Beverages,100,77.85,73.06,65.09,57.61,63.82,65.7,61.96,60.74,60.11,54.53
+"Kolkata, West Bengal",Demand: Beverages,95.95,100,86.41,72.39,64.41,70.76,67.23,80.13,83.51,81.31,80.05
+"Delhi NCR, Delhi NCR",Demand: Beverages,100,99.67,87.84,74.49,61.68,68.44,71.59,74.47,85.11,84.45,86.77
+"Mumbai, Maharashtra",Demand: Beverages,100,96,92.49,79.54,70.16,78.89,73.56,77.39,76.36,74.51,72.5
+"Chennai, Tamil Nadu",Demand: Beverages,100,92.23,84.57,70.81,69.73,71.58,67.28,80.79,92.4,83.45,81.69
+"Bengaluru, Karnataka",Demand: Beverages,95.9,100,89.66,74.98,66.11,69.21,66.19,67.71,68.61,67.65,71.45
+"Hyderabad, Telangana",Demand: Bihari,100,53.19,2.13,35.11,23.4,34.04,25.53,38.3,23.4,11.7,11.7
+"Delhi NCR, Delhi NCR",Demand: Bihari,84.21,90.63,83.9,88.31,86.29,87.61,82.26,88.77,98.11,99.53,100
+"Chennai, Tamil Nadu",Demand: Bihari,100,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Bihari,80.59,87.8,100,92.88,86.15,77.66,63.8,53.37,46.93,50.34,48
+"Bengaluru, Karnataka",Demand: Bihari,94.16,100,83.9,58.96,47.07,39.19,37.21,27.66,32.3,30.68,32.75
+"Kolkata, West Bengal",Demand: Bihari,83.65,62.39,67.56,53.44,64.46,73.32,100,93.29,84.68,66.95,77.11
+"Mumbai, Maharashtra",Demand: Biryani,98.68,100,94.44,82.47,81.95,91.97,84.37,98.16,88.13,86.19,95.97
+"Delhi NCR, Delhi NCR",Demand: Biryani,95.98,100,88.82,82.68,82.07,87.22,81.46,86.28,80.5,86.53,89.32
+"Kolkata, West Bengal",Demand: Biryani,90.28,90.78,88.77,78.76,82.84,87.09,80.95,100,92.56,87.01,90.54
+"Bengaluru, Karnataka",Demand: Biryani,96.42,100,95.99,87.45,86.86,91.57,87.88,88.5,85.41,82.58,90.85
+"Hyderabad, Telangana",Demand: Biryani,95.21,95.21,94.99,84.91,90.16,100,95.08,94.62,89.4,88.45,90.49
+"Chennai, Tamil Nadu",Demand: Biryani,99.07,100,93.19,82.67,84.76,88.42,87.82,94.04,94.95,87.19,90.09
+"Delhi NCR, Delhi NCR",Demand: Bohri,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Bohri,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Bohri,,,,,,,5.33,5.92,34.32,68.05,100
+"Chennai, Tamil Nadu",Demand: Bohri,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Bohri,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Bohri,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: British,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: British,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: British,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: British,61.2,70.23,91.64,88.96,90.97,99.33,72.24,90.3,100,80.27,81.61
+"Bengaluru, Karnataka",Demand: British,,,,,11.9,0.6,,,,69.05,100
+"Chennai, Tamil Nadu",Demand: British,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Burger,100,85.19,85.52,80.01,81.79,95.36,85.98,85.11,87.65,85.65,90.68
+"Chennai, Tamil Nadu",Demand: Burger,100,91.48,87.87,78.84,79.47,87.59,82.58,81.79,87.43,80.32,79.29
+"Mumbai, Maharashtra",Demand: Burger,100,92.93,89.13,79.41,77.99,88.77,78.18,86.38,85.19,88.13,91.27
+"Delhi NCR, Delhi NCR",Demand: Burger,100,90.1,87.63,89.46,87.37,90.52,85.76,87.35,87.29,91.12,94.18
+"Kolkata, West Bengal",Demand: Burger,84.69,78.83,80.5,75.32,70.84,89.84,86.75,93.58,100,95.03,97.67
+"Bengaluru, Karnataka",Demand: Burger,100,95.49,94.85,89.87,87.44,96.35,89.61,87.19,87.91,85.82,89.68
+"Kolkata, West Bengal",Demand: Burmese,66.77,71.04,66.46,71.95,74.24,78.51,68.29,84.76,83.54,83.23,100
+"Bengaluru, Karnataka",Demand: Burmese,100,91.27,60.08,19.26,21.44,31.45,25.67,21.18,17.84,18.61,16.3
+"Chennai, Tamil Nadu",Demand: Burmese,72.58,76.76,95.78,80.66,76.06,70.43,73.9,89.98,82.64,88.73,100
+"Hyderabad, Telangana",Demand: Burmese,61.63,52.33,89.53,67.44,58.14,80.23,79.07,74.42,69.77,77.91,100
+"Delhi NCR, Delhi NCR",Demand: Burmese,96.73,100,78.29,36.55,41.07,46.55,40.26,42.32,40.04,37.29,40.56
+"Mumbai, Maharashtra",Demand: Burmese,95.66,100,76.64,42.15,37.65,36.23,33.31,31.89,27.31,28.65,31.41
+"Delhi NCR, Delhi NCR",Demand: Cafe,100,99.2,84.75,74.4,74.41,80.79,79.35,76.23,73.11,78.27,58.89
+"Kolkata, West Bengal",Demand: Cafe,90.46,89.53,83.33,69.11,66.02,84.38,75.55,86.36,96.97,92.01,100
+"Bengaluru, Karnataka",Demand: Cafe,69.49,73.91,76.44,100,67.21,63.64,60.95,63,65.03,53.01,54.56
+"Chennai, Tamil Nadu",Demand: Cafe,100,91.65,91.47,80.97,81.87,82.39,88.63,92.48,93.85,64.3,71.82
+"Hyderabad, Telangana",Demand: Cafe,100,85.81,92.49,87.29,86.35,99.94,89.98,84.99,90.04,92.96,97.36
+"Mumbai, Maharashtra",Demand: Cafe,100,92.77,88.45,79.27,80.46,86.97,84.28,68.52,54.11,51.45,48.77
+"Bengaluru, Karnataka",Demand: Cantonese,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Cantonese,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Cantonese,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Cantonese,100,,6.14,73.91,30.43,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Cantonese,82.76,,100,82.76,34.48,13.79,,,,,
+"Mumbai, Maharashtra",Demand: Cantonese,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Chettinad,50,25,33.33,100,2.78,,,,,,
+"Kolkata, West Bengal",Demand: Chettinad,84.75,97.46,81.36,77.97,70.34,53.39,83.9,91.53,100,88.14,71.19
+"Bengaluru, Karnataka",Demand: Chettinad,72.03,34.19,56.19,55.36,54.93,45.03,44.66,48.71,73.26,100,99.49
+"Chennai, Tamil Nadu",Demand: Chettinad,100,93.81,86.79,77.04,74.23,81.12,73.01,74.07,78.99,64.98,72.66
+"Mumbai, Maharashtra",Demand: Chettinad,92.25,93.25,100,86.69,88.75,93.97,86.36,72.43,67.54,69.65,63.95
+"Delhi NCR, Delhi NCR",Demand: Chettinad,86.67,100,75.56,44.44,17.78,,,42.22,77.78,68.89,53.33
+"Bengaluru, Karnataka",Demand: Chinese,98.63,94.21,100,88.33,81.56,85.25,79.73,79.18,80.16,80.04,86.3
+"Chennai, Tamil Nadu",Demand: Chinese,86.93,76.91,81.76,78.44,80.64,94.52,100,89.9,98.83,82.48,79.6
+"Mumbai, Maharashtra",Demand: Chinese,89.37,94.58,99.9,91.44,92.1,100,88.59,99.56,95.87,93.35,96.04
+"Kolkata, West Bengal",Demand: Chinese,91.75,86.83,88.7,77.99,76.41,80.81,76.76,93.24,92.64,96.22,100
+"Hyderabad, Telangana",Demand: Chinese,97.18,92.68,100,86.82,85.56,99.64,96.57,93.98,91.12,88.02,89.33
+"Delhi NCR, Delhi NCR",Demand: Chinese,96.59,98.34,93.1,85.25,87.13,93.87,87.11,100,90.77,94.24,98.71
+"Chennai, Tamil Nadu",Demand: Continental,83.78,81.97,82.06,82.24,84.52,83.78,80.4,81.96,91.43,89.41,100
+"Delhi NCR, Delhi NCR",Demand: Continental,100,96.65,87.33,77.29,72.5,73.94,93.37,68.91,70.49,84.23,95.07
+"Mumbai, Maharashtra",Demand: Continental,75.08,46.35,77.37,100,89.75,91.34,88.22,88.31,84.3,88.1,86.6
+"Hyderabad, Telangana",Demand: Continental,100,89.7,93.55,83.03,83.25,90.57,82.75,84.7,79.21,82.28,88.52
+"Bengaluru, Karnataka",Demand: Continental,100,87.96,83.07,74.15,61.85,61.11,68.31,54.28,55.11,56.16,60.53
+"Kolkata, West Bengal",Demand: Continental,100,84.93,83.72,71.46,69.49,75.82,65.83,66.68,66.68,69.12,77.83
+"Hyderabad, Telangana",Demand: Desserts,100,89.11,89.3,82.39,75.48,94.94,86.93,85.01,81.18,80,76.33
+"Mumbai, Maharashtra",Demand: Desserts,98.22,93.86,100,91.06,83.39,89.8,76.14,83.78,83.54,84.41,86.57
+"Kolkata, West Bengal",Demand: Desserts,99.95,100,90.51,77.8,72.46,75.72,69.48,91.27,85.39,86.33,87.65
+"Bengaluru, Karnataka",Demand: Desserts,100,97.15,98.78,91.3,80.97,84.03,73.27,74.94,75.22,75.2,77.22
+"Delhi NCR, Delhi NCR",Demand: Desserts,100,95.79,89.91,88.72,87.05,92.02,77.03,87.27,92.48,91.9,93.04
+"Chennai, Tamil Nadu",Demand: Desserts,100,93.62,94.62,84.36,82.02,89.07,79.34,86.54,96.57,85.73,87.89
+"Mumbai, Maharashtra",Demand: Egyptian,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Egyptian,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Egyptian,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Egyptian,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Egyptian,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Egyptian,100,91.67,91.67,,,,,,,,
+"Mumbai, Maharashtra",Demand: European,31,65.17,83.15,80.35,76.28,81.48,77.06,76.34,100,99.28,87.04
+"Hyderabad, Telangana",Demand: European,44.44,,,,,,55.56,100,77.78,100,
+"Kolkata, West Bengal",Demand: European,1.28,2.56,2.56,8.97,5.13,2.56,15.38,11.54,19.23,24.36,100
+"Bengaluru, Karnataka",Demand: European,100,27.1,25.84,25.42,30.46,29.62,34.24,31.3,30.25,37.39,31.3
+"Chennai, Tamil Nadu",Demand: European,100,48.19,71.57,46.99,41.2,49.4,48.67,41.69,49.88,36.87,35.9
+"Delhi NCR, Delhi NCR",Demand: European,80.54,93.05,82.37,80.61,82.66,90.34,100,95.83,86.61,86.91,97.07
+"Hyderabad, Telangana",Demand: French,33.33,33.33,,,,,,33.33,33.33,33.33,100
+"Mumbai, Maharashtra",Demand: French,50,100,100,75,,,,25,,25,75
+"Delhi NCR, Delhi NCR",Demand: French,33.33,66.67,,100,33.33,66.67,33.33,66.67,66.67,33.33,100
+"Kolkata, West Bengal",Demand: French,,100,100,,,,,,,100,
+"Chennai, Tamil Nadu",Demand: French,28.57,57.14,,14.29,,14.29,57.14,14.29,14.29,14.29,100
+"Bengaluru, Karnataka",Demand: French,0.75,0.42,31.59,33.15,66.13,99.76,95.4,61.8,57.25,99.97,100
+"Hyderabad, Telangana",Demand: German,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: German,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: German,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: German,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: German,100,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: German,40,30,90,10,10,20,50,40,10,20,100
+"Mumbai, Maharashtra",Demand: Greek,,,,,,20,100,,,,
+"Delhi NCR, Delhi NCR",Demand: Greek,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Greek,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Greek,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Greek,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Greek,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Gujarati,100,93.79,46.58,40.17,53.62,57.76,60.66,58.8,66.05,69.15,71.64
+"Kolkata, West Bengal",Demand: Gujarati,,1.09,,,,,,,,,100
+"Bengaluru, Karnataka",Demand: Gujarati,36.94,88.4,95.4,100,87.19,67.47,47.34,49.27,51.54,48.92,48.25
+"Chennai, Tamil Nadu",Demand: Gujarati,100,70.44,64.53,33,52.22,69.46,50.74,61.58,47.78,45.32,57.64
+"Hyderabad, Telangana",Demand: Gujarati,4.23,28.17,11.27,21.13,,5.63,15.49,57.75,76.06,81.69,100
+"Mumbai, Maharashtra",Demand: Gujarati,91.93,100,99.73,88.93,91.84,87.36,74.92,85.51,81.52,85.02,80.15
+"Chennai, Tamil Nadu",Demand: Himachali,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Himachali,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Himachali,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Himachali,26.67,44.1,100,72.82,79.49,87.18,65.64,32.82,20.51,27.18,35.9
+"Mumbai, Maharashtra",Demand: Himachali,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Himachali,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Hyderabadi,63.11,66.64,58.01,51.03,70.75,78.14,76.5,100,57.76,48.48,21.61
+"Mumbai, Maharashtra",Demand: Hyderabadi,100,24.14,13.79,,,,3.45,6.9,20.69,,27.59
+"Hyderabad, Telangana",Demand: Hyderabadi,77.22,100,84.1,63.44,67.47,71.91,74.99,74.27,66.69,61.4,50.92
+"Delhi NCR, Delhi NCR",Demand: Hyderabadi,3.57,17.86,14.29,14.29,100,42.86,64.29,57.14,25,,35.71
+"Bengaluru, Karnataka",Demand: Hyderabadi,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Hyderabadi,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Indonesian,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Indonesian,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Indonesian,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Indonesian,,,100,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Indonesian,,,,,,,,,100,,
+"Mumbai, Maharashtra",Demand: Indonesian,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Iranian,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Iranian,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Iranian,38.27,100,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Iranian,100,0.76,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Iranian,,,,,,,,,,,100
+"Mumbai, Maharashtra",Demand: Iranian,13.82,86.96,100,82.66,70.8,76.92,60.37,68.58,59.97,48.24,49.8
+"Hyderabad, Telangana",Demand: Irish,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Irish,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Irish,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Irish,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Irish,33.33,,33.33,33.33,,100,,66.67,33.33,,
+"Delhi NCR, Delhi NCR",Demand: Irish,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Italian,96.86,95.25,98.58,88.16,87.09,88.47,83.34,94.81,91.89,93.27,100
+"Mumbai, Maharashtra",Demand: Italian,100,96.14,99.98,85.33,83.23,88.28,82.18,94.13,93.96,96.21,95.63
+"Hyderabad, Telangana",Demand: Italian,100,93.77,98.04,91.4,86.8,92.72,92.67,93.8,93.65,90.68,95.64
+"Chennai, Tamil Nadu",Demand: Italian,99.79,87.97,90.09,82.27,79.4,84.59,85.48,96.12,100,80.37,88.43
+"Bengaluru, Karnataka",Demand: Italian,100,66.34,67.93,58.95,53.74,56.69,53.35,52.63,49.48,49.28,51.47
+"Delhi NCR, Delhi NCR",Demand: Italian,99.12,96.4,100,87.11,86.6,88.17,81.63,93.27,90.35,91.71,87.54
+"Delhi NCR, Delhi NCR",Demand: Japanese,85.31,84.36,79.16,74.14,72.45,76.07,72.9,75.65,71.36,80.66,100
+"Mumbai, Maharashtra",Demand: Japanese,100,94.85,93.69,92.25,87.63,92.97,85.03,92.05,94.08,99.1,96.73
+"Chennai, Tamil Nadu",Demand: Japanese,67.84,75.38,76.21,69.63,73.66,87.28,95.65,100,84.78,62.47,82.16
+"Hyderabad, Telangana",Demand: Japanese,89.66,64.96,71.73,85.34,72.54,91.22,80.88,90.25,80.43,100,97.54
+"Bengaluru, Karnataka",Demand: Japanese,66.1,86.36,94.21,91.89,85.41,86.33,84.51,82,82.04,87.22,100
+"Kolkata, West Bengal",Demand: Japanese,100,94.68,88.49,80.11,73.31,74.68,63.13,59.37,57.57,62.64,70.56
+"Hyderabad, Telangana",Demand: Kashmiri,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Kashmiri,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Kashmiri,100,25.37,19.25,20.05,29.33,37.37,38.62,25.82,28.88,32.73,46.55
+"Kolkata, West Bengal",Demand: Kashmiri,80,54.29,51.43,88.57,25.71,100,60,40,54.29,,77.14
+"Delhi NCR, Delhi NCR",Demand: Kashmiri,84,93.58,98.03,95.04,100,99.83,97.6,83.23,70.66,71.43,91.19
+"Mumbai, Maharashtra",Demand: Kashmiri,53.33,75.83,71.67,100,77.5,79.17,50,40,56.67,63.33,30.83
+"Mumbai, Maharashtra",Demand: Kathiyawadi,100,85.63,87.9,58.73,55.1,51.07,48.65,54.39,55.13,10.35,1.37
+"Bengaluru, Karnataka",Demand: Kathiyawadi,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Kathiyawadi,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Kathiyawadi,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Kathiyawadi,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Kathiyawadi,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Kebab,83.94,84.48,96.16,100,82.8,79.28,72.81,75.97,70.05,70.84,68.23
+"Delhi NCR, Delhi NCR",Demand: Kebab,100,98.39,97.42,83.03,82.44,87.78,77.13,81.31,71.97,80,84.47
+"Mumbai, Maharashtra",Demand: Kebab,87.11,82,88.9,86.66,86.98,100,65.39,66.2,47.63,39.47,48.23
+"Chennai, Tamil Nadu",Demand: Kebab,91.33,100,97.77,68.61,63.26,68.22,64.43,54.13,58.29,49.77,51.16
+"Hyderabad, Telangana",Demand: Kebab,100,8.36,9.93,6.86,8.09,8.5,8.62,8.8,8.38,8.35,8.28
+"Kolkata, West Bengal",Demand: Kebab,94.13,81.14,66.31,60.65,70.49,62.99,58.21,75.76,74.56,100,93.95
+"Kolkata, West Bengal",Demand: Kerala,31.88,87.4,100,97.94,70.69,67.1,57.07,73.52,69.41,77.89,61.95
+"Delhi NCR, Delhi NCR",Demand: Kerala,91.23,100,97.52,90.47,83.09,82.97,75.14,81.35,83.92,96.28,80.45
+"Bengaluru, Karnataka",Demand: Kerala,93.12,89.64,100,89.01,84.47,85.75,83.41,88.79,83.82,90.01,92.96
+"Hyderabad, Telangana",Demand: Kerala,78.02,68.65,96.18,81.82,81.86,100,88.01,81.74,79.96,83.72,68.06
+"Chennai, Tamil Nadu",Demand: Kerala,86,87.49,78.81,61.39,59.52,68.31,64.56,100,99.76,86.61,89.52
+"Mumbai, Maharashtra",Demand: Kerala,94.8,100,95.43,79.25,76.75,75.82,73.4,85.69,80.08,83.02,79.41
+"Delhi NCR, Delhi NCR",Demand: Konkan,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Konkan,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Konkan,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Konkan,80.83,83.33,84.83,100,97.5,87.67,95.67,93.83,79.33,67.33,91.33
+"Hyderabad, Telangana",Demand: Konkan,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Konkan,59.89,92.71,100,91.64,87.81,90.29,89.19,96.14,87.19,64.23,85.31
+"Delhi NCR, Delhi NCR",Demand: Korean,57.36,57.63,49.66,43.52,42.82,42.6,42.69,45.03,42.07,48.34,100
+"Chennai, Tamil Nadu",Demand: Korean,67.59,63.89,58.33,64.81,86.11,82.41,85.19,78.7,100,69.44,86.11
+"Mumbai, Maharashtra",Demand: Korean,81.69,98.93,100,83.57,75.03,91.82,91.43,88.51,57.6,59.45,56.43
+"Bengaluru, Karnataka",Demand: Korean,100,80.92,76.99,82.12,61.85,57.74,35.84,34.13,34.13,36.44,31.39
+"Kolkata, West Bengal",Demand: Korean,100,43.48,29.74,28.35,22.09,24.7,15.83,18.43,15.13,5.57,4.17
+"Hyderabad, Telangana",Demand: Korean,74.5,,,45,45,25,48,42,60,90.5,100
+"Chennai, Tamil Nadu",Demand: Lebanese,61.92,54.08,58.44,56.99,58.03,60.86,64.77,88.19,100,95.21,94.93
+"Kolkata, West Bengal",Demand: Lebanese,85.7,72.47,58.32,60.47,40.19,38.97,43.05,50.41,84.32,100,81.87
+"Hyderabad, Telangana",Demand: Lebanese,82.79,66.7,67.78,79.43,79.8,100,86.67,75.01,93.19,91.28,77.15
+"Bengaluru, Karnataka",Demand: Lebanese,80.95,76.11,85.12,87.13,78.24,81.37,92.64,89.52,94.45,100,98.05
+"Delhi NCR, Delhi NCR",Demand: Lebanese,98.71,100,87.52,90.31,74.1,78.69,76.97,79.93,77.24,86.97,88.03
+"Mumbai, Maharashtra",Demand: Lebanese,93.36,97.55,97.3,88.74,82.12,87.08,83.47,84.48,89.21,100,95.79
+"Hyderabad, Telangana",Demand: Lucknowi,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Lucknowi,56.3,100,74.86,53.77,59.78,58.33,56.45,62.54,38.19,,
+"Kolkata, West Bengal",Demand: Lucknowi,73.42,97.39,100,92.81,91.5,89.54,57.08,54.03,63.18,79.96,41.39
+"Chennai, Tamil Nadu",Demand: Lucknowi,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Lucknowi,,,,,,,,,2.84,46.1,100
+"Delhi NCR, Delhi NCR",Demand: Lucknowi,68.25,80.61,94.3,91.06,100,97.91,91.16,91.16,76.81,85.93,67.78
+"Hyderabad, Telangana",Demand: Maharashtrian,100,83.26,91.59,72.79,64.63,75.1,73.12,80.21,84.83,92.99,67.93
+"Bengaluru, Karnataka",Demand: Maharashtrian,97.46,81.18,100,89.48,75.17,68.03,65.83,74.34,78.82,78.43,82.5
+"Kolkata, West Bengal",Demand: Maharashtrian,100,76.67,20,10,20,,,,,13.33,3.33
+"Mumbai, Maharashtra",Demand: Maharashtrian,100,89.58,95.84,76.56,72.96,72.2,72.93,74.68,73.17,77.16,72.66
+"Delhi NCR, Delhi NCR",Demand: Maharashtrian,89.57,84.87,81.52,64.24,60.37,60.52,81.41,57.6,100,98.32,25.96
+"Chennai, Tamil Nadu",Demand: Maharashtrian,,,,8.93,100,30.36,,,,1.79,3.57
+"Chennai, Tamil Nadu",Demand: Malaysian,96.58,82.9,100,91.95,80.68,65.59,65.79,77.87,73.84,67,68.61
+"Delhi NCR, Delhi NCR",Demand: Malaysian,,,,,,,,5.88,35.29,41.18,100
+"Hyderabad, Telangana",Demand: Malaysian,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Malaysian,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Malaysian,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Malaysian,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Malwani,89.98,91.66,91.03,88.22,88.09,93.88,93.17,97.28,91.5,82.93,100
+"Hyderabad, Telangana",Demand: Malwani,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Malwani,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Malwani,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Malwani,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Malwani,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Mangalorean,82.4,100,84.65,78.68,73.44,62.89,32.92,22.02,24.01,23.49,37.02
+"Delhi NCR, Delhi NCR",Demand: Mangalorean,38.51,58.58,55.08,57.18,52.16,59.98,54.14,61.26,58.46,87.98,100
+"Chennai, Tamil Nadu",Demand: Mangalorean,,,,,,,,29.09,100,75.45,64.09
+"Hyderabad, Telangana",Demand: Mangalorean,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Mangalorean,87.42,96,100,95.38,91.04,89.71,85.39,86.28,82.79,83.44,96.36
+"Kolkata, West Bengal",Demand: Mangalorean,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Mediterranean,96.34,87.53,97.37,86.31,91.22,100,98.52,91.16,87.63,83.46,80.35
+"Bengaluru, Karnataka",Demand: Mediterranean,97.41,94.11,100,89.51,85.27,83.63,78.25,70.29,69.66,66.13,70.56
+"Kolkata, West Bengal",Demand: Mediterranean,72.68,100,90.75,82.07,72.07,63.28,52.32,57.68,56.9,64.27,69.27
+"Mumbai, Maharashtra",Demand: Mediterranean,98.26,98.65,100,89.76,87.48,88.65,83.89,83.54,80.38,77.13,86.59
+"Delhi NCR, Delhi NCR",Demand: Mediterranean,96.3,100,78.46,82.18,73.69,81.65,77.78,78.89,76.01,89.39,88.2
+"Chennai, Tamil Nadu",Demand: Mediterranean,97.62,96.78,100,84.52,86.35,85.8,84.38,83.48,83.45,77.63,80.99
+"Delhi NCR, Delhi NCR",Demand: Mexican,100,93.65,86.27,77.17,69.07,66.31,61.3,58.33,65.37,71.29,70.6
+"Bengaluru, Karnataka",Demand: Mexican,100,96.6,91.75,82,75.85,73.48,67.07,63,74.38,75.05,79.55
+"Mumbai, Maharashtra",Demand: Mexican,100,94.88,95.83,84,75.32,77.01,70.84,73.44,78.79,79.05,75.12
+"Chennai, Tamil Nadu",Demand: Mexican,100,87.1,90.23,76.96,74.97,73.33,67.53,72.03,95.34,84.78,86.64
+"Hyderabad, Telangana",Demand: Mexican,100,94.2,87.64,76.37,72.06,74,71.92,61.82,72.04,75.08,71.76
+"Kolkata, West Bengal",Demand: Mexican,100,96.58,96.89,86.16,83.16,87.84,80.41,85.78,93.66,87.37,93.02
+"Chennai, Tamil Nadu",Demand: Modern Indian,47.32,51.68,55.03,52.35,60.74,72.82,81.88,90.6,100,88.26,86.91
+"Bengaluru, Karnataka",Demand: Modern Indian,39.2,49.95,50.41,49.41,46.58,56.06,54.15,64.63,71.19,86.14,100
+"Hyderabad, Telangana",Demand: Modern Indian,64.39,53.79,54.55,85.61,59.09,70.45,53.79,79.55,83.33,74.24,100
+"Mumbai, Maharashtra",Demand: Modern Indian,43.24,46.6,53.7,54.74,53.85,65.94,66.77,73.11,70.87,89.1,100
+"Delhi NCR, Delhi NCR",Demand: Modern Indian,71.56,70.35,72.23,64.05,68.23,77.75,78.73,100,98.63,48.68,15.19
+"Kolkata, West Bengal",Demand: Modern Indian,76.1,66.04,86.16,60.38,68.55,79.87,46.54,73.58,72.96,71.07,100
+"Mumbai, Maharashtra",Demand: Mughlai,57.45,100,95.78,82.78,79.88,83.78,79.85,88.48,79.62,80.54,81.76
+"Kolkata, West Bengal",Demand: Mughlai,85.47,75.13,76.77,72.45,74.48,72.11,61,82.54,100,82.79,83.09
+"Bengaluru, Karnataka",Demand: Mughlai,20.76,57.79,61.4,58.11,56.75,61.81,64.74,68.5,81.67,98.13,100
+"Hyderabad, Telangana",Demand: Mughlai,97.52,88.67,97.22,87.49,83.63,100,96.63,98.88,92.63,92.42,79.25
+"Chennai, Tamil Nadu",Demand: Mughlai,36.04,35.02,39.79,28.41,26.01,25.69,25.34,40.58,65.39,95.6,100
+"Delhi NCR, Delhi NCR",Demand: Mughlai,84.62,100,88.94,90.41,88.59,90,79.48,87.99,79.5,87.45,88.65
+"Hyderabad, Telangana",Demand: Naga,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Naga,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Naga,81.6,73.87,84,81.87,84,82.67,80.27,100,82.93,86.13,94.4
+"Delhi NCR, Delhi NCR",Demand: Naga,97.02,100,84.14,79.52,73.59,90.14,90.54,79.13,70.65,74.28,50.01
+"Mumbai, Maharashtra",Demand: Naga,5.83,3.88,31.07,90.78,100,75.24,91.26,83.5,94.17,87.86,64.56
+"Bengaluru, Karnataka",Demand: Naga,67.02,73.42,85.96,80.98,32.09,66.58,100,95.91,73.87,73.87,75.82
+"Hyderabad, Telangana",Demand: Nepalese,,,,,,6.58,3.95,13.16,23.68,21.05,100
+"Delhi NCR, Delhi NCR",Demand: Nepalese,62.44,64.1,53.96,50,57.82,57.05,53.74,56.5,89.98,100,94.93
+"Bengaluru, Karnataka",Demand: Nepalese,51.52,40.81,47.27,48.28,53.33,61.62,81.01,100,76.77,58.79,39.19
+"Kolkata, West Bengal",Demand: Nepalese,100,2.63,3.13,2.32,1.72,3.94,3.74,3.33,3.13,1.92,2.32
+"Chennai, Tamil Nadu",Demand: Nepalese,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Nepalese,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: North Indian,100,96.52,90.26,81.33,81.37,85.64,82.73,96.73,88.67,96.19,96.92
+"Mumbai, Maharashtra",Demand: North Indian,100,93.43,93.01,80.76,79.77,83.68,78.14,90.93,84.9,88.63,89.1
+"Chennai, Tamil Nadu",Demand: North Indian,95.99,92.55,93.98,81.29,83.43,88.21,83.92,96.28,100,88.9,91.89
+"Bengaluru, Karnataka",Demand: North Indian,100,94.35,93.71,84.21,81.21,83.19,81.33,84.08,82.84,86.54,91.86
+"Hyderabad, Telangana",Demand: North Indian,100,92.59,95.25,82.2,82.4,91.61,92.43,95.4,88.76,91.97,89.52
+"Kolkata, West Bengal",Demand: North Indian,100,91.46,89.11,79.08,80.42,82.5,78.48,97.96,91.85,91.79,95.45
+"Kolkata, West Bengal",Demand: Odia,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Odia,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Odia,95.14,99.38,100,74.27,74.09,69.18,70.44,73.06,58.79,61.62,65.22
+"Delhi NCR, Delhi NCR",Demand: Odia,98.48,100,78.35,74.46,64.94,59.74,60.17,54.33,60.82,61.04,67.75
+"Hyderabad, Telangana",Demand: Odia,100,89.2,96.33,89.52,90.5,86.29,78.62,84.56,86.29,61.77,55.83
+"Mumbai, Maharashtra",Demand: Odia,100,73.45,78.38,78.54,73.29,62,57.55,54.69,52.94,49.92,46.26
+"Bengaluru, Karnataka",Demand: Oriental,100,94.24,96.42,87.89,85.45,91.33,87.01,86.98,84.03,86.49,91.57
+"Hyderabad, Telangana",Demand: Oriental,98.2,89.05,93.12,84.17,87.32,100,97.56,95.7,90.42,91.97,93.42
+"Mumbai, Maharashtra",Demand: Oriental,100,94.07,96.23,87.22,90.14,97.52,88.18,97.79,90.72,95.82,98.74
+"Delhi NCR, Delhi NCR",Demand: Oriental,100,98.43,92.93,86.75,87.73,93.19,86.34,97.55,87.16,92.59,92.07
+"Chennai, Tamil Nadu",Demand: Oriental,96.42,92.22,92.52,82.6,86.05,92.51,90.52,99.08,100,89.73,89.45
+"Kolkata, West Bengal",Demand: Oriental,99.55,93.9,92.17,81.95,83.29,88.29,80.73,100,90.68,89.23,95.13
+"Hyderabad, Telangana",Demand: Pan-asian,91.84,87.76,87.76,65.31,59.18,77.55,58.16,57.14,75.51,100,95.92
+"Mumbai, Maharashtra",Demand: Pan-asian,94.34,90.89,100,88.46,81.78,99.85,77.44,87.14,87.14,86.04,85.89
+"Bengaluru, Karnataka",Demand: Pan-asian,100,86.88,83.52,87.4,73.83,74.42,68.9,76.73,64.65,72.78,68.75
+"Delhi NCR, Delhi NCR",Demand: Pan-asian,100,88.29,82.38,75.6,75.42,83.39,69.91,67.91,71.28,71.54,76.87
+"Chennai, Tamil Nadu",Demand: Pan-asian,93.1,100,94.48,94.48,66.21,78.62,55.17,61.38,82.76,50.34,61.38
+"Kolkata, West Bengal",Demand: Pan-asian,100,86.15,82,80.18,76.11,80.23,75.03,70.66,81.26,86.15,99.22
+"Kolkata, West Bengal",Demand: Parsi,100,85.38,83.08,40,,,,,,,
+"Bengaluru, Karnataka",Demand: Parsi,70.5,72.36,100,68.32,71.43,45.34,51.24,45.65,51.86,51.86,27.95
+"Mumbai, Maharashtra",Demand: Parsi,100,55.48,56.29,48.91,47.07,50.14,45.83,47.38,51.58,57.82,51.42
+"Delhi NCR, Delhi NCR",Demand: Parsi,100,87.9,89.27,80.24,69.85,65.08,48.72,61.16,60.65,60.14,58.94
+"Hyderabad, Telangana",Demand: Parsi,80.75,83.57,100,73.94,63.62,58.69,49.53,42.25,35.92,30.52,25.12
+"Chennai, Tamil Nadu",Demand: Parsi,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Pasta,100,90.5,94.27,87.51,80.73,86.7,86.97,82.98,83.5,87.61,95.2
+"Mumbai, Maharashtra",Demand: Pasta,95.34,95.94,100,86.39,81.13,84.78,78.13,87.52,88.28,93.29,93.55
+"Kolkata, West Bengal",Demand: Pasta,96.89,91.37,93.29,84.11,81.62,84.53,81.31,93.51,92.39,93.35,100
+"Delhi NCR, Delhi NCR",Demand: Pasta,100,95.27,96.02,85.01,81.54,84.2,79.61,89.44,88.01,91.7,95.81
+"Bengaluru, Karnataka",Demand: Pasta,100,94.56,93.76,82.08,70.34,71.06,66.89,66.19,57.81,57.89,64.1
+"Chennai, Tamil Nadu",Demand: Pasta,100,95.47,97.77,84.83,78.76,83.66,79.47,94.57,99.9,83.06,91.43
+"Kolkata, West Bengal",Demand: Pizza,99.96,96.63,100,85.81,87.34,93.34,77.55,96.04,85.58,84.91,81.63
+"Bengaluru, Karnataka",Demand: Pizza,99.49,99.08,100,91.68,90.18,97.03,90.13,86.54,86.44,88.89,86.39
+"Hyderabad, Telangana",Demand: Pizza,100,92.47,94.5,89.85,90.96,99.63,96.16,90.62,90.47,90.27,99.52
+"Chennai, Tamil Nadu",Demand: Pizza,98.86,92.25,91.79,80.58,83.44,93.87,91.95,95.21,100,86.52,87.32
+"Mumbai, Maharashtra",Demand: Pizza,99.05,96.62,98.68,88.21,89.28,100,89.2,95.09,93.72,94.37,93.32
+"Delhi NCR, Delhi NCR",Demand: Pizza,100,95.02,99.86,85.84,90.78,94.53,84.77,94,90.19,92.46,90.94
+"Delhi NCR, Delhi NCR",Demand: Portuguese,,74.43,3.87,,,,,,,100,
+"Hyderabad, Telangana",Demand: Portuguese,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Portuguese,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Portuguese,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Portuguese,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Portuguese,2.64,100,6.91,6.19,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Rajasthani,94.54,95.3,80.71,97.3,95.64,81.12,68.67,79.53,99.86,91.84,100
+"Kolkata, West Bengal",Demand: Rajasthani,58.66,100,88.43,76.49,77.46,82.16,81.64,90.52,59.25,60.22,74.18
+"Bengaluru, Karnataka",Demand: Rajasthani,57.26,47.89,60.99,53.13,53.56,50.22,71.38,77.87,75.39,100,98.61
+"Hyderabad, Telangana",Demand: Rajasthani,94.77,86.49,77.22,52.17,36.39,60.55,93,100,86.09,52.37,45.86
+"Mumbai, Maharashtra",Demand: Rajasthani,90.68,93.78,93.78,68.88,79.67,78.92,66.7,75.03,69.27,84.74,100
+"Chennai, Tamil Nadu",Demand: Rajasthani,81.28,72.58,69.34,68.87,85.59,89.98,74.2,84.9,88.7,82,100
+"Kolkata, West Bengal",Demand: Rolls,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Rolls,100,99.07,89.5,85.13,83.3,87.88,84.29,89.93,88.55,91.74,91.34
+"Mumbai, Maharashtra",Demand: Rolls,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Rolls,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Rolls,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Rolls,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Russian,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Russian,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Russian,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Russian,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Russian,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Russian,,33.33,33.33,66.67,33.33,66.67,33.33,66.67,33.33,100,
+"Delhi NCR, Delhi NCR",Demand: Salad,100,95.29,88.1,79.38,63.84,64.69,73.77,72.32,82.71,87.5,98.65
+"Mumbai, Maharashtra",Demand: Salad,100,96.05,97.49,86.91,78.17,77.43,82.22,77.09,75.13,75.77,75.1
+"Hyderabad, Telangana",Demand: Salad,99.45,86.91,98.57,92.38,90.34,98.67,100,86.75,81.22,80.84,76.2
+"Bengaluru, Karnataka",Demand: Salad,84.41,86.94,100,90.52,84.61,79.58,72.46,62.8,65.98,62.44,71.76
+"Kolkata, West Bengal",Demand: Salad,82.12,77.66,72.24,60.3,57.33,71.24,76.92,100,96.96,96.46,80.75
+"Chennai, Tamil Nadu",Demand: Salad,100,87.27,90.16,78.68,74.34,73.82,74.27,80.11,99.88,93.89,94.64
+"Kolkata, West Bengal",Demand: Seafood,100,81.34,81.44,65.64,62.93,57.09,53.09,70.09,80.82,82.27,94.14
+"Bengaluru, Karnataka",Demand: Seafood,78.79,98.56,100,80.92,85.17,83.41,76.83,75.97,82.59,86.12,88.02
+"Delhi NCR, Delhi NCR",Demand: Seafood,100,93.13,86.49,78.49,74.55,64.75,76.13,55.86,55.41,57.77,64.3
+"Mumbai, Maharashtra",Demand: Seafood,71.26,83.48,89.56,86.25,87.78,88.11,78.3,85.78,85.91,85.19,100
+"Chennai, Tamil Nadu",Demand: Seafood,68.3,81.92,84.55,60.65,65.61,72.39,66.52,79.51,97.15,100,98.93
+"Hyderabad, Telangana",Demand: Seafood,100,41.24,33.02,18.89,17.8,17.66,19.97,19.36,13.32,9.04,12.64
+"Chennai, Tamil Nadu",Demand: Shawarma,98.02,96.28,100,83.57,85.76,85.73,83.96,82.13,81.5,73.75,75.7
+"Hyderabad, Telangana",Demand: Shawarma,96.59,85.94,94.64,84.26,89.8,100,98.06,89.22,85.38,80.86,76.24
+"Mumbai, Maharashtra",Demand: Shawarma,100,98.65,99.79,89.44,86.67,87.56,82.41,82.32,79.5,75.12,82.05
+"Delhi NCR, Delhi NCR",Demand: Shawarma,95.82,100,78.8,81.27,73.26,80.46,75.58,73.67,68.64,79.52,76.16
+"Kolkata, West Bengal",Demand: Shawarma,95.15,100,95.77,84.34,73.27,63.94,55.21,58.79,62.49,67.24,60.16
+"Bengaluru, Karnataka",Demand: Shawarma,100,95.57,98.25,85.9,79.59,77.61,73.17,66.56,65.31,60.72,64.27
+"Hyderabad, Telangana",Demand: Sichuan,11.29,17.74,56.45,62.9,45.16,80.65,74.19,59.68,72.58,74.19,100
+"Bengaluru, Karnataka",Demand: Sichuan,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Sichuan,50,,,,,,50,,100,,50
+"Mumbai, Maharashtra",Demand: Sichuan,1.15,2.3,3.45,100,9.2,8.05,9.2,2.3,6.9,,
+"Chennai, Tamil Nadu",Demand: Sichuan,,,,,,100,,,,,
+"Kolkata, West Bengal",Demand: Sichuan,,,100,16.67,,,,,,,
+"Mumbai, Maharashtra",Demand: Sindhi,98.62,100,98.89,80.37,77.21,83.13,73.08,92.83,78.95,77.61,73.34
+"Delhi NCR, Delhi NCR",Demand: Sindhi,89.19,100,81.08,62.16,45.95,27.03,56.76,64.86,40.54,62.16,43.24
+"Hyderabad, Telangana",Demand: Sindhi,100,66.67,47.97,34.96,30.08,20.33,27.64,48.78,57.72,49.59,56.1
+"Chennai, Tamil Nadu",Demand: Sindhi,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Sindhi,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Sindhi,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Singaporean,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Singaporean,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Singaporean,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Singaporean,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Singaporean,74.01,75.71,94.35,100,65.54,66.1,53.11,61.58,64.41,79.66,89.27
+"Chennai, Tamil Nadu",Demand: Singaporean,46.91,65.93,63.21,68.64,85.43,67.9,71.85,65.68,100,82.47,91.36
+"Kolkata, West Bengal",Demand: Snacks,86.26,83.97,78.06,68.83,71.94,73.63,68.91,86.71,90.69,100,94.61
+"Delhi NCR, Delhi NCR",Demand: Snacks,96.06,100,86.64,85.45,83.39,84.38,71.47,81.72,87.98,88.98,89.67
+"Mumbai, Maharashtra",Demand: Snacks,95.52,96.98,92.57,81.45,87.77,100,85.19,92.57,97.69,92.51,98.1
+"Chennai, Tamil Nadu",Demand: Snacks,62.24,73.98,77.15,66.49,61.16,76.42,68.93,85.46,100,66.21,70.82
+"Hyderabad, Telangana",Demand: Snacks,61.9,78.38,92.15,70.06,67.11,76.98,78.23,90.28,100,90.36,93.86
+"Bengaluru, Karnataka",Demand: Snacks,78.95,82.32,87.72,72.24,67.77,76.68,66.73,84.32,100,98.03,87.82
+"Hyderabad, Telangana",Demand: South Indian,86.54,100,96.29,78.36,77.87,84.77,79.71,81.54,76.58,78.07,71.31
+"Bengaluru, Karnataka",Demand: South Indian,100,91.43,92.55,82.94,83.19,83.6,79.08,81.94,76.98,82.4,84.21
+"Kolkata, West Bengal",Demand: South Indian,98.41,100,94.26,81.12,77.23,75.22,80.44,99.94,93.49,98.39,98.88
+"Chennai, Tamil Nadu",Demand: South Indian,97.15,93.55,93.38,83.43,89.11,92.39,82.59,99.76,100,84.83,86.22
+"Mumbai, Maharashtra",Demand: South Indian,100,96.7,98.54,87.79,87.66,89.84,81.17,94.82,88.35,95.29,89.62
+"Delhi NCR, Delhi NCR",Demand: South Indian,93.18,94.05,88.44,80.52,77.43,78.86,77.35,90.34,89.28,100,95.64
+"Delhi NCR, Delhi NCR",Demand: Spanish,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Spanish,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Spanish,,,,,,,,,,,
+"Bengaluru, Karnataka",Demand: Spanish,,,,,,,,100,,,
+"Kolkata, West Bengal",Demand: Spanish,90.91,54.55,90.91,54.55,18.18,45.45,36.36,63.64,45.45,81.82,100
+"Mumbai, Maharashtra",Demand: Spanish,0.95,17.03,15.14,16.4,18.61,38.17,29.34,25.55,55.52,100,90.54
+"Mumbai, Maharashtra",Demand: Tamil,,,,,,15.44,19.85,32.35,44.85,97.06,100
+"Delhi NCR, Delhi NCR",Demand: Tamil,,,,,,,,,,,
+"Kolkata, West Bengal",Demand: Tamil,,,,,,,,,,,
+"Chennai, Tamil Nadu",Demand: Tamil,84.37,79.42,81.43,74,75.37,79.09,83.92,86.14,83.46,84.86,100
+"Bengaluru, Karnataka",Demand: Tamil,73.54,100,90.42,88.78,67.43,70.26,59.76,42.24,34.4,34.22,32.21
+"Hyderabad, Telangana",Demand: Tamil,61.54,71.79,87.18,100,66.67,56.41,,,58.97,51.28,51.28
+"Chennai, Tamil Nadu",Demand: Thai,30.45,28.48,100,24.27,26.35,27.2,32.74,39.85,41.92,24.25,29.01
+"Delhi NCR, Delhi NCR",Demand: Thai,65.81,73.04,91.32,86.58,85.82,96.26,86.38,100,89.85,95.64,95.38
+"Hyderabad, Telangana",Demand: Thai,97.23,76.47,87.54,85.81,83.39,82.35,84.26,93.94,79.07,91,100
+"Bengaluru, Karnataka",Demand: Thai,61.63,59.02,64.4,83.42,73.8,75.46,70.76,76.36,78.78,77.72,100
+"Kolkata, West Bengal",Demand: Thai,98.59,97.31,100,90.9,75.64,74.62,69.74,63.21,59.87,67.44,86.03
+"Mumbai, Maharashtra",Demand: Thai,74.95,77.4,78.3,75.8,77.05,85.18,82.79,96.61,91.28,97.83,100
+"Bengaluru, Karnataka",Demand: Tibetan,90.29,80.94,84.94,75.69,80.07,75.94,81.42,65.01,96.08,83.89,100
+"Hyderabad, Telangana",Demand: Tibetan,89.58,60.98,69.18,39.02,48.12,59.65,60.98,43.68,75.61,90.02,100
+"Chennai, Tamil Nadu",Demand: Tibetan,0.41,35.12,86.36,81.4,38.84,54.55,100,85.54,95.87,61.16,97.11
+"Mumbai, Maharashtra",Demand: Tibetan,69.9,68.09,74.68,67.36,71.62,73.9,74.07,73.94,79.24,95.43,100
+"Kolkata, West Bengal",Demand: Tibetan,76.47,71.01,70.28,66.95,72.08,80.65,75.74,82.12,91.12,89.96,100
+"Delhi NCR, Delhi NCR",Demand: Tibetan,100,82.62,68.35,59.54,63.58,65.57,55.07,56.11,47.61,51.53,38.77
+"Mumbai, Maharashtra",Demand: Turkish,74.31,93.21,88.81,82.75,98.17,86.61,79.08,100,62.94,46.79,48.07
+"Bengaluru, Karnataka",Demand: Turkish,91.34,88.53,96.63,93.03,83.69,100,77.17,98.99,88.98,86.61,94.04
+"Chennai, Tamil Nadu",Demand: Turkish,84.55,100,81.33,51.72,46.78,48.93,57.51,71.89,75.75,83.91,91.85
+"Hyderabad, Telangana",Demand: Turkish,38.65,42.18,47.45,34.09,59.86,72.66,78.55,71.56,67.79,100,91.91
+"Kolkata, West Bengal",Demand: Turkish,100,94.31,83.63,92.17,76.16,67.26,42.7,68.68,59.07,49.47,47.69
+"Delhi NCR, Delhi NCR",Demand: Turkish,84.24,73.75,65.5,92.49,100,73.98,69.74,68.1,61.93,73.83,78.66
+"Kolkata, West Bengal",Demand: Vietnamese,,,,,,,,,,,
+"Delhi NCR, Delhi NCR",Demand: Vietnamese,84.55,69.98,78.37,34.44,24.94,35.98,34,35.98,41.5,100,74.17
+"Mumbai, Maharashtra",Demand: Vietnamese,59.23,94,100,70.98,61.63,45.56,52.52,70.74,81.29,69.54,48.44
+"Bengaluru, Karnataka",Demand: Vietnamese,38.99,51.37,48.07,59.49,58.52,55.39,63.67,78.14,85.77,92.12,100
+"Chennai, Tamil Nadu",Demand: Vietnamese,,,,,,,,,,,
+"Hyderabad, Telangana",Demand: Vietnamese,,,,,,,,,,,
+"Mumbai, Maharashtra",Demand: Western,84.42,93.43,91.08,87.4,85.81,95.3,86.75,88.98,79.11,71.21,100
+"Kolkata, West Bengal",Demand: Western,89.08,80.06,82.07,76.96,78.8,86.5,76.02,85.4,74.68,88.72,100
+"Delhi NCR, Delhi NCR",Demand: Western,90.77,90.01,84.14,82.72,82.4,90.39,83.58,90.25,78.4,84.04,100
+"Hyderabad, Telangana",Demand: Western,87.57,79.63,82.27,82.44,82.78,100,92.37,91.38,81.14,80.19,97.54
+"Chennai, Tamil Nadu",Demand: Western,99.37,95.05,93.62,88.3,88.07,93.53,91.66,92.26,92.85,82.95,100
+"Bengaluru, Karnataka",Demand: Western,95.9,93.03,92.59,87.53,83.75,91.81,86.13,81.25,75.25,81.84,100
+"Delhi NCR, Delhi NCR",Demand: Wraps,6.33,9.69,15.31,16.22,23.68,36.54,8.88,7.33,33.1,100,8.91
+"Chennai, Tamil Nadu",Demand: Wraps,16.72,16.78,19.45,16.98,42.44,100,89.78,22.86,16.32,10.07,10.45
+"Hyderabad, Telangana",Demand: Wraps,48.68,49.69,100,90.3,80.63,87.07,50.92,51.01,40.21,38.18,35.84
+"Bengaluru, Karnataka",Demand: Wraps,5.58,14.41,69.43,94.84,100,92.48,3.36,4.53,5.04,5.39,5.05
+"Kolkata, West Bengal",Demand: Wraps,68.98,90.95,71.68,60.11,44.71,26.44,18.63,15.16,13.63,10.05,100
+"Mumbai, Maharashtra",Demand: Wraps,8.46,16.39,41.1,44.36,25.49,100,6.97,7.24,8.17,8.87,8.9

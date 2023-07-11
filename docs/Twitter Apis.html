@@ -1,0 +1,1002 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Twitter Data &#8212; Web Scraping with Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Twitter Apis';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Kaggle Datasets" href="Kaggle_Datasets.html" />
+    <link rel="prev" title="Google Mobility Reports and Popular Times API" href="Google-Mobility-Report.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    New age sources of data
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">How To</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="How-To-Interact-With-This-Book.html">How To Interact With This Book</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workshop Walkthrough</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Google%20Trends.html">Google Trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Google-Mobility-Report.html">Google Mobility Reports and Popular Times API</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Twitter Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Kaggle_Datasets.html">Kaggle Datasets</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Restaurant%20Data.html">Restaurant Data ( Zomato )</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="House%20Listing%20Data.html">House Listing Data (99 Acres , Magic Bricks etc.)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTwitter Apis.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Twitter Apis.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Twitter Data</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="twitter-data">
+<h1>Twitter Data<a class="headerlink" href="#twitter-data" title="Permalink to this headline">#</a></h1>
+<br>
+<p>The <em><strong>Twitter API</strong></em> provides a wealth of data that journalists can use to glean insights, uncover trends, and even find breaking news. Here are some key types of data points that the API provides:</p>
+<p>Tweets: The text content of the tweet, along with its ID, creation date, and source (e.g., Twitter for iPhone). This is often the primary data point of interest.</p>
+<p><code class="docutils literal notranslate"><span class="pre">User</span></code>: Information about the account that posted the tweet, including the username, profile description, location, follower count, friend count, and more.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Engagement</span></code>: Metrics such as the number of likes, retweets, and replies that a tweet has received.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Entities</span></code>: This includes hashtags, user mentions, URLs, and media associated with the tweet.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Place</span></code>: If location tagging is enabled, this includes information about the place associated with the tweet.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Language</span></code>: The language of the tweet.</p>
+<p>How journalists can leverage these data:</p>
+<p><code class="docutils literal notranslate"><span class="pre">Identifying</span> <span class="pre">Trends</span></code>: By analyzing tweets and hashtags, journalists can identify trending topics and get a sense of public sentiment on various issues.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Breaking</span> <span class="pre">News</span></code>: Journalists can monitor Twitter for breaking news. This is especially useful in situations where events are unfolding rapidly, such as during natural disasters or public demonstrations.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Audience</span> <span class="pre">Engagement</span></code>: Journalists can gauge audience response to their stories by monitoring likes, retweets, and replies.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Investigative</span> <span class="pre">Reporting</span></code>: The Twitter API can be used to gather data for investigative reporting. For example, a journalist might track the online activity of a public figure, or analyze tweets from a specific location to investigate local issues.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Stories</span></code>: Journalists can use Twitter data to create data-driven stories or visualizations. For example, a journalist could create a map showing where tweets about a certain topic are coming from, or a chart showing how the popularity of a hashtag has changed over time.</p>
+<br><br>
+<p><em><strong>We will look at some twitter data from the top 20 most followed polticians of our country during the period of early covid time (Jun 2020 to Sep 2020) and make sense what they tweeted and do a sentimental analysis check</strong></em></p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1"># Load the Twitter data</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../offline/data/Translated (To English).csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Display the first few rows of the data</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>screen_name</th>
+      <th>created_at</th>
+      <th>text</th>
+      <th>retweet_count</th>
+      <th>favorite_count</th>
+      <th>in_reply_to_screen_name</th>
+      <th>retweeted_status_screen_name</th>
+      <th>user_description</th>
+      <th>source</th>
+      <th>lang</th>
+      <th>id</th>
+      <th>Translation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>yadavakhilesh</td>
+      <td>2020-08-05T00:52:49Z</td>
+      <td>जय महादेव जय सिया-राम\nजय राधे-कृष्ण जय हनुमान...</td>
+      <td>3881</td>
+      <td>36026</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Socialist Leader of India. Chief Minister of U...</td>
+      <td>Twitter for iPhone</td>
+      <td>hi</td>
+      <td>1.290000e+18</td>
+      <td>Jai Mahadev Jai Siya-Ram  Jai Radhe-Krishna Ja...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>yadavakhilesh</td>
+      <td>2020-08-03T16:21:00Z</td>
+      <td>रक्षाबंधन के पर्व पर हार्दिक शुभकामनाएँ! https...</td>
+      <td>3008</td>
+      <td>48607</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Socialist Leader of India. Chief Minister of U...</td>
+      <td>Twitter for iPhone</td>
+      <td>hi</td>
+      <td>1.290000e+18</td>
+      <td>Best wishes on the festival of Rakshabandhan! ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>yadavakhilesh</td>
+      <td>2020-08-02T05:32:46Z</td>
+      <td>कोरोनाकाल में न तो सीमाएं सुरक्षित हैं, न काम-...</td>
+      <td>2974</td>
+      <td>19255</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Socialist Leader of India. Chief Minister of U...</td>
+      <td>Twitter for iPhone</td>
+      <td>hi</td>
+      <td>1.290000e+18</td>
+      <td>In the coronary period, neither the borders ar...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>yadavakhilesh</td>
+      <td>2020-08-08T05:27:14Z</td>
+      <td>वर्तमान मुख्यमंत्री का निष्फल कार्यकाल इसी बात...</td>
+      <td>2777</td>
+      <td>18243</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Socialist Leader of India. Chief Minister of U...</td>
+      <td>Twitter for iPhone</td>
+      <td>hi</td>
+      <td>1.290000e+18</td>
+      <td>The present Chief Minister's unfruitful tenure...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>yadavakhilesh</td>
+      <td>2020-08-02T07:19:40Z</td>
+      <td>कोरोना से पीड़ित उप्र की प्राविधिक शिक्षा मंत्...</td>
+      <td>2071</td>
+      <td>22519</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Socialist Leader of India. Chief Minister of U...</td>
+      <td>Twitter for iPhone</td>
+      <td>hi</td>
+      <td>1.290000e+18</td>
+      <td>Heartfelt tribute to the sadistic family and h...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Create a figure with two subplots</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Plot the distribution of retweet counts</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;retweet_count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Distribution of Retweet Counts&#39;</span><span class="p">,</span> <span class="n">logy</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot the distribution of favorite counts</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;favorite_count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Distribution of Favorite Counts&#39;</span><span class="p">,</span> <span class="n">logy</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+<span class="c1"># Adjust the layout</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/693c0d17f5254a9cebfac6555229755dbc9a69e106700f299d686bff90f2daaf.png" src="_images/693c0d17f5254a9cebfac6555229755dbc9a69e106700f299d686bff90f2daaf.png" />
+</div>
+</div>
+<br>
+<p>Here are the distributions of retweet counts and favorite counts for the tweets:</p>
+<p>The top histogram shows the distribution of retweet counts. Most tweets have a low number of retweets, with a small number of tweets having a high number of retweets. This is a typical characteristic of social media posts, where a small number of posts go viral and get a lot of retweets.</p>
+<p>The bottom histogram shows the distribution of favorite counts. The distribution is similar to that of retweet counts, with most tweets having a low number of favorites and a small number of tweets having a high number of favorites.</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<span class="c1"># Count the number of tweets per user</span>
+<span class="n">tweet_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;screen_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+
+<span class="c1"># Create a bar plot of the top 10 users with the most tweets</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">tweet_counts</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">tweet_counts</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;cool&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Number of Tweets per User&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;User&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Number of Tweets&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6d5b50dc4157757a8539b6a77a8d83f2acafbfdfcf1fc96a3b3d137e832a6751.png" src="_images/6d5b50dc4157757a8539b6a77a8d83f2acafbfdfcf1fc96a3b3d137e832a6751.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort the DataFrame by &#39;favorite_count&#39;</span>
+<span class="n">most_favorited_tweets</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;favorite_count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Create a bar plot of the most favorited tweets</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">most_favorited_tweets</span><span class="p">[</span><span class="s1">&#39;favorite_count&#39;</span><span class="p">],</span> <span class="n">most_favorited_tweets</span><span class="p">[</span><span class="s1">&#39;screen_name&#39;</span><span class="p">],</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;cool&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Most Favorited Tweets&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Number of Favorites&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;User&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/fc074e092a68b65c8ab1e9fc96197f731b12753b4cbcf4267da9dabdcaabd008.png" src="_images/fc074e092a68b65c8ab1e9fc96197f731b12753b4cbcf4267da9dabdcaabd008.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="c1"># Download the NLTK stop words</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get the English stop words</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">preprocess_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Convert the text to lower case</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    
+    <span class="c1"># Remove punctuation</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[^\w\s]&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    
+    <span class="c1"># Remove URLs</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;http\S+|www\S+|https\S+&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span><span class="p">)</span>
+    
+    <span class="c1"># Remove stop words</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">text</span>
+
+<span class="c1"># Preprocess the text</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Processed_Text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Translation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">preprocess_text</span><span class="p">)</span>
+
+<span class="c1"># Initialize the CountVectorizer</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
+
+<span class="c1"># Fit and transform the processed text</span>
+<span class="n">word_count</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Processed_Text&#39;</span><span class="p">])</span>
+
+<span class="c1"># Get the words and their counts</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
+<span class="n">counts</span> <span class="o">=</span> <span class="n">word_count</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">A1</span>
+
+<span class="c1"># Create a DataFrame with the words and their counts</span>
+<span class="n">word_count_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;word&#39;</span><span class="p">:</span> <span class="n">words</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">:</span> <span class="n">counts</span><span class="p">})</span>
+
+<span class="c1"># Get the top 20 most frequently used words</span>
+<span class="n">top_words</span> <span class="o">=</span> <span class="n">word_count_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="n">top_words</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/vatsalbharti/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>word</th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>16057</th>
+      <td>rt</td>
+      <td>3634</td>
+    </tr>
+    <tr>
+      <th>11853</th>
+      <td>minister</td>
+      <td>1716</td>
+    </tr>
+    <tr>
+      <th>12512</th>
+      <td>narendramodi</td>
+      <td>1694</td>
+    </tr>
+    <tr>
+      <th>9654</th>
+      <td>ji</td>
+      <td>1664</td>
+    </tr>
+    <tr>
+      <th>7713</th>
+      <td>government</td>
+      <td>1451</td>
+    </tr>
+    <tr>
+      <th>17276</th>
+      <td>shri</td>
+      <td>1397</td>
+    </tr>
+    <tr>
+      <th>13799</th>
+      <td>people</td>
+      <td>1396</td>
+    </tr>
+    <tr>
+      <th>19117</th>
+      <td>today</td>
+      <td>1392</td>
+    </tr>
+    <tr>
+      <th>4653</th>
+      <td>country</td>
+      <td>1390</td>
+    </tr>
+    <tr>
+      <th>1424</th>
+      <td>also</td>
+      <td>1182</td>
+    </tr>
+    <tr>
+      <th>8893</th>
+      <td>india</td>
+      <td>1167</td>
+    </tr>
+    <tr>
+      <th>6872</th>
+      <td>farmers</td>
+      <td>841</td>
+    </tr>
+    <tr>
+      <th>17939</th>
+      <td>state</td>
+      <td>820</td>
+    </tr>
+    <tr>
+      <th>12748</th>
+      <td>new</td>
+      <td>805</td>
+    </tr>
+    <tr>
+      <th>14038</th>
+      <td>pm</td>
+      <td>795</td>
+    </tr>
+    <tr>
+      <th>4589</th>
+      <td>corona</td>
+      <td>795</td>
+    </tr>
+    <tr>
+      <th>14471</th>
+      <td>prime</td>
+      <td>751</td>
+    </tr>
+    <tr>
+      <th>2923</th>
+      <td>bihar</td>
+      <td>713</td>
+    </tr>
+    <tr>
+      <th>5395</th>
+      <td>development</td>
+      <td>705</td>
+    </tr>
+    <tr>
+      <th>6586</th>
+      <td>every</td>
+      <td>684</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wordcloud</span> <span class="kn">import</span> <span class="n">WordCloud</span>
+<span class="c1"># Create a WordCloud object without specifying a maximum font size</span>
+<span class="n">wordcloud</span> <span class="o">=</span> <span class="n">WordCloud</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">21</span><span class="p">)</span><span class="o">.</span><span class="n">generate_from_frequencies</span><span class="p">(</span><span class="n">word_count_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;word&#39;</span><span class="p">)[</span><span class="s1">&#39;count&#39;</span><span class="p">])</span>
+
+<span class="c1"># Display the WordCloud</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wordcloud</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s2">&quot;bilinear&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/75711d857659a21ae9e6a17c532c5cdb41b3c3e0f568312561c55fe5753b5540.png" src="_images/75711d857659a21ae9e6a17c532c5cdb41b3c3e0f568312561c55fe5753b5540.png" />
+</div>
+</div>
+<br>
+<p><em><strong>Sentimental Analysis of each Author</strong></em></p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">textblob</span> <span class="kn">import</span> <span class="n">TextBlob</span>
+
+<span class="k">def</span> <span class="nf">get_sentiment</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Create a TextBlob object</span>
+    <span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    
+    <span class="c1"># Return the sentiment polarity</span>
+    <span class="k">return</span> <span class="n">blob</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">polarity</span>
+
+<span class="c1"># Sentiment analysis for each author</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sentiment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Translation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_sentiment</span><span class="p">)</span>
+
+<span class="c1"># Group by author and calculate the mean sentiment for each author</span>
+<span class="n">author_sentiment</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;screen_name&#39;</span><span class="p">)[</span><span class="s1">&#39;Sentiment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">author_sentiment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>screen_name
+AmitShah           0.203183
+ArvindKejriwal     0.147387
+KTRTRS             0.089026
+KapilSibal         0.112221
+MamataOfficial     0.383568
+Naveen_Odisha      0.269370
+NitishKumar        0.133032
+OfficeofUT         0.090091
+PawarSpeaks        0.122447
+RahulGandhi        0.029284
+ShashiTharoor      0.080911
+Swamy39            0.097652
+derekobrienmp      0.075168
+myogiadityanath    0.206435
+narendramodi       0.165200
+ncbn               0.160070
+rajnathsingh       0.157938
+smritiirani        0.120871
+vijayrupanibjp     0.189373
+yadavakhilesh      0.072378
+Name: Sentiment, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a histogram of sentiment scores</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sentiment&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogram of Sentiment Scores&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Sentiment Score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5d268183ae05a892fc9628730db9a51257418c81cd54e0a28a6a1859daad3fad.png" src="_images/5d268183ae05a892fc9628730db9a51257418c81cd54e0a28a6a1859daad3fad.png" />
+</div>
+</div>
+<br>
+<p>The sentiment score is a number between -1 and 1. Negative scores indicate negative sentiment, positive scores indicate positive sentiment, and a score of 0 indicates neutral sentiment. For example, the tweets by ‘MamataOfficial’ have the highest average sentiment score (0.384), indicating that they generally have a positive sentiment.</p>
+<br><br>
+<p><em><strong>We will do Topic modeling analysis to understand the main themes in the tweets</strong></em></p>
+<p>We’ll use the Latent Dirichlet Allocation (LDA) method for this. Please note that topic modeling can be a time-consuming process, especially for large datasets. Also, interpreting the results of topic modeling can sometimes be subjective
+<br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">LatentDirichletAllocation</span>
+
+<span class="c1"># Define a function to print the top words for each topic</span>
+<span class="k">def</span> <span class="nf">print_top_words</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">,</span> <span class="n">n_top_words</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">topic_idx</span><span class="p">,</span> <span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">components_</span><span class="p">):</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Topic #</span><span class="si">%d</span><span class="s2">: &quot;</span> <span class="o">%</span> <span class="n">topic_idx</span>
+        <span class="n">message</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">feature_names</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">topic</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[:</span><span class="o">-</span><span class="n">n_top_words</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Use CountVectorizer to get the term-document matrix</span>
+<span class="n">tf_vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">max_df</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">min_df</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="n">tf_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Translation&#39;</span><span class="p">])</span>
+
+<span class="c1"># Use LatentDirichletAllocation to perform LDA</span>
+<span class="n">lda</span> <span class="o">=</span> <span class="n">LatentDirichletAllocation</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                                <span class="n">learning_method</span><span class="o">=</span><span class="s1">&#39;online&#39;</span><span class="p">,</span>
+                                <span class="n">learning_offset</span><span class="o">=</span><span class="mf">50.</span><span class="p">,</span>
+                                <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">lda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tf</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>LatentDirichletAllocation(learning_method=&#39;online&#39;, learning_offset=50.0,
+                          max_iter=5, random_state=0)
+</pre></div>
+</div>
+</div>
+</div>
+<br>
+Here are the main themes (topics) and the top words associated with each theme based on the Latent Dirichlet Allocation (LDA) analysis:
+<p><em><strong>Topic #0 (Festival Wishes)</strong></em>: greetings, https, occasion, festival, mother, lord, blessings, best, wishes, happiness</p>
+<p><em><strong>Topic #1 (Condolences and Thankfulness)</strong></em>: ji, https, thank, wishes, family, death, best, peace, shri, thanks</p>
+<p><em><strong>Topic #2 (Government and Public Services)</strong></em>: https, government, people, bihar, state, minister, development, bjp, corona, public</p>
+<p><em><strong>Topic #3 (Birthday Wishes)</strong></em>: https, shri, birthday, happy, minister, rt, party, wish, ktrtrs, president</p>
+<p><em><strong>Topic #4 (Fake News and Rally)</strong></em>: pibfactcheck, claim, rally, fake, don, false, rajnathsingh_in, claimed, kutch, baba</p>
+<p><em><strong>Topic #5 (Farmers and Government)</strong></em>: farmers, https, rt, government, narendramodi, modi, minister, crore, poor, prime</p>
+<p><em><strong>Topic #6 (Anniversaries and Tributes)</strong></em>: anniversary, birth, day, freedom, https, great, tribute, country, salute, sacrifice</p>
+<p><em><strong>Topic #7 (Bengal Issues)</strong></em>: https, new, bengal, law, episode, rt, people, days, problems, today</p>
+<p><em><strong>Topic #8 (Delhi and Health Issues)</strong></em>: https, rt, delhi, dr, swamy39, corona, diwali, dengue, states, hindi</p>
+<p><em><strong>Topic #9 (Country Progress)</strong></em>: rt, https, india, narendramodi, country, today, ji, new, pm, self</p>
+<br><p><code class="docutils literal notranslate"><span class="pre">Twitter</span> <span class="pre">data</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">to</span> <span class="pre">identify</span> <span class="pre">trends,</span> <span class="pre">gauge</span> <span class="pre">public</span> <span class="pre">sentiment,</span> <span class="pre">understand</span> <span class="pre">popular</span> <span class="pre">topics,</span> <span class="pre">identify</span> <span class="pre">influential</span> <span class="pre">users,</span> <span class="pre">and</span> <span class="pre">much</span> <span class="pre">more.</span> <span class="pre">By</span> <span class="pre">coupling</span> <span class="pre">these</span> <span class="pre">insights</span> <span class="pre">with</span> <span class="pre">their</span> <span class="pre">reporting,</span> <span class="pre">one</span>&#160; <span class="pre">can</span> <span class="pre">uncover</span> <span class="pre">new</span> <span class="pre">story</span> <span class="pre">angles,</span> <span class="pre">verify</span> <span class="pre">facts,</span> <span class="pre">and</span> <span class="pre">better</span> <span class="pre">understand</span> <span class="pre">their</span> <span class="pre">audience</span></code></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Google-Mobility-Report.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Google Mobility Reports and Popular Times API</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Kaggle_Datasets.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Kaggle Datasets</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="https://www.linkedin.com/in/vatsal-bharti-a0190911b/">Vatsal Bharti</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

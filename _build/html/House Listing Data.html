@@ -1,0 +1,826 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>House Listing Data (99 Acres , Magic Bricks etc.) &#8212; Web Scraping with Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'House Listing Data';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Restaurant Data ( Zomato )" href="Restaurant%20Data.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    New age sources of data
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">How To</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="How-To-Interact-With-This-Book.html">How To Interact With This Book</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workshop Walkthrough</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Google%20Trends.html">Google Trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Google-Mobility-Report.html">Google Mobility Reports and Popular Times API</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Twitter%20Apis.html">Twitter Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Kaggle_Datasets.html">Kaggle Datasets</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Restaurant%20Data.html">Restaurant Data ( Zomato )</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">House Listing Data (99 Acres , Magic Bricks etc.)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FHouse Listing Data.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/House Listing Data.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>House Listing Data (99 Acres , Magic Bricks etc.)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="house-listing-data-99-acres-magic-bricks-etc">
+<h1>House Listing Data (99 Acres , Magic Bricks etc.)<a class="headerlink" href="#house-listing-data-99-acres-magic-bricks-etc" title="Permalink to this headline">#</a></h1>
+<br>
+<p><em><strong>99 acres , magic bricks and <a class="reference external" href="http://housing.com">housing.com</a> are real estate platforms where one can find house,commerial,appartments,flats,lands etc. listing , we can use such data points to understand how rental and buy prices are indicators of affluence and socioeconomic status in a given area</strong></em>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Income</span></code>: Generally, higher-income individuals and families can afford to pay more for housing, whether it’s rent or a mortgage. Therefore, areas with higher rental and purchase prices often have a higher average income. Conversely, areas with lower rental and purchase prices tend to have a lower average income.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Wealth</span></code>: Home ownership, in particular, is a key indicator of wealth. The more expensive homes are in an area, the wealthier the residents of that area are likely to be.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Demand</span></code>: High rental and purchase prices can also indicate high demand for housing in an area. This could be because the area has desirable amenities, good schools, low crime rates, or other factors that attract affluent residents.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Quality</span> <span class="pre">of</span> <span class="pre">Life</span></code>: Higher housing costs are often associated with higher quality of life, including access to good schools, parks, recreational facilities, and other community resources. These factors are typically more available or of higher quality in more affluent areas.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">and</span> <span class="pre">Occupation</span></code>: Areas with higher housing costs often have residents with higher levels of education and more prestigious occupations. This is because income (which is correlated with education and occupation) is a major factor in the ability to afford housing.</p>
+<p>However, while rental and purchase prices can be good indicators of affluence, they are not perfect. They do not account for wealth that is not tied up in real estate, and they do not consider income inequality within an area. Furthermore, in some cases, individuals or families may choose to live in a less expensive area to save money or may be living in an expensive area due to factors other than their personal wealth (for example, being supported by family or receiving housing subsidies). It acts as a great proxy data for the same</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+
+<span class="c1"># Read the CSV file</span>
+<span class="n">rent_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../offline/data/ResidentialAllcities_Rent.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Display the first few rows of the DataFrame</span>
+<span class="n">rent_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PROP_ID</th>
+      <th>PROPERTY_TYPE</th>
+      <th>CITY</th>
+      <th>LOCALITY</th>
+      <th>MIN_PRICE</th>
+      <th>MAX_PRICE</th>
+      <th>PRICE_SQFT</th>
+      <th>AREA</th>
+      <th>PRICE</th>
+      <th>MAP_DETAILS.LATITUDE</th>
+      <th>MAP_DETAILS.LONGITUDE</th>
+      <th>FORMATTED_LANDMARK_DETAILS</th>
+      <th>City based on hdfc address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>N65939760</td>
+      <td>Residential Apartment</td>
+      <td>Bardhaman</td>
+      <td>Ulhas</td>
+      <td>15000</td>
+      <td>15000</td>
+      <td>14.0</td>
+      <td>1020 sq.ft.</td>
+      <td>15,000</td>
+      <td>23.223370</td>
+      <td>87.890647</td>
+      <td>NaN</td>
+      <td>Bardhaman</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>R67394958</td>
+      <td>Independent/Builder Floor</td>
+      <td>Bardhaman</td>
+      <td>Bara Nilpur</td>
+      <td>10000</td>
+      <td>10000</td>
+      <td>6.0</td>
+      <td>1600 sq.ft.</td>
+      <td>10,000</td>
+      <td>23.220408</td>
+      <td>87.875135</td>
+      <td>NaN</td>
+      <td>Bardhaman</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>H67063388</td>
+      <td>Residential Apartment</td>
+      <td>Bardhaman</td>
+      <td>Goda</td>
+      <td>7800</td>
+      <td>7800</td>
+      <td>11.0</td>
+      <td>665 sq.ft.</td>
+      <td>7,800</td>
+      <td>23.256575</td>
+      <td>87.838465</td>
+      <td>NaN</td>
+      <td>Bardhaman</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>F63473562</td>
+      <td>Independent House/Villa</td>
+      <td>Bardhaman</td>
+      <td>Rasulpur</td>
+      <td>20000</td>
+      <td>20000</td>
+      <td>5.0</td>
+      <td>4600 sq.ft.</td>
+      <td>20,000</td>
+      <td>23.184539</td>
+      <td>88.030303</td>
+      <td>NaN</td>
+      <td>Bardhaman</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>O62817124</td>
+      <td>Independent House/Villa</td>
+      <td>Bardhaman</td>
+      <td>Greenpark Keshabgunjchatti Burdwan Town</td>
+      <td>7000</td>
+      <td>7000</td>
+      <td>10.0</td>
+      <td>700 sq.ft.</td>
+      <td>7,000</td>
+      <td>23.232498</td>
+      <td>87.861958</td>
+      <td>NaN</td>
+      <td>Bardhaman</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<br>
+<p>The dataset contains the following columns:</p>
+<p><code class="docutils literal notranslate"><span class="pre">PROP_ID</span></code>: There are 106,419 unique property IDs, indicating that each row represents a different property.</p>
+<p><code class="docutils literal notranslate"><span class="pre">PROPERTY_TYPE</span></code>: The most common property type is ‘Residential Apartment’, which appears 74,041 times.</p>
+<p><code class="docutils literal notranslate"><span class="pre">CITY</span></code>: There are 55 unique cities in the data, with Pune being the most common city, appearing 13,552 times.</p>
+<p><code class="docutils literal notranslate"><span class="pre">LOCALITY</span></code>: There are 10,380 unique localities in the data. The most common locality is ‘Hiranandani Gardens Powai’, appearing 1,083 times.</p>
+<p><code class="docutils literal notranslate"><span class="pre">MIN_PRICE</span></code>: The minimum price is 0 (which might represent missing or incorrect data), and the maximum price is 85,000,000. The average minimum price is 49,388, with a standard deviation of 310,471.</p>
+<p><code class="docutils literal notranslate"><span class="pre">MAX_PRICE</span></code>: The minimum max price is 0 (which might represent missing or incorrect data), and the maximum max price is 85,000,000. The average maximum price is also 49,388, with a standard deviation of 310,471.</p>
+<p><code class="docutils literal notranslate"><span class="pre">PRICE_SQFT</span></code>: The price per square foot ranges from 0 to 9,900,000, with an average of 442.63 and a standard deviation of 34,932.51.</p>
+<p><code class="docutils literal notranslate"><span class="pre">AREA</span></code>: The area ranges from 0 sq.ft. to 5,535,580 sq.ft., with an average of 1,730.45 sq.ft. and a standard deviation of 24,520.24.</p>
+<p><code class="docutils literal notranslate"><span class="pre">PRICE</span></code>: The price ranges from 1,000 to 99,999, with an average of 27,643.08 and a standard deviation of 19,779.68.</p>
+<p><code class="docutils literal notranslate"><span class="pre">MAP_DETAILS.LATITUDE</span></code>: The latitude ranges from -44.08 to 88.52, with an average of 23.23 and a standard deviation of 12.09.</p>
+<p><code class="docutils literal notranslate"><span class="pre">MAP_DETAILS.LONGITUDE</span></code>: The longitude ranges from -115.26 to 94.17, with an average of 71.44 and a standard deviation of 18.34.</p>
+<p><code class="docutils literal notranslate"><span class="pre">FORMATTED_LANDMARK_DETAILS</span></code>: There are 14,696 unique landmark details, with the most common one appearing 495 times.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Note</span></code> : Cities included in this dataset Bardhaman, Bhubaneswar, Chennai, Chittoor-Piler,
+Delhi(NCR), Gaya, Goa, Gurgoan, Hyderabad, Jaipur,
+Kankavli-Sindhudurg, Karwar, Kolkata, Meerut, Mumbai,
+Noida, Palakkad, Pune, Ratnagiri, Sawantwadi,
+Secunderabad, Surat, Vadodara
+<br></p>
+<br>
+<p><em><strong>City-wise Rental Trends</strong></em>: By analyzing the average, minimum, and maximum rental prices in different cities, a data journalist could write about how rental prices vary from city to city. They could also look at how these prices correlate with other factors, such as the city’s cost of living, average income, etc.</p>
+<p><em><strong>Affluence Indicators</strong></em>: The data can be used to infer the affluence of different cities and localities. Higher rental prices could indicate more affluent areas. This could lead to articles about the most expensive places to live in India.</p>
+<p><em><strong>Property Type Analysis</strong></em>: A data journalist could write about the most common types of properties available for rent in different cities and localities. They could explore questions like “What type of properties are most common in affluent areas?” or “How does property type correlate with rental price?”</p>
+<p><em><strong>Exploring the Rental Market Dynamics</strong></em>: By analyzing the distribution of rental prices and areas within each city, a journalist could explore the diversity of the rental market in different cities. They could write about how the rental market caters to different income groups and what kind of properties are available to different segments of the population.</p>
+<p><em><strong>Geographic Distribution of Properties</strong></em>: The latitude and longitude data could be used to visualize the geographic distribution of properties in different cities. This could lead to articles exploring questions like “Where are the hotspots for rental properties in different cities?” or “How does geographic location within a city affect rental prices?”</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;LOCALITY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;LOCALITY&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span><span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;City based on hdfc address&#39;</span><span class="p">]</span>
+
+<span class="c1"># Replace &#39;Price on Request&#39; with NaN in PRICE column</span>
+<span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;PRICE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;PRICE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+
+<span class="c1"># Replace non-numerical values with NaN in AREA column</span>
+<span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;AREA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;AREA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; sq.ft.&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate the average rental price per square foot for each city</span>
+<span class="n">city_avg_price</span> <span class="o">=</span> <span class="n">rent_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;City based on hdfc address&#39;</span><span class="p">)[</span><span class="s1">&#39;PRICE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">top_cities</span> <span class="o">=</span> <span class="n">city_avg_price</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+
+<span class="c1"># Calculate the average rental price per square foot for each locality</span>
+<span class="n">locality_avg_price</span> <span class="o">=</span> <span class="n">rent_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;LOCALITY&#39;</span><span class="p">)[</span><span class="s1">&#39;PRICE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Display the top 10 localities with the highest average rental price</span>
+<span class="n">top_localities</span> <span class="o">=</span> <span class="n">locality_avg_price</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Create bar plots</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Bar plot for top cities</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">top_cities</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">top_cities</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Top 10 Cities by Average Rental Price&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;City&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Average Rental Price&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">setp</span><span class="p">(</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">get_majorticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="c1"># Bar plot for top localities</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">top_localities</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">top_localities</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Top 10 Localities by Average Rental Price&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Locality&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Average Rental Price&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">setp</span><span class="p">(</span><span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">get_majorticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="c1"># Adjust layout</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9dc3bdc18e30d6a35de8c3b525af7c737c9366519dc1992d248914fd618eb0a2.png" src="_images/9dc3bdc18e30d6a35de8c3b525af7c737c9366519dc1992d248914fd618eb0a2.png" />
+</div>
+</div>
+<br>
+<p><code class="docutils literal notranslate"><span class="pre">City-level</span> <span class="pre">price</span> <span class="pre">type</span> <span class="pre">analysis</span></code>: Analyze the distribution of property types within each city.</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># City-level property type analysis</span>
+<span class="n">city_property_type_counts</span> <span class="o">=</span> <span class="n">rent_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;City based on hdfc address&#39;</span><span class="p">,</span> <span class="s1">&#39;PROPERTY_TYPE&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Filter data for top cities</span>
+<span class="n">top_cities_data</span> <span class="o">=</span> <span class="n">rent_data</span><span class="p">[</span><span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;City based on hdfc address&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">top_cities</span><span class="o">.</span><span class="n">index</span><span class="p">)]</span>
+
+<span class="c1"># Create boxplots for rental prices in top cities</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">boxplot</span> <span class="o">=</span> <span class="n">top_cities_data</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;PRICE&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s1">&#39;City based on hdfc address&#39;</span><span class="p">,</span> <span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;City-Level Rental Price Distribution for Top 10 Cities&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="c1"># Remove automatically generated title</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Price&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;City&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1008x432 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/f2124b0f6839e71982e094d9288324fe28701f519ba70458955cd4aed5ce3419.png" src="_images/f2124b0f6839e71982e094d9288324fe28701f519ba70458955cd4aed5ce3419.png" />
+</div>
+</div>
+<br>
+<p>The boxplot above provides a summary of the property sizes (in terms of area) distribution in the top 10 cities. The line inside each box represents the median area in the city, while the box itself represents the interquartile range (IQR, or the middle 50% of areas). Again, extreme outliers have been omitted from the plot for readability.</p>
+<br><br>
+<p><code class="docutils literal notranslate"><span class="pre">City-level</span> <span class="pre">area</span> <span class="pre">distribution</span> <span class="pre">analysis</span></code>: Analyze the distribution of property types within each city.</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create boxplots for area in top cities</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">boxplot</span> <span class="o">=</span> <span class="n">top_cities_data</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;AREA&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s1">&#39;City based on hdfc address&#39;</span><span class="p">,</span> <span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;City-Level Area Distribution for Top 10 Cities&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="c1"># Remove automatically generated title</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Area (sq.ft.)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;City&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1008x432 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/1bd42cf78a421e7a911cf4a5d4e5fb365b08edc565dcbac74aacdc5a0837c156.png" src="_images/1bd42cf78a421e7a911cf4a5d4e5fb365b08edc565dcbac74aacdc5a0837c156.png" />
+</div>
+</div>
+<br>
+<p><code class="docutils literal notranslate"><span class="pre">City-level</span> <span class="pre">localitywise</span>&#160; <span class="pre">property</span> <span class="pre">type</span> <span class="pre">analysis</span></code>: Analyze the distribution of property types within each city.</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot the city property type counts as a stacked bar chart</span>
+<span class="c1"># City-level property type analysis</span>
+<span class="n">city_property_type_count</span> <span class="o">=</span> <span class="n">rent_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;CITY&#39;</span><span class="p">,</span> <span class="s1">&#39;PROPERTY_TYPE&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Display the property type counts for each city</span>
+<span class="n">city_property_type_count</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="n">city_property_type_count</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;City&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;City-Level Property Type Distribution&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b4daaca862f7e935125d8242f3d77d54fed938485c1fb71ba4940c2be35409c2.png" src="_images/b4daaca862f7e935125d8242f3d77d54fed938485c1fb71ba4940c2be35409c2.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate the average rental price per square foot for each city</span>
+<span class="n">city_avg_price</span> <span class="o">=</span> <span class="n">rent_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;CITY&#39;</span><span class="p">)[</span><span class="s1">&#39;PRICE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">top_cities</span> <span class="o">=</span> <span class="n">city_avg_price</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># Filter data for top cities</span>
+<span class="n">top_cities_data</span> <span class="o">=</span> <span class="n">rent_data</span><span class="p">[</span><span class="n">rent_data</span><span class="p">[</span><span class="s1">&#39;CITY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">top_cities</span><span class="o">.</span><span class="n">index</span><span class="p">)]</span>
+
+<span class="c1"># Create boxplots for rental prices in top cities</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">boxplot</span> <span class="o">=</span> <span class="n">top_cities_data</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;PRICE&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s1">&#39;CITY&#39;</span><span class="p">,</span> <span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;City-Level Rental Price Distribution for Top 20 localitywise in Cities&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="c1"># Remove automatically generated title</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Price&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;City&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1008x432 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/8a48fbb5d42e2c2542e5bf81cf8840f64734b170aa5806fa3173262b8fde4a76.png" src="_images/8a48fbb5d42e2c2542e5bf81cf8840f64734b170aa5806fa3173262b8fde4a76.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create boxplots for area in top cities</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">boxplot</span> <span class="o">=</span> <span class="n">top_cities_data</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;AREA&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s1">&#39;CITY&#39;</span><span class="p">,</span> <span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;City-Level Area Distribution for Top 20 localitywise in Cities&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="c1"># Remove automatically generated title</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Area (sq.ft.)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;City&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1008x432 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/940e2122dd7bd265eb0f18da229f276b2edddcd50e8f5cea5c043ee638670e47.png" src="_images/940e2122dd7bd265eb0f18da229f276b2edddcd50e8f5cea5c043ee638670e47.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set up the figure and axes for the histograms</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">top_cities</span><span class="o">.</span><span class="n">index</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+
+<span class="c1"># Generate a histogram for each city</span>
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">city</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axs</span><span class="p">,</span> <span class="n">top_cities</span><span class="o">.</span><span class="n">index</span><span class="p">):</span>
+    <span class="n">city_data</span> <span class="o">=</span> <span class="n">top_cities_data</span><span class="p">[</span><span class="n">top_cities_data</span><span class="p">[</span><span class="s1">&#39;CITY&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">city</span><span class="p">]</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">city_data</span><span class="p">[</span><span class="s1">&#39;AREA&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5000</span><span class="p">])</span>  <span class="c1"># Limit x-axis for readability</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Area (sq.ft.)&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
+
+<span class="c1"># Adjust layout</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d494365d50acc000b9f096e804cf91175786f6c31aa8e2e5843d752ee9706faa.png" src="_images/d494365d50acc000b9f096e804cf91175786f6c31aa8e2e5843d752ee9706faa.png" />
+</div>
+</div>
+<br>
+<p>The histograms above show the distribution of property sizes (in terms of area) within each of the top 10 cities. Each histogram represents a different city, and the x-axis represents the area of properties. The y-axis represents the count of properties within each area range (bin). For readability, the x-axis is limited to properties with areas less than 5000 sq.ft. Properties larger than this are considered outliers for the purpose of this visualization.</p>
+<p>We can see that for most cities, the majority of properties are less than 2000 sq.ft. in size, with very few properties larger than this. However, the distribution varies from city to city.</p>
+<br></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Restaurant%20Data.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Restaurant Data ( Zomato )</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="https://www.linkedin.com/in/vatsal-bharti-a0190911b/">Vatsal Bharti</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

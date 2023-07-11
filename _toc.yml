@@ -1,0 +1,23 @@
+format: jb-book
+root: welcome
+parts:
+- caption: How To
+  chapters:
+  - file: How-To-Interact-With-This-Book
+    title: How To Interact With This Book
+- caption: Workshop Walkthrough
+  chapters:
+  - file: Google Trends
+    title: Google Trends
+  - file: Google-Mobility-Report
+    title: Google Mobility Report and Google Popular times API
+  - file: Twitter Apis
+    title: Twitter Data
+  - file: Kaggle_Datasets
+    title: Kaggle Datasets
+  - file: Restaurant Data
+    title: Restaurant Data ( Zomato )
+  - file: House Listing Data
+    title: House Listing Data (99 Acres , Magic Bricks etc.)
+  
+  

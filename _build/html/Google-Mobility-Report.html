@@ -1,0 +1,1171 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Google Mobility Reports and Popular Times API &#8212; Web Scraping with Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Google-Mobility-Report';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Twitter Data" href="Twitter%20Apis.html" />
+    <link rel="prev" title="Google Trends" href="Google%20Trends.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    New age sources of data
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">How To</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="How-To-Interact-With-This-Book.html">How To Interact With This Book</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workshop Walkthrough</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Google%20Trends.html">Google Trends</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Google Mobility Reports and Popular Times API</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Twitter%20Apis.html">Twitter Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Kaggle_Datasets.html">Kaggle Datasets</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Restaurant%20Data.html">Restaurant Data ( Zomato )</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="House%20Listing%20Data.html">House Listing Data (99 Acres , Magic Bricks etc.)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGoogle-Mobility-Report.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Google-Mobility-Report.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Google Mobility Reports and Popular Times API</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Google Mobility Reports and Popular Times API</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#google-popular-times-api">Google Popular Times API</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="google-mobility-reports-and-popular-times-api">
+<h1>Google Mobility Reports and Popular Times API<a class="headerlink" href="#google-mobility-reports-and-popular-times-api" title="Permalink to this headline">#</a></h1>
+<br>
+<p><em>Google Mobility Reports</em> is intended to help understand the impact of COVID-19 on movement and visits to different types of places, such as grocery stores, parks, workplaces, etc. It’s not intended for medical diagnostic, prognostic, or treatment purposes, nor for personal travel plans. The data should not be used to compare changes between countries, or between regions with different characteristics (like rural vs urban areas) as location accuracy varies. Google has discontinued these reports from 15th Oct 2022.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Categories</span></code>:</p>
+<p>The dataset provides mobility trends for the following categories:</p>
+<p>Grocery &amp; Pharmacy: Mobility trends for places like grocery markets, food warehouses, specialty food shops, drug stores, and pharmacies.</p>
+<p>Parks: Mobility trends for places like local parks, national parks, public beaches, marinas, dog parks, plazas, and public gardens.</p>
+<p>Transit Stations: Mobility trends for public transport hubs such as subway, bus, and train stations.</p>
+<p>Retail &amp; Recreation: Mobility trends for places like restaurants, cafes, shopping centers, theme parks, museums, libraries, and movie theaters.</p>
+<p>Residential: Mobility trends for places of residence.</p>
+<p>Workplaces: Mobility trends for places of work.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Collection</span> <span class="pre">and</span> <span class="pre">Privacy</span></code>:</p>
+<p>The datasets are calculated using aggregated and anonymized data from users who have opted-in to Location History for their Google Account. This data represents a sample of Google’s users and may or may not represent the exact behavior of a wider population.</p>
+<p>Google is committed to preserving user privacy. No personally identifiable information, like an individual’s location, contacts, or movement, is made available at any point. Users can choose to turn off Location History at any time from their Google Account and can always delete Location History data directly from their Timeline.</p>
+<br><br>
+<p><em><strong>How can one Intrepret and Analyse this data</strong></em></p>
+<p>Hypothetical Situation</p>
+<ol class="arabic simple">
+<li><p>Impact of Holidays:
+Use a Google Mobility Report from Diwali or another major holiday. Compare this to a regular day, emphasizing the difference in mobility patterns. For instance, if the “Workplaces” category shows a decrease of 50% on Diwali compared to the baseline day, it indicates fewer people went to their workplaces on Diwali. Simultaneously, if the “Residential” category shows an increase, it signifies more people stayed at home.</p></li>
+<li><p>Small Changes in Residential Data:
+Use data from the “Residential” category during the initial COVID-19 lockdown period. Even a 10% increase in this category can signify a significant change in behavior, indicating that people were spending more time at home, in line with lockdown regulations.</p></li>
+<li><p>Weekend Patterns:
+Show a report that clearly demonstrates changes from weekdays to weekends. For instance, you might show that visits to workplaces in Delhi drop by 20% on weekends compared to weekdays, while visits to parks increase by 30%. This shows how people’s routines change on weekends.</p></li>
+</ol>
+<br><br>
+<p><em><strong>Sample Covid Mobility Report Data</strong></em></p>
+<br><img alt="Google Trends" class="centre" src="_images/mobility_data.png" />
+<br>
+<p><em><strong>Lets Take the data for Delhi’s district - Central Delhi, India, from May 15 2021 to August 10 2022</strong></em></p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../offline/data/data.csv&#39;</span><span class="p">)</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country_region_code</th>
+      <th>country_region</th>
+      <th>sub_region_1</th>
+      <th>sub_region_2</th>
+      <th>metro_area</th>
+      <th>iso_3166_2_code</th>
+      <th>census_fips_code</th>
+      <th>place_id</th>
+      <th>date</th>
+      <th>retail_and_recreation_percent_change_from_baseline</th>
+      <th>grocery_and_pharmacy_percent_change_from_baseline</th>
+      <th>parks_percent_change_from_baseline</th>
+      <th>transit_stations_percent_change_from_baseline</th>
+      <th>workplaces_percent_change_from_baseline</th>
+      <th>residential_percent_change_from_baseline</th>
+      <th>source_url</th>
+      <th>etl_timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2021-05-15</td>
+      <td>-83</td>
+      <td>-69</td>
+      <td>-81</td>
+      <td>-80</td>
+      <td>-68</td>
+      <td>23</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2021-05-16</td>
+      <td>-84</td>
+      <td>-68</td>
+      <td>-81</td>
+      <td>-77</td>
+      <td>-54</td>
+      <td>18</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2021-05-17</td>
+      <td>-80</td>
+      <td>-64</td>
+      <td>-76</td>
+      <td>-79</td>
+      <td>-67</td>
+      <td>23</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2021-05-18</td>
+      <td>-82</td>
+      <td>-66</td>
+      <td>-79</td>
+      <td>-78</td>
+      <td>-70</td>
+      <td>24</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2021-05-19</td>
+      <td>-87</td>
+      <td>-79</td>
+      <td>-84</td>
+      <td>-81</td>
+      <td>-72</td>
+      <td>27</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>448</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2022-08-06</td>
+      <td>-24</td>
+      <td>9</td>
+      <td>23</td>
+      <td>7</td>
+      <td>3</td>
+      <td>5</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>449</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2022-08-07</td>
+      <td>-29</td>
+      <td>12</td>
+      <td>14</td>
+      <td>8</td>
+      <td>4</td>
+      <td>5</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>450</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2022-08-08</td>
+      <td>-24</td>
+      <td>5</td>
+      <td>48</td>
+      <td>6</td>
+      <td>-4</td>
+      <td>5</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>451</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2022-08-09</td>
+      <td>-23</td>
+      <td>8</td>
+      <td>25</td>
+      <td>2</td>
+      <td>-23</td>
+      <td>9</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+    <tr>
+      <th>452</th>
+      <td>IN</td>
+      <td>India</td>
+      <td>Delhi</td>
+      <td>Central Delhi</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ChIJiT9nOFj9DDkRkoyq8FS5wxo</td>
+      <td>2022-08-10</td>
+      <td>-18</td>
+      <td>12</td>
+      <td>56</td>
+      <td>28</td>
+      <td>-3</td>
+      <td>3</td>
+      <td>https://www.gstatic.com/covid19/mobility/Globa...</td>
+      <td>2023-07-10 00:07:58.145154+00:00</td>
+    </tr>
+  </tbody>
+</table>
+<p>453 rows × 17 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># List of categories</span>
+<span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;retail_and_recreation_percent_change_from_baseline&quot;</span><span class="p">,</span> 
+              <span class="s2">&quot;grocery_and_pharmacy_percent_change_from_baseline&quot;</span><span class="p">,</span> 
+              <span class="s2">&quot;parks_percent_change_from_baseline&quot;</span><span class="p">,</span> 
+              <span class="s2">&quot;transit_stations_percent_change_from_baseline&quot;</span><span class="p">,</span> 
+              <span class="s2">&quot;workplaces_percent_change_from_baseline&quot;</span><span class="p">,</span> 
+              <span class="s2">&quot;residential_percent_change_from_baseline&quot;</span><span class="p">]</span>
+
+<span class="c1"># Plot each category</span>
+<span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="n">category</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Percent change from baseline&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/875675ab8b0a76f7cd5b43a3d53147cdeda83b92eab650f59c81d399d1387f6f.png" src="_images/875675ab8b0a76f7cd5b43a3d53147cdeda83b92eab650f59c81d399d1387f6f.png" />
+<img alt="_images/b6522f399c9fa1c15f261d50245f80c4b3e138c723fa6994cd1da32dab730699.png" src="_images/b6522f399c9fa1c15f261d50245f80c4b3e138c723fa6994cd1da32dab730699.png" />
+<img alt="_images/657e8dd6d0292006c451cc9c2af40bbec896d88777e7f22601bffc23db627da4.png" src="_images/657e8dd6d0292006c451cc9c2af40bbec896d88777e7f22601bffc23db627da4.png" />
+<img alt="_images/2b924d4dbe0cf821a0837d8e3c5872f0674ec5bb4516e2f1efa0673c4011751f.png" src="_images/2b924d4dbe0cf821a0837d8e3c5872f0674ec5bb4516e2f1efa0673c4011751f.png" />
+<img alt="_images/1005e9af178a30c25be34ce278bbb931c554104e74c5924918d5e43bd0c8649d.png" src="_images/1005e9af178a30c25be34ce278bbb931c554104e74c5924918d5e43bd0c8649d.png" />
+<img alt="_images/fa5aa9a88e3baf0ab8082ce7963c8f81f092190df7f1b3603e5e4c8992e97d94.png" src="_images/fa5aa9a88e3baf0ab8082ce7963c8f81f092190df7f1b3603e5e4c8992e97d94.png" />
+</div>
+</div>
+<br>
+<p>The visualizations show the daily percent change from baseline for different categories in Central Delhi from May 15 2021 to August 10 2022.
+Here are some observations from these plots:</p>
+<p>Retail and Recreation: There is a clear downward trend, indicating a consistent decrease in visits to retail and recreation places during this period.</p>
+<p>Grocery and Pharmacy: The trend is slightly downward, indicating a small decrease in visits to grocery and pharmacy places.</p>
+<p>Parks: The downward trend indicates a decrease in visits to parks during this period.</p>
+<p>Transit Stations: There is a clear downward trend, indicating a decrease in visits to transit stations during this period.</p>
+<p>Workplaces: The downward trend suggests a decrease in visits to workplaces during this period.</p>
+<p>Residential: There is an upward trend, indicating an increase in time spent at residences, which is consistent with the decrease in visits to other types of places.</p>
+<p>These trends are consistent with the measures taken to mitigate the spread of COVID-19, such as lockdowns and social distancing guidelines, which encouraged people to stay home and avoid public places. These visualizations provide a clear picture of how these measures affected mobility in different sectors in Central Delhi during this period.</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<span class="n">mean_changes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">mean_changes</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Percent change from baseline&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Category&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Average percent change from baseline for each category&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/152e3b8c7caa8c353ada0066966961061e87a3e8af161b186668a50bdbbcca02.png" src="_images/152e3b8c7caa8c353ada0066966961061e87a3e8af161b186668a50bdbbcca02.png" />
+</div>
+</div>
+<br>
+<p>The categories are sorted from the highest positive change (Residential) to the most negative change (Retail and Recreation).</p>
+<p>From the bar chart, it is evident that:</p>
+<p>The residential category shows a positive change, indicating people spent more time at home.
+All other categories (Retail &amp; Recreation, Grocery &amp; Pharmacy, Parks, Transit Stations, and Workplaces) show a negative change, indicating a decrease in mobility in these sectors.</p>
+<p>Similarily you can analyze and compare different countries states , regions , sub regions and understand how mobility has picked up</p>
+<br></section>
+<section class="tex2jax_ignore mathjax_ignore" id="google-popular-times-api">
+<h1>Google Popular Times API<a class="headerlink" href="#google-popular-times-api" title="Permalink to this headline">#</a></h1>
+<br>
+<p>Google Popular Times is a feature of Google Search and Google Maps. It provides users with information indicating when a particular location (like a restaurant, a museum, or a grocery store) typically gets busy. The data is presented as a histogram, with the horizontal axis representing the time of day and the vertical axis representing how busy the location typically is at that time.</p>
+<p>Here’s how it works:</p>
+<p>Data Collection: Google collects data from users who have opted into Google Location History. It aggregates and anonymizes this data.</p>
+<p>Data Analysis: Google analyzes this data to identify patterns. For example, it might identify that a particular grocery store gets busier during the evening.</p>
+<p>Displaying Data: Google then displays this information as a graph. The graph shows the relative popularity of the place for each hour of the day, with each day of the week having a separate graph.</p>
+<p>This feature can be very useful for planning visits to avoid busy times, reducing waiting times, and even helping with social distancing during the COVID-19 pandemic. However, it’s important to note that the data is based on typical patterns and may not always reflect the current situation, especially in times of rapid change or unusual circumstances.</p>
+<br><img alt="Google Trends" class="centre" src="_images/populartimes.png" />
+<br>
+<p><em><strong>Google’s Popular Times feature can provide journalists</strong></em> with valuable information about the behavior and habits of people in a specific location. Here are some potential ways journalists could use this tool:</p>
+<p>Reporting on Consumer Trends: Journalists could use Popular Times to report on consumer trends. For example, they could investigate whether certain types of businesses (like gyms or coffee shops) are more popular at certain times of day.</p>
+<p>Investigating Impact of Events: If a major event occurs (like a concert or a sports game), journalists could use Popular Times to investigate its impact on local businesses.</p>
+<p>Analyzing Impact of Policy Changes: If a new policy or regulation is implemented (such as a change in operating hours for alcohol sales), journalists could use Popular Times to investigate its impact on businesses and consumer behavior.</p>
+<p>Social Distancing Measures: During a pandemic, journalists could use Popular Times to report on how well people are adhering to social distancing measures. For example, they could identify locations that are consistently crowded, potentially posing a risk for virus transmission.</p>
+<p>Urban Planning and Development: Journalists could use Popular Times data to inform stories about urban planning and development. For example, if a city is planning to redevelop a neighborhood, journalists could use Popular Times to report on how people currently use the space and how this might change after redevelopment.</p>
+<p><em><strong>Note</strong></em></p>
+<p>Google’s Popular Times data is based on averages and might not always reflect the current situation. Therefore, it should be used as one tool among many, and findings should be cross-referenced with other sources of information.
+<br></p>
+<br>
+<p>We will use populartimes data from  13-24 May 2020 of Delhi using certain Point of interest like bank,petrolpump,hypermarket &amp; vegetable market to understand how one can analyse and interpret</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the required library</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Load the new data file</span>
+<span class="n">popular_times_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../offline/data/Delhi_Popular_Time.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Display the first few rows of the data</span>
+<span class="n">popular_times_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>name</th>
+      <th>address</th>
+      <th>current_popularity</th>
+      <th>alltime_popularity</th>
+      <th>day</th>
+      <th>hour</th>
+      <th>category</th>
+      <th>date</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ChIJpamq2rbjDDkRI3MWeR5A2Qk</td>
+      <td>Subzi Mandi</td>
+      <td>A- 32, Kalka Devi Marg, Block A, Dayanand Colo...</td>
+      <td>17.0</td>
+      <td>8</td>
+      <td>Wednesday</td>
+      <td>7</td>
+      <td>Vegetable Market</td>
+      <td>2020-05-13</td>
+      <td>Delhi</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ChIJZbGXPJT8DDkROGQnBrxZGes</td>
+      <td>Jheel Sabzi Mandi</td>
+      <td>Jheel, Geeta Colony, Shahdara, Delhi, 110031, ...</td>
+      <td>9.0</td>
+      <td>2</td>
+      <td>Wednesday</td>
+      <td>7</td>
+      <td>Vegetable Market</td>
+      <td>2020-05-13</td>
+      <td>Delhi</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ChIJaQyjiKIEDTkRl1Ofx_r36SQ</td>
+      <td>Choti Subzi Mandi</td>
+      <td>Mandir Marg, Chhoti Subji Mandi, Janakpuri, Ne...</td>
+      <td>6.0</td>
+      <td>4</td>
+      <td>Wednesday</td>
+      <td>7</td>
+      <td>Vegetable Market</td>
+      <td>2020-05-13</td>
+      <td>Delhi</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ChIJAQAA0IoBDTkR2FykSyQcvFY</td>
+      <td>Azadpur Mandi</td>
+      <td>Azadpur new sabji mandi Shop no. A324, Block A...</td>
+      <td>73.0</td>
+      <td>56</td>
+      <td>Wednesday</td>
+      <td>7</td>
+      <td>Vegetable Market</td>
+      <td>2020-05-13</td>
+      <td>Delhi</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ChIJv81bQJnhDDkRtWevGSD5IOs</td>
+      <td>Devli Vegetable Market</td>
+      <td>Durbal Ji Nath Marg, RPS Colony, Khanpur, New ...</td>
+      <td>No Footfall</td>
+      <td>0</td>
+      <td>Wednesday</td>
+      <td>7</td>
+      <td>Vegetable Market</td>
+      <td>2020-05-13</td>
+      <td>Delhi</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<br>
+<p>The loaded dataset contains information about various places in Delhi. Here’s a brief description of each column in the dataset:</p>
+<p>id: Unique identifier for each place.</p>
+<p>name: Name of the place.</p>
+<p>address: Address of the place.</p>
+<p>current_popularity: The current popularity of the place as a percentage. Some places have “No Footfall” which means there’s no data available for the current popularity.</p>
+<p>alltime_popularity: The all-time popularity of the place as a percentage.</p>
+<p>day: The day of the week when the data was recorded.</p>
+<p>hour: The hour of the day when the data was recorded.</p>
+<p>category: The category of the place (e.g., Vegetable Market).</p>
+<p>date: The date when the data was recorded.</p>
+<p>city: The city where the place is located.</p>
+<br><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exclude places where current popularity is &quot;No Footfall&quot;</span>
+<span class="n">popular_times_data_filtered</span> <span class="o">=</span> <span class="n">popular_times_data</span><span class="p">[</span><span class="n">popular_times_data</span><span class="p">[</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;No Footfall&#39;</span><span class="p">]</span>
+
+<span class="c1"># Convert the &#39;current_popularity&#39; column to numeric</span>
+<span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">])</span>
+
+<span class="c1"># Import the necessary visualization libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1"># Plot the distribution of current popularity for different categories of places</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">popular_times_data_filtered</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of Current Popularity for Different Categories of Places&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Current Popularity&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Category&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f6302710d636080d51258e6ff01f951d05d8eda43b5e47892929c515a31201b1.png" src="_images/f6302710d636080d51258e6ff01f951d05d8eda43b5e47892929c515a31201b1.png" />
+</div>
+</div>
+<br>
+<p>This boxplot provides a visual representation of the distribution of current popularity for different categories of places in Delhi. Here’s how to interpret it:</p>
+<p>Vegetable Market: Most vegetable markets have a current popularity ranging roughly from 30 to 70, with some outliers experiencing higher popularity. The median popularity is around 50.</p>
+<p>Residential Area: The current popularity for most residential areas ranges from about 10 to 60, with a median around 30.</p>
+<p>Public Transport: Public transports have a wider range of popularity, extending from near 0 to almost 100. The median popularity is around 45.</p>
+<p>Park: Parks have a current popularity mostly between 20 and 80, with a median near 50.</p>
+<p>Covid Centre: Covid Centres have a current popularity mostly between 20 and 70, with a median just above 40. There are a few outliers with higher popularity.</p>
+<p>Grocery Store: The current popularity of grocery stores ranges roughly from 20 to 70, with a median around 45.</p>
+<p>This plot provides a comprehensive picture of how busy different types of places are in the current situation. It can be a useful tool for a journalist to report on how the public is interacting with different types of places in the city, which can be particularly relevant in situations like a pandemic.
+<br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s examine the alltime_popularity of different categories of places</span>
+
+<span class="c1"># Convert the &#39;alltime_popularity&#39; column to numeric</span>
+<span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;alltime_popularity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;alltime_popularity&#39;</span><span class="p">])</span>
+
+<span class="c1"># Plot the distribution of alltime popularity for different categories of places</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;alltime_popularity&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">popular_times_data_filtered</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of All-time Popularity for Different Categories of Places&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;All-time Popularity&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Category&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ff757ae93104c2facbe020eda74c467d664ea791d4018f58c5486eec0c5a8075.png" src="_images/ff757ae93104c2facbe020eda74c467d664ea791d4018f58c5486eec0c5a8075.png" />
+</div>
+</div>
+<br>
+This boxplot shows the distribution of all-time popularity for different categories of places in Delhi. Here's how to interpret it:
+<p>Vegetable Market: The all-time popularity for most vegetable markets ranges roughly from 30 to 70, with a median popularity around 50.</p>
+<p>Residential Area: The all-time popularity for most residential areas ranges from about 20 to 60, with a median around 40.</p>
+<p>Public Transport: Public transports have a wide range of popularity, extending from near 10 to almost 100. The median popularity is around 50.</p>
+<p>Park: Parks have an all-time popularity mostly between 30 and 80, with a median near 50.</p>
+<p>Covid Centre: Covid Centres have an all-time popularity mostly between 20 and 60, with a median just above 40. There are a few outliers with higher popularity.</p>
+<p>Grocery Store: The all-time popularity of grocery stores ranges roughly from 30 to 70, with a median around 50.</p>
+<p>By comparing this plot with the previous one, we can see how the current popularity of these places compares with their all-time popularity. This can help identify places that are currently more or less popular than usual.</p>
+<p>Next, let’s analyze the hourly pattern of current popularity for different categories of places.
+<br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert the &#39;hour&#39; column to numeric</span>
+<span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;hour&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;hour&#39;</span><span class="p">])</span>
+
+<span class="c1"># Group the data by &#39;category&#39; and &#39;hour&#39;, and calculate the mean current popularity</span>
+<span class="n">hourly_popularity</span> <span class="o">=</span> <span class="n">popular_times_data_filtered</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;hour&#39;</span><span class="p">])[</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Pivot the data for easier plotting</span>
+<span class="n">hourly_popularity_pivot</span> <span class="o">=</span> <span class="n">hourly_popularity</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;hour&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot the hourly pattern of current popularity for different categories of places</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">hourly_popularity_pivot</span><span class="p">,</span> <span class="n">dashes</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Hourly Pattern of Current Popularity for Different Categories of Places&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Hour&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Current Popularity&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8f88e5c7fe2ff807df311c5fc8480b206ba06add6340f22c36feda139f2ec8c2.png" src="_images/8f88e5c7fe2ff807df311c5fc8480b206ba06add6340f22c36feda139f2ec8c2.png" />
+</div>
+</div>
+<br>
+This line chart shows the hourly pattern of current popularity for different categories of places in Delhi. Here's how to interpret it:
+<p>Vegetable Market: The popularity of vegetable markets peaks in the early morning hours, then gradually decreases throughout the day.</p>
+<p>Residential Area: The popularity of residential areas is relatively constant throughout the day, with a slight increase in the late evening hours.</p>
+<p>Public Transport: The popularity of public transport peaks in the morning and late afternoon hours, corresponding to typical commuting times.</p>
+<p>Park: The popularity of parks increases during the afternoon hours, peaking in the late afternoon.</p>
+<p>Covid Centre: The popularity of Covid Centres is relatively constant throughout the day, with a slight peak in the early morning hours.</p>
+<p>Grocery Store: The popularity of grocery stores peaks in the early morning hours, then gradually decreases throughout the day.</p>
+<p>This chart can help journalists understand when different types of places are busiest, which can inform reporting on topics like commuting patterns or the impact of Covid-19 on people’s daily routines.</p>
+<p>Next, let’s analyze how the current popularity of different categories of places varies by day of the week.</p>
+<p>Finished working
+Show work</p>
+<p>This line chart shows the daily pattern of current popularity for different categories of places in Delhi. Here’s how to interpret it:</p>
+<p>Vegetable Market: The popularity of vegetable markets is relatively constant throughout the week, with a slight decrease on Sundays.</p>
+<p>Residential Area: The popularity of residential areas is highest on Sundays, and lowest on Fridays and Saturdays.</p>
+<p>Public Transport: The popularity of public transport is highest on weekdays, with a significant drop on weekends.</p>
+<p>Park: The popularity of parks increases from Monday to Sunday, peaking on Sunday.</p>
+<p>Covid Centre: The popularity of Covid Centres is relatively constant throughout the week, with a slight decrease on Sundays.</p>
+<p>Grocery Store: The popularity of grocery stores is highest on Sundays, and lowest on Fridays.</p>
+<p>This chart provides a detailed view of how the popularity of different types of places varies by day of the week. This information can be particularly useful for journalists covering topics like shopping trends, commuting patterns, or the impact of Covid-19 on daily life in Delhi.
+<br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert the &#39;day&#39; column to a category type with proper order</span>
+<span class="n">day_order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]</span>
+<span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">(</span><span class="n">popular_times_data_filtered</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">],</span> <span class="n">categories</span><span class="o">=</span><span class="n">day_order</span><span class="p">,</span> <span class="n">ordered</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Group the data by &#39;category&#39; and &#39;day&#39;, and calculate the mean current popularity</span>
+<span class="n">daily_popularity</span> <span class="o">=</span> <span class="n">popular_times_data_filtered</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;day&#39;</span><span class="p">])[</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Pivot the data for easier plotting</span>
+<span class="n">daily_popularity_pivot</span> <span class="o">=</span> <span class="n">daily_popularity</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;day&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;current_popularity&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot the daily pattern of current popularity for different categories of places</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">daily_popularity_pivot</span><span class="p">,</span> <span class="n">dashes</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Daily Pattern of Current Popularity for Different Categories of Places&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Day&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Current Popularity&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/229d7481874303acf3c37bef3abbfd81c83d98ddeb2bdddc9d49c589d0018508.png" src="_images/229d7481874303acf3c37bef3abbfd81c83d98ddeb2bdddc9d49c589d0018508.png" />
+</div>
+</div>
+<br>
+<p>This line chart shows the daily pattern of current popularity for different categories of places in Delhi. Here’s how to interpret it:</p>
+<p>Vegetable Market: The popularity of vegetable markets is relatively constant throughout the week, with a slight decrease on Sundays.</p>
+<p>Residential Area: The popularity of residential areas is highest on Sundays, and lowest on Fridays and Saturdays.</p>
+<p>Public Transport: The popularity of public transport is highest on weekdays, with a significant drop on weekends.</p>
+<p>Park: The popularity of parks increases from Monday to Sunday, peaking on Sunday.</p>
+<p>Covid Centre: The popularity of Covid Centres is relatively constant throughout the week, with a slight decrease on Sundays.</p>
+<p>Grocery Store: The popularity of grocery stores is highest on Sundays, and lowest on Fridays.</p>
+<p>This chart provides a detailed view of how the popularity of different types of places varies by day of the week. This information can be particularly useful for journalists covering topics like shopping trends, commuting patterns, or the impact of Covid-19 on daily life in Delhi.</p>
+<br></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Google%20Trends.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Google Trends</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Twitter%20Apis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Twitter Data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Google Mobility Reports and Popular Times API</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#google-popular-times-api">Google Popular Times API</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="https://www.linkedin.com/in/vatsal-bharti-a0190911b/">Vatsal Bharti</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
