@@ -2,7 +2,7 @@
 
 title: Web Scraping with Python
 author: <a href="https://www.linkedin.com/in/vatsal-bharti-a0190911b/">Vatsal Bharti</a>
-logo: logo.png
+logo: assets.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -39,3 +39,27 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_footer:
+    - text: |
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  comments:
+    hypothesis: true
+  extra_css:
+    - _static/custom.css
+
+  
+
+sphinx:
+  config:
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    html_css_files:
+      - _static/custom.css
+    
+
+parse:
+  myst_enable_extensions:
+    - html_image
+    - html_admonition
+

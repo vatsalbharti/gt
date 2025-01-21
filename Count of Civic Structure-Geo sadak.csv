@@ -1,0 +1,693 @@
+place,name,State,Division,Count_CivicStructure_AgriculturalFacility,Count_CivicStructure_EducationFacility,Count_CivicStructure_MedicalFacility,Count_CivicStructure_TransportOrAdminFacility,Count_Person
+wikidataId/Q797295,Nicobar district,Andaman and Nicobar Islands,,,,,,36842.0
+wikidataId/Q796983,North and Middle Andaman,Andaman and Nicobar Islands,,,,,,105597.0
+wikidataId/Q796979,South Andaman district,Andaman and Nicobar Islands,,,,,,238142.0
+wikidataId/Q15212,Anantapur,Andhra Pradesh,,577.0,414.0,359.0,1139.0,4081148.0
+wikidataId/Q15213,Chittoor,Andhra Pradesh,,1433.0,781.0,692.0,2377.0,4174064.0
+wikidataId/Q15338,East Godavari,Andhra Pradesh,,821.0,492.0,368.0,1434.0,5154296.0
+wikidataId/Q15341,Guntur,Andhra Pradesh,,1085.0,674.0,557.0,1931.0,4887813.0
+wikidataId/Q15342,Kadapa District,Andhra Pradesh,,579.0,303.0,237.0,934.0,2882469.0
+wikidataId/Q15382,Krishna,Andhra Pradesh,,893.0,507.0,408.0,1479.0,4517398.0
+wikidataId/Q15381,Kurnool,Andhra Pradesh,,637.0,421.0,366.0,1130.0,4053463.0
+wikidataId/Q15390,Prakasam,Andhra Pradesh,,1278.0,767.0,648.0,2275.0,3397448.0
+wikidataId/Q15383,Spsr Nellore,Andhra Pradesh,,944.0,515.0,445.0,1502.0,2963557.0
+wikidataId/Q15395,Srikakulam,Andhra Pradesh,,667.0,377.0,272.0,1109.0,2703114.0
+wikidataId/Q15394,Visakhapatanam,Andhra Pradesh,,849.0,488.0,390.0,1507.0,4290589.0
+wikidataId/Q15392,Vizianagaram,Andhra Pradesh,,670.0,355.0,290.0,1058.0,2344474.0
+wikidataId/Q15404,West Godavari,Andhra Pradesh,,784.0,393.0,361.0,1298.0,3936966.0
+wikidataId/Q15413,Anjaw,Arunachal Pradesh,,26.0,10.0,5.0,7.0,21167.0
+wikidataId/Q15427,Changlang,Arunachal Pradesh,,48.0,11.0,17.0,36.0,148226.0
+wikidataId/Q15446,Dibang Valley,Arunachal Pradesh,,24.0,4.0,5.0,7.0,8004.0
+wikidataId/Q15424,East Kameng,Arunachal Pradesh,,71.0,24.0,24.0,40.0,78690.0
+wikidataId/Q15419,East Siang,Arunachal Pradesh,,129.0,42.0,29.0,54.0,99214.0
+wikidataId/Q2449506,Kurung Kumey,Arunachal Pradesh,,40.0,27.0,24.0,31.0,92076.0
+wikidataId/Q15438,Lohit,Arunachal Pradesh,,108.0,26.0,27.0,46.0,145726.0
+wikidataId/Q2373368,Lower Dibang Valley,Arunachal Pradesh,,109.0,44.0,30.0,66.0,54080.0
+wikidataId/Q15436,Lower Subansiri,Arunachal Pradesh,,50.0,53.0,40.0,60.0,83030.0
+wikidataId/Q15432,Papum Pare,Arunachal Pradesh,,139.0,56.0,52.0,79.0,176573.0
+wikidataId/Q15449,Tawang,Arunachal Pradesh,,29.0,13.0,9.0,18.0,49977.0
+wikidataId/Q15448,Tirap,Arunachal Pradesh,,189.0,68.0,53.0,99.0,111975.0
+wikidataId/Q15465,Upper Siang,Arunachal Pradesh,,35.0,6.0,8.0,15.0,35320.0
+wikidataId/Q15464,Upper Subansiri,Arunachal Pradesh,,76.0,49.0,32.0,55.0,83448.0
+wikidataId/Q15459,West Kameng,Arunachal Pradesh,,25.0,31.0,39.0,51.0,83947.0
+wikidataId/Q15453,West Siang,Arunachal Pradesh,,141.0,41.0,42.0,83.0,112274.0
+wikidataId/Q42774,Dima Hasao,Assam,Central Assam Division,131.0,111.0,18.0,101.0,214102.0
+wikidataId/Q42558,Karbi Anglong district,Assam,Central Assam Division,415.0,250.0,65.0,379.0,956313.0
+wikidataId/Q42737,Marigaon,Assam,Central Assam Division,317.0,256.0,64.0,294.0,957423.0
+wikidataId/Q42686,Nagaon,Assam,Central Assam Division,775.0,510.0,182.0,578.0,2823768.0
+wikidataId/Q42209,Cachar,Assam,Hills and Barak Valley Division,377.0,245.0,97.0,323.0,1736617.0
+wikidataId/Q42505,Hailakandi,Assam,Hills and Barak Valley Division,165.0,122.0,36.0,160.0,659296.0
+wikidataId/Q42542,Karimganj,Assam,Hills and Barak Valley Division,433.0,298.0,104.0,358.0,1228686.0
+wikidataId/Q2360266,Baksa,Assam,Lower Assam Division,475.0,324.0,99.0,391.0,950075.0
+wikidataId/Q41249,Barpeta,Assam,Lower Assam Division,1295.0,914.0,287.0,1057.0,1693622.0
+wikidataId/Q42197,Bongaigaon,Assam,Lower Assam Division,336.0,200.0,59.0,283.0,738804.0
+wikidataId/Q2574898,Chirang,Assam,Lower Assam Division,216.0,150.0,45.0,159.0,482162.0
+wikidataId/Q42485,Dhubri,Assam,Lower Assam Division,529.0,357.0,116.0,429.0,1949258.0
+wikidataId/Q42522,Goalpara,Assam,Lower Assam Division,452.0,305.0,68.0,358.0,1008183.0
+wikidataId/Q2247441,Kamrup,Assam,Lower Assam Division,713.0,458.0,133.0,546.0,1517542.0
+wikidataId/Q2464674,Kamrup Metro,Assam,Lower Assam Division,159.0,87.0,31.0,114.0,1253938.0
+wikidataId/Q42618,Kokrajhar,Assam,Lower Assam Division,403.0,282.0,75.0,323.0,887142.0
+wikidataId/Q42779,Nalbari,Assam,Lower Assam Division,356.0,257.0,74.0,279.0,771639.0
+wikidataId/Q42461,Darrang,Assam,North Assam division,285.0,169.0,52.0,215.0,928500.0
+wikidataId/Q42765,Sonitpur,Assam,North Assam division,443.0,249.0,68.0,340.0,1924110.0
+wikidataId/Q321998,Udalguri,Assam,North Assam division,362.0,230.0,68.0,276.0,831668.0
+wikidataId/Q42473,Dhemaji,Assam,,341.0,255.0,72.0,264.0,686133.0
+wikidataId/Q42479,Dibrugarh,Assam,,562.0,384.0,114.0,451.0,1326335.0
+wikidataId/Q42517,Golaghat,Assam,,424.0,313.0,86.0,370.0,1066888.0
+wikidataId/Q42611,Jorhat,Assam,,292.0,200.0,73.0,293.0,1092256.0
+wikidataId/Q42743,Lakhimpur,Assam,,400.0,326.0,104.0,379.0,1042137.0
+wikidataId/Q42768,Sivasagar,Assam,,545.0,342.0,97.0,440.0,1151050.0
+wikidataId/Q42756,Tinsukia,Assam,,326.0,218.0,79.0,242.0,1327929.0
+wikidataId/Q43097,Banka,Bihar,Bhagalpur division,128.0,175.0,82.0,292.0,2034763.0
+wikidataId/Q49155,Bhagalpur,Bihar,Bhagalpur division,161.0,191.0,81.0,341.0,3037766.0
+wikidataId/Q49160,Darbhanga,Bihar,Darbhanga division,164.0,191.0,93.0,295.0,3937385.0
+wikidataId/Q77474,Madhubani,Bihar,Darbhanga division,248.0,297.0,125.0,470.0,4487379.0
+wikidataId/Q100117,Samastipur,Bihar,Darbhanga division,318.0,354.0,167.0,607.0,4261566.0
+wikidataId/Q77746,Madhepura,Bihar,Kosi division,125.0,173.0,77.0,303.0,2001762.0
+wikidataId/Q100120,Saharsa,Bihar,Kosi division,107.0,151.0,71.0,256.0,1900661.0
+wikidataId/Q100139,Supaul,Bihar,Kosi division,139.0,188.0,76.0,308.0,2229076.0
+wikidataId/Q42917,Arwal,Bihar,Magadh division,52.0,71.0,27.0,122.0,700843.0
+wikidataId/Q43086,Aurangabad,Bihar,Magadh division,157.0,176.0,94.0,306.0,2540073.0
+wikidataId/Q49173,Gaya,Bihar,Magadh division,262.0,282.0,130.0,487.0,4391418.0
+wikidataId/Q49176,Jehanabad,Bihar,Magadh division,87.0,117.0,40.0,171.0,1125313.0
+wikidataId/Q100067,Nawada,Bihar,Magadh division,204.0,254.0,106.0,378.0,2219146.0
+wikidataId/Q49157,Begusarai,Bihar,Munger division,189.0,220.0,95.0,376.0,2970541.0
+wikidataId/Q49168,Jamui,Bihar,Munger division,133.0,160.0,55.0,243.0,1760405.0
+wikidataId/Q49175,Khagaria,Bihar,Munger division,92.0,106.0,47.0,182.0,1666886.0
+wikidataId/Q77505,Lakhisarai,Bihar,Munger division,60.0,86.0,36.0,114.0,1000912.0
+wikidataId/Q77452,Munger,Bihar,Munger division,95.0,103.0,55.0,188.0,1367765.0
+wikidataId/Q100093,Sheikhpura,Bihar,Munger division,63.0,66.0,30.0,94.0,636342.0
+wikidataId/Q49153,Bhojpur,Bihar,Patna division,177.0,238.0,92.0,385.0,2728407.0
+wikidataId/Q49161,Buxar,Bihar,Patna division,106.0,125.0,71.0,208.0,1706352.0
+wikidataId/Q77367,Kaimur (bhabua),Bihar,Patna division,109.0,163.0,71.0,267.0,1626384.0
+wikidataId/Q77633,Nalanda,Bihar,Patna division,266.0,294.0,128.0,533.0,2877653.0
+wikidataId/Q100077,Patna,Bihar,Patna division,245.0,304.0,114.0,489.0,5838465.0
+wikidataId/Q100085,Rohtas,Bihar,Patna division,200.0,264.0,110.0,483.0,2959918.0
+wikidataId/Q42901,Araria,Bihar,Purnia division,125.0,160.0,73.0,273.0,2811569.0
+wikidataId/Q77568,Katihar,Bihar,Purnia division,197.0,239.0,103.0,366.0,3071029.0
+wikidataId/Q77375,Kishanganj,Bihar,Purnia division,98.0,103.0,42.0,181.0,1690400.0
+wikidataId/Q100082,Purnia,Bihar,Purnia division,211.0,265.0,129.0,457.0,3264619.0
+wikidataId/Q49171,Gopalganj,Bihar,Saran division,197.0,211.0,122.0,386.0,2562012.0
+wikidataId/Q100146,Saran,Bihar,Saran division,240.0,311.0,134.0,543.0,3951862.0
+wikidataId/Q100131,Siwan,Bihar,Saran division,182.0,234.0,104.0,381.0,3330464.0
+wikidataId/Q49159,East Champaran district,Bihar,Tirhut division,325.0,372.0,175.0,631.0,5099371.0
+wikidataId/Q77731,Muzaffarpur,Bihar,Tirhut division,233.0,292.0,126.0,509.0,4801062.0
+wikidataId/Q100124,Pashchim Champaran,Bihar,Tirhut division,224.0,282.0,134.0,418.0,3935042.0
+wikidataId/Q100095,Sheohar,Bihar,Tirhut division,39.0,38.0,16.0,71.0,656246.0
+wikidataId/Q100144,Sitamarhi,Bihar,Tirhut division,164.0,192.0,73.0,337.0,3423574.0
+wikidataId/Q100130,Vaishali,Bihar,Tirhut division,202.0,290.0,127.0,474.0,3495021.0
+wikidataId/Q5071071,Chandigarh,Chandigarh,,,,,,1055450.0
+wikidataId/Q100152,Bastar,Chhattisgarh,Bastar Division,146.0,165.0,88.0,424.0,1413199.0
+wikidataId/Q100164,Bijapur,Chhattisgarh,Bastar Division,76.0,81.0,25.0,181.0,255230.0
+wikidataId/Q100211,Dantewada,Chhattisgarh,Bastar Division,72.0,55.0,30.0,179.0,533638.0
+wikidataId/Q2310530,Kanker,Chhattisgarh,Bastar Division,164.0,238.0,97.0,554.0,748941.0
+wikidataId/Q12420995,Kondagaon,Chhattisgarh,Bastar Division,102.0,147.0,64.0,321.0,
+wikidataId/Q2322000,Narayanpur,Chhattisgarh,Bastar Division,42.0,26.0,16.0,72.0,139820.0
+wikidataId/Q16933590,Sukma,Chhattisgarh,Bastar Division,35.0,38.0,21.0,119.0,
+wikidataId/Q100157,Bilaspur,Chhattisgarh,Bilaspur Division,358.0,301.0,133.0,844.0,2663629.0
+wikidataId/Q2575633,Janjgir-champa,Chhattisgarh,Bilaspur Division,346.0,335.0,159.0,825.0,1619707.0
+wikidataId/Q2299121,Korba,Chhattisgarh,Bilaspur Division,197.0,174.0,79.0,455.0,1206640.0
+wikidataId/Q13476249,Mungeli,Chhattisgarh,Bilaspur Division,110.0,107.0,68.0,362.0,
+wikidataId/Q2286310,Raigarh,Chhattisgarh,Bilaspur Division,395.0,309.0,128.0,839.0,1493984.0
+wikidataId/Q16056266,Balod,Chhattisgarh,Durg Division,194.0,210.0,92.0,556.0,
+wikidataId/Q16254159,Bemetara,Chhattisgarh,Durg Division,109.0,152.0,71.0,397.0,
+wikidataId/Q100182,Durg,Chhattisgarh,Durg Division,132.0,145.0,83.0,410.0,3343872.0
+wikidataId/Q2450255,Kabirdham,Chhattisgarh,Durg Division,161.0,139.0,82.0,386.0,822526.0
+wikidataId/Q2341800,Rajnandgaon,Chhattisgarh,Durg Division,302.0,322.0,150.0,903.0,1537133.0
+wikidataId/Q15663455,Baloda Bazar,Chhattisgarh,Raipur Division,170.0,185.0,79.0,488.0,
+wikidataId/Q100190,Dhamtari,Chhattisgarh,Raipur Division,127.0,184.0,85.0,426.0,799781.0
+wikidataId/Q16961365,Gariaband district,Chhattisgarh,Raipur Division,155.0,172.0,89.0,560.0,
+wikidataId/Q2450240,Mahasamund,Chhattisgarh,Raipur Division,254.0,203.0,120.0,618.0,1032754.0
+wikidataId/Q2295914,Raipur,Chhattisgarh,Raipur Division,167.0,185.0,99.0,502.0,4063872.0
+wikidataId/Q16056268,Balrampur,Chhattisgarh,Surguja Division,165.0,147.0,69.0,396.0,
+wikidataId/Q2577551,Jashpur,Chhattisgarh,Surguja Division,220.0,287.0,123.0,721.0,851669.0
+wikidataId/Q2295896,Korea,Chhattisgarh,Surguja Division,112.0,148.0,74.0,412.0,658917.0
+wikidataId/Q16938031,Surajpur,Chhattisgarh,Surguja Division,133.0,121.0,57.0,371.0,
+wikidataId/Q1805075,Surguja,Chhattisgarh,Surguja Division,135.0,184.0,91.0,467.0,2359886.0
+wikidataId/Q46107,Dadra and Nagar Haveli,Dadra and Nagar Haveli and Daman and Diu,,,,,,343709.0
+wikidataId/Q1158197,Daman,Dadra and Nagar Haveli and Daman and Diu,,,,,,191173.0
+wikidataId/Q2552347,Diu,Dadra and Nagar Haveli and Daman and Diu,,,,,,52074.0
+wikidataId/Q107941,Central,Delhi,,,,,,582320.0
+wikidataId/Q107960,East,Delhi,,,,,,1709346.0
+wikidataId/Q987,New Delhi,Delhi,,,,,,142004.0
+wikidataId/Q693367,North,Delhi,,,,,,887978.0
+wikidataId/Q429329,North East,Delhi,,,,,,2241624.0
+wikidataId/Q766125,North West,Delhi,,,,,,3656539.0
+wikidataId/Q2061938,South,Delhi,,,,,,2731929.0
+wikidataId/Q2379189,South West,Delhi,,,,,,2292958.0
+wikidataId/Q549807,West,Delhi,,,,,,2543243.0
+wikidataId/Q108234,North Goa,Goa,,,,,,818008.0
+wikidataId/Q108244,South Goa,Goa,,,,,,640537.0
+wikidataId/Q401686,Ahmadabad,Gujarat,,121.0,160.0,113.0,620.0,7214225.0
+wikidataId/Q257946,Amreli,Gujarat,,218.0,199.0,155.0,886.0,1514190.0
+wikidataId/Q485683,Anand,Gujarat,,435.0,238.0,148.0,951.0,2092745.0
+wikidataId/Q12175285,Aravalli district,Gujarat,,216.0,225.0,121.0,886.0,
+wikidataId/Q806125,Banas Kantha,Gujarat,,140.0,417.0,234.0,761.0,3120506.0
+wikidataId/Q854900,Bharuch,Gujarat,,243.0,193.0,140.0,941.0,1551019.0
+wikidataId/Q854963,Bhavnagar,Gujarat,,304.0,233.0,158.0,1024.0,2880365.0
+wikidataId/Q14505072,Botad,Gujarat,,44.0,40.0,21.0,165.0,
+wikidataId/Q5979243,Chhota Udepur district,Gujarat,,96.0,69.0,60.0,341.0,
+wikidataId/Q186518,Dahod district,Gujarat,,168.0,106.0,80.0,617.0,2127086.0
+wikidataId/Q1135616,Dang,Gujarat,,61.0,58.0,49.0,268.0,228291.0
+wikidataId/Q14594717,Devbhoomi Dwarka district,Gujarat,,93.0,69.0,56.0,353.0,
+wikidataId/Q1772860,Gandhinagar,Gujarat,,191.0,126.0,66.0,545.0,1391753.0
+wikidataId/Q15244465,Gir Somnath,Gujarat,,172.0,96.0,54.0,450.0,
+wikidataId/Q2982118,Jamnagar,Gujarat,,162.0,136.0,107.0,714.0,2160119.0
+wikidataId/Q1797344,Junagadh,Gujarat,,212.0,193.0,118.0,842.0,2743082.0
+wikidataId/Q1063417,Kachchh,Gujarat,,257.0,192.0,137.0,956.0,2092371.0
+wikidataId/Q1755463,Kheda,Gujarat,,284.0,234.0,160.0,1016.0,2299885.0
+wikidataId/Q2019694,Mahesana,Gujarat,,167.0,164.0,106.0,712.0,2035064.0
+wikidataId/Q5706885,Mahisagar,Gujarat,,303.0,219.0,165.0,982.0,
+wikidataId/Q5979727,Morbi,Gujarat,,133.0,94.0,73.0,541.0,
+wikidataId/Q1797230,Narmada,Gujarat,,69.0,47.0,37.0,244.0,590297.0
+wikidataId/Q1797349,Navsari,Gujarat,,247.0,232.0,176.0,967.0,1329672.0
+wikidataId/Q1781463,Panch Mahals,Gujarat,,217.0,181.0,132.0,901.0,2390776.0
+wikidataId/Q1815269,Patan,Gujarat,,118.0,138.0,105.0,529.0,1343734.0
+wikidataId/Q1772815,Porbandar,Gujarat,,66.0,50.0,35.0,264.0,585449.0
+wikidataId/Q1815245,Rajkot,Gujarat,,216.0,191.0,146.0,795.0,3804558.0
+wikidataId/Q1772856,Sabar Kantha,Gujarat,,285.0,203.0,135.0,912.0,2428589.0
+wikidataId/Q1797317,Surat,Gujarat,,231.0,202.0,132.0,943.0,6081322.0
+wikidataId/Q237535,Surendranagar,Gujarat,,219.0,159.0,132.0,768.0,1756268.0
+wikidataId/Q670165,Tapi,Gujarat,,190.0,202.0,140.0,813.0,807022.0
+wikidataId/Q578285,Vadodara,Gujarat,,189.0,182.0,114.0,823.0,4165626.0
+wikidataId/Q1946743,Valsad,Gujarat,,176.0,171.0,120.0,663.0,1705678.0
+wikidataId/Q2086226,Ambala,Haryana,Ambala division,49.0,192.0,173.0,263.0,1128350.0
+wikidataId/Q980118,Kurukshetra,Haryana,Ambala division,66.0,286.0,254.0,399.0,964655.0
+wikidataId/Q1898143,Panchkula,Haryana,Ambala division,16.0,83.0,60.0,101.0,561293.0
+wikidataId/Q1873644,Yamuna Nagar district,Haryana,Ambala division,52.0,174.0,145.0,204.0,1214205.0
+wikidataId/Q2086173,Faridabad,Haryana,Faridabad division,13.0,70.0,66.0,76.0,1809733.0
+wikidataId/Q2216696,Nuh,Haryana,Faridabad division,56.0,144.0,137.0,216.0,1089263.0
+wikidataId/Q2724926,Palwal,Haryana,Faridabad division,27.0,179.0,111.0,202.0,1042708.0
+wikidataId/Q1815766,Gurugram,Haryana,Gurugram division,31.0,144.0,127.0,183.0,1514432.0
+wikidataId/Q684019,Mahendragarh,Haryana,Gurugram division,46.0,315.0,248.0,371.0,922088.0
+wikidataId/Q2301759,Rewari,Haryana,Gurugram division,41.0,192.0,166.0,272.0,900332.0
+wikidataId/Q2301753,Fatehabad,Haryana,Hisar division,48.0,242.0,177.0,259.0,942011.0
+wikidataId/Q1815773,Hisar,Haryana,Hisar division,64.0,332.0,274.0,402.0,1743931.0
+wikidataId/Q268605,Jind,Haryana,Hisar division,82.0,366.0,247.0,411.0,1334152.0
+wikidataId/Q526101,Sirsa,Haryana,Hisar division,92.0,411.0,317.0,505.0,1295189.0
+wikidataId/Q614037,Kaithal,Haryana,Karnal division,51.0,266.0,232.0,332.0,1074304.0
+wikidataId/Q607915,Karnal,Haryana,Karnal division,61.0,330.0,264.0,458.0,1505324.0
+wikidataId/Q2086163,Panipat,Haryana,Karnal division,51.0,196.0,151.0,265.0,1205437.0
+wikidataId/Q1852857,Bhiwani,Haryana,Rohtak division,92.0,440.0,328.0,513.0,1634445.0
+wikidataId/Q1948260,Jhajjar,Haryana,Rohtak division,46.0,217.0,177.0,235.0,958405.0
+wikidataId/Q967388,Rohtak,Haryana,Rohtak division,24.0,218.0,154.0,248.0,1061204.0
+wikidataId/Q2241746,Sonipat,Haryana,Rohtak division,55.0,284.0,216.0,333.0,1450001.0
+wikidataId/Q1478939,Bilaspur,Himachal Pradesh,,13.0,192.0,240.0,307.0,381956.0
+wikidataId/Q1060614,Chamba,Himachal Pradesh,,18.0,235.0,263.0,373.0,519080.0
+wikidataId/Q2086180,Hamirpur,Himachal Pradesh,,13.0,152.0,237.0,294.0,454768.0
+wikidataId/Q727232,Kangra,Himachal Pradesh,,35.0,593.0,674.0,948.0,1510075.0
+wikidataId/Q1862950,Kinnaur,Himachal Pradesh,,2.0,52.0,76.0,89.0,84121.0
+wikidataId/Q2980880,Kullu,Himachal Pradesh,,9.0,108.0,119.0,224.0,437903.0
+wikidataId/Q837595,Lahaul and Spiti district,Himachal Pradesh,,2.0,34.0,38.0,55.0,31564.0
+wikidataId/Q1892161,Mandi,Himachal Pradesh,,27.0,395.0,451.0,608.0,999777.0
+wikidataId/Q1921404,Shimla,Himachal Pradesh,,22.0,335.0,417.0,571.0,814010.0
+wikidataId/Q654331,Sirmaur,Himachal Pradesh,,4.0,169.0,217.0,322.0,529855.0
+wikidataId/Q2980937,Solan,Himachal Pradesh,,14.0,196.0,235.0,369.0,580320.0
+wikidataId/Q2301741,Una,Himachal Pradesh,,11.0,155.0,179.0,295.0,521173.0
+wikidataId/Q2298979,Doda,Jammu and Kashmir,Jammu Division,,,,,409936.0
+wikidataId/Q1947371,Jammu,Jammu and Kashmir,Jammu Division,,,,,1529958.0
+wikidataId/Q2375700,Kathua,Jammu and Kashmir,Jammu Division,,,,,616435.0
+wikidataId/Q2321899,Kishtwar,Jammu and Kashmir,Jammu Division,,,,,230696.0
+wikidataId/Q2983134,Poonch,Jammu and Kashmir,Jammu Division,,,,,476835.0
+wikidataId/Q544279,Rajouri,Jammu and Kashmir,Jammu Division,,,,,642415.0
+wikidataId/Q2321939,Ramban,Jammu and Kashmir,Jammu Division,,,,,283713.0
+wikidataId/Q2321956,Reasi,Jammu and Kashmir,Jammu Division,,,,,314667.0
+wikidataId/Q1117086,Samba,Jammu and Kashmir,Jammu Division,,,,,318898.0
+wikidataId/Q1947311,Udhampur,Jammu and Kashmir,Jammu Division,,,,,554985.0
+wikidataId/Q2982349,Anantnag,Jammu and Kashmir,Kashmir Division,,,,,1078692.0
+wikidataId/Q2983553,Bandipora,Jammu and Kashmir,Kashmir Division,,,,,392232.0
+wikidataId/Q1912057,Baramulla,Jammu and Kashmir,Kashmir Division,,,,,1008039.0
+wikidataId/Q2594218,Budgam,Jammu and Kashmir,Kashmir Division,,,,,753745.0
+wikidataId/Q2556028,Ganderbal,Jammu and Kashmir,Kashmir Division,,,,,297446.0
+wikidataId/Q2321867,Kulgam,Jammu and Kashmir,Kashmir Division,,,,,424483.0
+wikidataId/Q2297306,Kupwara,Jammu and Kashmir,Kashmir Division,,,,,870354.0
+wikidataId/Q2085364,Pulwama,Jammu and Kashmir,Kashmir Division,,,,,560440.0
+wikidataId/Q2073646,Shopian,Jammu and Kashmir,Kashmir Division,,,,,266215.0
+wikidataId/Q1506029,Srinagar,Jammu and Kashmir,Kashmir Division,,,,,1236829.0
+wikidataId/Q2452921,East Singhbhum district,Jharkhand,Kolhan division,57.0,199.0,80.0,266.0,2293919.0
+wikidataId/Q2362658,Saraikela Kharsawan,Jharkhand,Kolhan division,47.0,165.0,70.0,230.0,1065056.0
+wikidataId/Q1950527,West Singhbhum,Jharkhand,Kolhan division,43.0,196.0,77.0,257.0,1502338.0
+wikidataId/Q2295925,Bokaro,Jharkhand,North Chotanagpur division,60.0,329.0,145.0,505.0,2062330.0
+wikidataId/Q1979499,Chatra,Jharkhand,North Chotanagpur division,19.0,100.0,50.0,173.0,1042886.0
+wikidataId/Q2240791,Dhanbad,Jharkhand,North Chotanagpur division,50.0,258.0,112.0,353.0,2684487.0
+wikidataId/Q2302065,Giridih,Jharkhand,North Chotanagpur division,74.0,276.0,123.0,404.0,2445474.0
+wikidataId/Q1945416,Hazaribagh,Jharkhand,North Chotanagpur division,48.0,253.0,116.0,326.0,1734495.0
+wikidataId/Q2085480,Koderma,Jharkhand,North Chotanagpur division,81.0,347.0,146.0,439.0,716259.0
+wikidataId/Q2663612,Ramgarh,Jharkhand,North Chotanagpur division,23.0,106.0,51.0,138.0,949443.0
+wikidataId/Q2302076,Garhwa,Jharkhand,Palamu division,28.0,136.0,50.0,162.0,1322784.0
+wikidataId/Q2244762,Latehar,Jharkhand,Palamu division,32.0,115.0,42.0,154.0,726978.0
+wikidataId/Q1797254,Palamu,Jharkhand,Palamu division,74.0,338.0,145.0,487.0,1939869.0
+wikidataId/Q2030017,Deoghar,Jharkhand,Santhal Pargana division,48.0,180.0,86.0,284.0,1492073.0
+wikidataId/Q2577657,Dumka,Jharkhand,Santhal Pargana division,46.0,198.0,93.0,237.0,1321442.0
+wikidataId/Q638980,Godda,Jharkhand,Santhal Pargana division,51.0,222.0,124.0,334.0,1313551.0
+wikidataId/Q2980986,Jamtara,Jharkhand,Santhal Pargana division,36.0,134.0,79.0,198.0,791042.0
+wikidataId/Q2295930,Pakur,Jharkhand,Santhal Pargana division,16.0,76.0,50.0,131.0,900422.0
+wikidataId/Q767878,Sahebganj,Jharkhand,Santhal Pargana division,85.0,296.0,146.0,452.0,1150567.0
+wikidataId/Q2295865,Gumla,Jharkhand,South Chotanagpur division,46.0,179.0,85.0,231.0,1025213.0
+wikidataId/Q367344,Khunti,Jharkhand,South Chotanagpur division,44.0,222.0,108.0,288.0,531885.0
+wikidataId/Q1948301,Lohardaga,Jharkhand,South Chotanagpur division,40.0,166.0,57.0,239.0,461790.0
+wikidataId/Q1947380,Ranchi,Jharkhand,South Chotanagpur division,90.0,361.0,133.0,456.0,2914253.0
+wikidataId/Q2597889,Simdega,Jharkhand,South Chotanagpur division,34.0,127.0,70.0,161.0,599578.0
+wikidataId/Q806464,Bangalore Rural district,Karnataka,Bangalore division,368.0,305.0,181.0,581.0,990923.0
+wikidataId/Q806463,Bangalore Urban district,Karnataka,Bangalore division,388.0,265.0,164.0,560.0,9621551.0
+wikidataId/Q1072629,Chikkaballapura,Karnataka,Bangalore division,463.0,317.0,147.0,615.0,1255104.0
+wikidataId/Q165264,Chitradurga,Karnataka,Bangalore division,735.0,592.0,380.0,1287.0,1659456.0
+wikidataId/Q1863214,Davanagere district,Karnataka,Bangalore division,424.0,351.0,214.0,647.0,1945497.0
+wikidataId/Q2509866,Kolar,Karnataka,Bangalore division,523.0,490.0,314.0,880.0,1536401.0
+wikidataId/Q427679,Ramanagara,Karnataka,Bangalore division,379.0,335.0,251.0,660.0,1082636.0
+wikidataId/Q2981389,Shimoga District,Karnataka,Bangalore division,830.0,630.0,378.0,1320.0,1752753.0
+wikidataId/Q1301635,Tumakuru,Karnataka,Bangalore division,746.0,580.0,355.0,1140.0,2678980.0
+wikidataId/Q1910231,Bagalkot district,Karnataka,Belgaum division,444.0,334.0,209.0,745.0,1889752.0
+wikidataId/Q815464,Belagavi,Karnataka,Belgaum division,1316.0,1080.0,650.0,2107.0,4779661.0
+wikidataId/Q83108,Bijapur District,Karnataka,Belgaum division,583.0,432.0,238.0,906.0,2177331.0
+wikidataId/Q1790904,Dharwad,Karnataka,Belgaum division,266.0,205.0,137.0,436.0,1847023.0
+wikidataId/Q2353931,Gadag,Karnataka,Belgaum division,217.0,174.0,112.0,347.0,1064570.0
+wikidataId/Q765481,Haveri,Karnataka,Belgaum division,393.0,436.0,271.0,740.0,1597668.0
+wikidataId/Q579205,Uttara Kannada,Karnataka,Belgaum division,899.0,675.0,405.0,1492.0,1437169.0
+wikidataId/Q1791926,Ballari,Karnataka,Gulbarga Division,388.0,325.0,213.0,626.0,2452595.0
+wikidataId/Q1790568,Bidar,Karnataka,Gulbarga Division,331.0,221.0,162.0,467.0,1703300.0
+wikidataId/Q2641873,Kalaburagi,Karnataka,Gulbarga Division,472.0,379.0,227.0,814.0,2566326.0
+wikidataId/Q956387,Koppal,Karnataka,Gulbarga Division,317.0,221.0,143.0,506.0,1389920.0
+wikidataId/Q1430830,Raichur,Karnataka,Gulbarga Division,433.0,271.0,172.0,600.0,1928812.0
+wikidataId/Q1786949,Yadgir,Karnataka,Gulbarga Division,189.0,150.0,79.0,315.0,1174271.0
+wikidataId/Q862912,Chamarajanagar district,Karnataka,Mysore division,375.0,279.0,181.0,526.0,1020791.0
+wikidataId/Q743077,Chikkamagaluru,Karnataka,Mysore division,471.0,331.0,207.0,663.0,1137961.0
+wikidataId/Q950571,Dakshina Kannada,Karnataka,Mysore division,560.0,411.0,245.0,867.0,2089649.0
+wikidataId/Q956732,Hassan,Karnataka,Mysore division,729.0,534.0,315.0,1088.0,1776421.0
+wikidataId/Q1553185,Kodagu,Karnataka,Mysore division,261.0,137.0,101.0,353.0,554519.0
+wikidataId/Q2768290,Mandya,Karnataka,Mysore division,1099.0,737.0,422.0,1523.0,1805769.0
+wikidataId/Q591781,Mysore district,Karnataka,Mysore division,1088.0,764.0,529.0,1647.0,3001127.0
+wikidataId/Q1483337,Udupi,Karnataka,Mysore division,358.0,322.0,200.0,628.0,1177361.0
+wikidataId/Q928959,Alappuzha,Kerala,,905.0,222.0,209.0,340.0,2127789.0
+wikidataId/Q1356097,Ernakulam,Kerala,,1433.0,315.0,322.0,540.0,3282388.0
+wikidataId/Q301821,Idukki,Kerala,,875.0,238.0,202.0,380.0,1108974.0
+wikidataId/Q2980652,Kannur,Kerala,,1198.0,272.0,274.0,498.0,2523003.0
+wikidataId/Q1419703,Kasaragod,Kerala,,379.0,88.0,82.0,170.0,1307375.0
+wikidataId/Q1356124,Kollam,Kerala,,991.0,245.0,213.0,395.0,2635375.0
+wikidataId/Q1353354,Kottayam,Kerala,,1605.0,381.0,372.0,723.0,1974551.0
+wikidataId/Q1142979,Kozhikode,Kerala,,1492.0,321.0,307.0,564.0,3086293.0
+wikidataId/Q1030918,Malappuram,Kerala,,2586.0,522.0,554.0,880.0,4112920.0
+wikidataId/Q1535742,Palakkad,Kerala,,1759.0,409.0,432.0,686.0,2809934.0
+wikidataId/Q634935,Pathanamthitta,Kerala,,748.0,174.0,194.0,294.0,1197412.0
+wikidataId/Q162612,Thiruvananthapuram,Kerala,,1372.0,297.0,285.0,541.0,3301427.0
+wikidataId/Q2429655,Thrissur,Kerala,,1474.0,302.0,287.0,507.0,3121200.0
+wikidataId/Q1364427,Wayanad,Kerala,,517.0,109.0,140.0,216.0,817420.0
+wikidataId/Q1650798,Kargil,Ladakh,,108.0,51.0,44.0,142.0,140802.0
+wikidataId/Q1921210,Leh Ladakh,Ladakh,,182.0,101.0,96.0,279.0,133487.0
+wikidataId/Q10784153,Lakshadweep District,Lakshadweep,,,,,,64473.0
+wikidataId/Q1797245,Bhopal,Madhya Pradesh,Bhopal division,91.0,79.0,46.0,248.0,2371061.0
+wikidataId/Q1815223,Raisen,Madhya Pradesh,Bhopal division,358.0,290.0,152.0,796.0,1331597.0
+wikidataId/Q1833306,Rajgarh,Madhya Pradesh,Bhopal division,256.0,230.0,116.0,632.0,1545814.0
+wikidataId/Q2299029,Sehore,Madhya Pradesh,Bhopal division,229.0,196.0,126.0,600.0,1311332.0
+wikidataId/Q1815253,Vidisha,Madhya Pradesh,Bhopal division,256.0,209.0,123.0,671.0,1458875.0
+wikidataId/Q2341700,Bhind,Madhya Pradesh,Chambal division,181.0,186.0,98.0,533.0,1703005.0
+wikidataId/Q2341467,Morena,Madhya Pradesh,Chambal division,197.0,151.0,105.0,465.0,1965970.0
+wikidataId/Q620105,Sheopur,Madhya Pradesh,Chambal division,110.0,79.0,53.0,234.0,687861.0
+wikidataId/Q2246416,Ashoknagar,Madhya Pradesh,Gwalior division,138.0,126.0,73.0,427.0,845071.0
+wikidataId/Q2206266,Datia,Madhya Pradesh,Gwalior division,120.0,80.0,56.0,316.0,786754.0
+wikidataId/Q930027,Guna,Madhya Pradesh,Gwalior division,265.0,220.0,130.0,726.0,1241519.0
+wikidataId/Q2085310,Gwalior,Madhya Pradesh,Gwalior division,149.0,101.0,79.0,341.0,2032036.0
+wikidataId/Q2299042,Shivpuri,Madhya Pradesh,Gwalior division,307.0,237.0,161.0,700.0,1726050.0
+wikidataId/Q2667586,Alirajpur,Madhya Pradesh,Indore division,70.0,75.0,52.0,253.0,728999.0
+wikidataId/Q2126754,Barwani,Madhya Pradesh,Indore division,335.0,218.0,155.0,728.0,1385881.0
+wikidataId/Q2125592,Burhanpur,Madhya Pradesh,Indore division,86.0,105.0,57.0,239.0,757847.0
+wikidataId/Q2299069,Dhar,Madhya Pradesh,Indore division,481.0,396.0,220.0,1313.0,2185793.0
+wikidataId/Q2085436,East Nimar,Madhya Pradesh,Indore division,208.0,158.0,103.0,518.0,1310061.0
+wikidataId/Q742938,Indore,Madhya Pradesh,Indore division,240.0,175.0,109.0,575.0,3276697.0
+wikidataId/Q2085336,Jhabua,Madhya Pradesh,Indore division,156.0,114.0,80.0,365.0,1025048.0
+wikidataId/Q2273900,Khargone,Madhya Pradesh,Indore division,284.0,269.0,159.0,773.0,1873046.0
+wikidataId/Q641904,Balaghat,Madhya Pradesh,Jabalpur division,373.0,278.0,187.0,911.0,1701698.0
+wikidataId/Q1986096,Chhindwara,Madhya Pradesh,Jabalpur division,477.0,371.0,248.0,1236.0,2090922.0
+wikidataId/Q2398551,Dindori,Madhya Pradesh,Jabalpur division,201.0,194.0,137.0,579.0,704524.0
+wikidataId/Q632093,Jabalpur,Madhya Pradesh,Jabalpur division,259.0,201.0,118.0,616.0,2463289.0
+wikidataId/Q746441,Katni,Madhya Pradesh,Jabalpur division,193.0,172.0,119.0,572.0,1292042.0
+wikidataId/Q2341670,Mandla,Madhya Pradesh,Jabalpur division,223.0,153.0,105.0,479.0,1054905.0
+wikidataId/Q2341616,Narsinghpur,Madhya Pradesh,Jabalpur division,244.0,172.0,128.0,631.0,1091854.0
+wikidataId/Q2221184,Seoni,Madhya Pradesh,Jabalpur division,338.0,279.0,179.0,926.0,1379131.0
+wikidataId/Q1815279,Betul,Madhya Pradesh,Narmadapuram division,308.0,271.0,165.0,879.0,1575362.0
+wikidataId/Q2173003,Harda,Madhya Pradesh,Narmadapuram division,135.0,110.0,63.0,288.0,570465.0
+wikidataId/Q620801,Hoshangabad,Madhya Pradesh,Narmadapuram division,333.0,252.0,157.0,814.0,1241350.0
+wikidataId/Q526862,Rewa,Madhya Pradesh,Rewa division,298.0,233.0,174.0,827.0,2365106.0
+wikidataId/Q2577924,Satna,Madhya Pradesh,Rewa division,342.0,276.0,172.0,939.0,2228935.0
+wikidataId/Q2449793,Sidhi,Madhya Pradesh,Rewa division,208.0,177.0,126.0,501.0,1127033.0
+wikidataId/Q2668638,Singrauli,Madhya Pradesh,Rewa division,140.0,140.0,70.0,342.0,1178273.0
+wikidataId/Q2449785,Chhatarpur,Madhya Pradesh,Sagar division,244.0,202.0,122.0,642.0,1762375.0
+wikidataId/Q2479331,Damoh,Madhya Pradesh,Sagar division,190.0,169.0,104.0,520.0,1264219.0
+wikidataId/Q2341630,Panna,Madhya Pradesh,Sagar division,178.0,151.0,75.0,479.0,1016520.0
+wikidataId/Q2085421,Sagar,Madhya Pradesh,Sagar division,356.0,301.0,169.0,910.0,2378458.0
+wikidataId/Q2449760,Tikamgarh,Madhya Pradesh,Sagar division,197.0,190.0,98.0,518.0,1445166.0
+wikidataId/Q2299093,Anuppur,Madhya Pradesh,Shahdol division,132.0,90.0,67.0,398.0,749237.0
+wikidataId/Q2085464,Shahdol,Madhya Pradesh,Shahdol division,184.0,186.0,99.0,565.0,1066063.0
+wikidataId/Q620297,Umaria,Madhya Pradesh,Shahdol division,95.0,96.0,71.0,303.0,644758.0
+wikidataId/Q2025998,Dewas,Madhya Pradesh,Ujjain division,292.0,258.0,157.0,827.0,1563715.0
+wikidataId/Q1870014,Mandsaur,Madhya Pradesh,Ujjain division,225.0,190.0,122.0,609.0,1340411.0
+wikidataId/Q2341713,Neemuch,Madhya Pradesh,Ujjain division,183.0,125.0,78.0,436.0,826067.0
+wikidataId/Q2299164,Ratlam,Madhya Pradesh,Ujjain division,189.0,156.0,99.0,534.0,1455069.0
+wikidataId/Q2449803,Shajapur,Madhya Pradesh,Ujjain division,214.0,209.0,117.0,603.0,1512681.0
+wikidataId/Q892641,Ujjain,Madhya Pradesh,Ujjain division,301.0,258.0,156.0,820.0,1986864.0
+wikidataId/Q520510,Akola,Maharashtra,Amravati division,210.0,340.0,275.0,927.0,1813906.0
+wikidataId/Q1771774,Amravati,Maharashtra,Amravati division,306.0,497.0,317.0,1265.0,2888445.0
+wikidataId/Q47929,Buldhana,Maharashtra,Amravati division,189.0,384.0,244.0,887.0,2586258.0
+wikidataId/Q1804858,Washim,Maharashtra,Amravati division,126.0,215.0,131.0,559.0,1197160.0
+wikidataId/Q1804852,Yavatmal,Maharashtra,Amravati division,313.0,442.0,286.0,1136.0,2772348.0
+wikidataId/Q592942,Aurangabad,Maharashtra,Aurangabad Division,285.0,417.0,297.0,1177.0,3701282.0
+wikidataId/Q814037,Beed,Maharashtra,Aurangabad Division,279.0,447.0,299.0,1199.0,2585049.0
+wikidataId/Q2087615,Hingoli,Maharashtra,Aurangabad Division,128.0,189.0,135.0,520.0,1177345.0
+wikidataId/Q1804863,Jalna,Maharashtra,Aurangabad Division,207.0,329.0,203.0,827.0,1959046.0
+wikidataId/Q1948713,Latur,Maharashtra,Aurangabad Division,264.0,417.0,283.0,1041.0,2454196.0
+wikidataId/Q692389,Nanded,Maharashtra,Aurangabad Division,338.0,482.0,299.0,1144.0,3361292.0
+wikidataId/Q1647186,Osmanabad,Maharashtra,Aurangabad Division,239.0,329.0,198.0,849.0,1657576.0
+wikidataId/Q1797389,Parbhani,Maharashtra,Aurangabad Division,160.0,268.0,159.0,528.0,1836086.0
+wikidataId/Q2341660,Mumbai,Maharashtra,Konkan division,,,,,3085411.0
+wikidataId/Q2085374,Mumbai Suburban,Maharashtra,Konkan division,,,,,9356962.0
+wikidataId/Q18003119,Palghar,Maharashtra,Konkan division,138.0,211.0,151.0,570.0,
+wikidataId/Q2019683,Raigad,Maharashtra,Konkan division,278.0,350.0,234.0,929.0,2634200.0
+wikidataId/Q1771768,Ratnagiri,Maharashtra,Konkan division,270.0,366.0,208.0,946.0,1615069.0
+wikidataId/Q768332,Sindhudurg,Maharashtra,Konkan division,166.0,211.0,130.0,538.0,849651.0
+wikidataId/Q943099,Thane,Maharashtra,Konkan division,94.0,166.0,100.0,453.0,11060148.0
+wikidataId/Q1813857,Bhandara,Maharashtra,Nagpur division,196.0,320.0,192.0,742.0,1200334.0
+wikidataId/Q1797274,Chandrapur,Maharashtra,Nagpur division,239.0,370.0,234.0,991.0,2204307.0
+wikidataId/Q1804847,Gadchiroli,Maharashtra,Nagpur division,178.0,286.0,187.0,673.0,1072942.0
+wikidataId/Q1917227,Gondia,Maharashtra,Nagpur division,198.0,289.0,210.0,793.0,1322507.0
+wikidataId/Q1797367,Nagpur,Maharashtra,Nagpur division,226.0,359.0,267.0,997.0,4653570.0
+wikidataId/Q980608,Wardha,Maharashtra,Nagpur division,194.0,305.0,193.0,814.0,1300774.0
+wikidataId/Q1797383,Dhule,Maharashtra,Nashik division,157.0,236.0,128.0,609.0,2050862.0
+wikidataId/Q1797291,Jalgaon,Maharashtra,Nashik division,315.0,501.0,296.0,1312.0,4229917.0
+wikidataId/Q1623525,Nandurbar,Maharashtra,Nashik division,118.0,207.0,144.0,521.0,1648295.0
+wikidataId/Q1797269,Nashik,Maharashtra,Nashik division,392.0,601.0,363.0,1423.0,6107187.0
+wikidataId/Q401744,Ahmednagar,Maharashtra,Pune division,494.0,763.0,529.0,2047.0,4543159.0
+wikidataId/Q1797312,Kolhapur,Maharashtra,Pune division,443.0,758.0,482.0,1924.0,3876001.0
+wikidataId/Q1797336,Pune,Maharashtra,Pune division,511.0,851.0,534.0,2150.0,9429408.0
+wikidataId/Q1425060,Sangli,Maharashtra,Pune division,669.0,680.0,393.0,1616.0,2822143.0
+wikidataId/Q1135612,Satara,Maharashtra,Pune division,464.0,745.0,488.0,1636.0,3003741.0
+wikidataId/Q1797263,Solapur,Maharashtra,Pune division,465.0,809.0,552.0,2026.0,4317756.0
+wikidataId/Q938190,Bishnupur,Manipur,,94.0,103.0,38.0,148.0,237399.0
+wikidataId/Q2301769,Chandel,Manipur,,61.0,129.0,27.0,152.0,144182.0
+wikidataId/Q2577281,Churachandpur,Manipur,,128.0,187.0,74.0,253.0,274143.0
+wikidataId/Q1916666,Imphal East,Manipur,,153.0,203.0,67.0,271.0,456113.0
+wikidataId/Q1822188,Imphal West,Manipur,,134.0,208.0,90.0,250.0,517992.0
+wikidataId/Q2301706,Senapati,Manipur,,146.0,198.0,57.0,232.0,479148.0
+wikidataId/Q2301717,Tamenglong,Manipur,,51.0,77.0,21.0,77.0,140651.0
+wikidataId/Q2086198,Thoubal,Manipur,,212.0,301.0,115.0,342.0,422168.0
+wikidataId/Q735101,Ukhrul,Manipur,,37.0,66.0,23.0,75.0,183998.0
+wikidataId/Q2085455,East Garo Hills,Meghalaya,,16.0,27.0,10.0,32.0,317917.0
+wikidataId/Q15923776,East Jaintia Hills,Meghalaya,,6.0,26.0,3.0,27.0,
+wikidataId/Q1945304,East Khasi Hills,Meghalaya,,75.0,201.0,49.0,311.0,825922.0
+wikidataId/Q7055466,North Garo Hills,Meghalaya,,14.0,30.0,14.0,69.0,
+wikidataId/Q1884672,Ri Bhoi,Meghalaya,,81.0,172.0,61.0,248.0,258840.0
+wikidataId/Q2329228,South Garo Hills,Meghalaya,,20.0,21.0,8.0,43.0,142334.0
+wikidataId/Q15961576,South West Garo Hills,Meghalaya,,22.0,32.0,7.0,36.0,
+wikidataId/Q15923741,South West Khasi Hills,Meghalaya,,12.0,23.0,5.0,47.0,
+wikidataId/Q2329181,West Garo Hills,Meghalaya,,66.0,148.0,44.0,202.0,643291.0
+wikidataId/Q13181190,West Jaintia Hills,Meghalaya,,58.0,83.0,29.0,153.0,
+wikidataId/Q2064752,West Khasi Hills,Meghalaya,,65.0,115.0,29.0,165.0,383461.0
+wikidataId/Q1947322,Aizawl,Mizoram,,54.0,70.0,14.0,102.0,400309.0
+wikidataId/Q1965256,Champhai,Mizoram,,39.0,54.0,7.0,81.0,125745.0
+wikidataId/Q1947343,Kolasib,Mizoram,,17.0,21.0,5.0,26.0,83955.0
+wikidataId/Q2086209,Lawngtlai,Mizoram,,60.0,66.0,13.0,83.0,117894.0
+wikidataId/Q1947352,Lunglei,Mizoram,,56.0,58.0,16.0,97.0,161428.0
+wikidataId/Q751531,Mamit,Mizoram,,39.0,56.0,9.0,83.0,86364.0
+wikidataId/Q1821714,Saiha,Mizoram,,61.0,73.0,17.0,95.0,56574.0
+wikidataId/Q2086190,Serchhip,Mizoram,,19.0,39.0,5.0,52.0,64937.0
+wikidataId/Q634262,Dimapur,Nagaland,,55.0,110.0,41.0,179.0,378811.0
+wikidataId/Q2597908,Kiphire,Nagaland,,20.0,20.0,5.0,39.0,74004.0
+wikidataId/Q953530,Kohima,Nagaland,,46.0,64.0,26.0,95.0,267988.0
+wikidataId/Q1426783,Longleng,Nagaland,,17.0,14.0,4.0,32.0,50484.0
+wikidataId/Q2175311,Mokokchung,Nagaland,,39.0,70.0,24.0,107.0,194622.0
+wikidataId/Q2339648,Mon,Nagaland,,30.0,37.0,16.0,49.0,250260.0
+wikidataId/Q516294,Peren,Nagaland,,12.0,24.0,7.0,26.0,95219.0
+wikidataId/Q590882,Phek,Nagaland,,83.0,84.0,32.0,144.0,163418.0
+wikidataId/Q2571393,Tuensang,Nagaland,,28.0,41.0,19.0,60.0,196596.0
+wikidataId/Q681821,Wokha,Nagaland,,27.0,33.0,21.0,55.0,166343.0
+wikidataId/Q2091461,Zunheboto,Nagaland,,67.0,75.0,36.0,143.0,140757.0
+wikidataId/Q2022279,Balasore district,Odisha,Central division,374.0,477.0,156.0,676.0,2320529.0
+wikidataId/Q685638,Bhadrak,Odisha,Central division,195.0,241.0,71.0,357.0,1506337.0
+wikidataId/Q2022256,Cuttack,Odisha,Central division,431.0,482.0,166.0,707.0,2624470.0
+wikidataId/Q971581,Jagatsinghapur,Odisha,Central division,211.0,293.0,87.0,373.0,1136971.0
+wikidataId/Q2087771,Jajapur,Odisha,Central division,318.0,339.0,102.0,540.0,1827192.0
+wikidataId/Q2299172,Kendrapara,Odisha,Central division,197.0,281.0,88.0,377.0,1440361.0
+wikidataId/Q662818,Khordha,Odisha,Central division,170.0,256.0,76.0,288.0,2251673.0
+wikidataId/Q1914546,Mayurbhanj,Odisha,Central division,547.0,631.0,190.0,868.0,2519738.0
+wikidataId/Q2367388,Nayagarh,Odisha,Central division,225.0,277.0,86.0,350.0,962789.0
+wikidataId/Q1817158,Puri,Odisha,Central division,207.0,235.0,78.0,325.0,1698730.0
+wikidataId/Q1772807,Angul district,Odisha,Northern division,313.0,373.0,113.0,496.0,1273821.0
+wikidataId/Q804642,Balangir,Odisha,Northern division,417.0,555.0,163.0,759.0,1648997.0
+wikidataId/Q808140,Bargarh,Odisha,Northern division,347.0,402.0,140.0,540.0,1481255.0
+wikidataId/Q2269639,Debagarh district,Odisha,Northern division,166.0,249.0,60.0,319.0,312520.0
+wikidataId/Q1948389,Dhenkanal,Odisha,Northern division,196.0,272.0,93.0,350.0,1192811.0
+wikidataId/Q569181,Jharsuguda,Odisha,Northern division,96.0,132.0,44.0,168.0,579505.0
+wikidataId/Q2085428,Kendujhar,Odisha,Northern division,313.0,409.0,132.0,526.0,1801733.0
+wikidataId/Q1267306,Sambalpur,Odisha,Northern division,332.0,231.0,86.0,378.0,1041099.0
+wikidataId/Q1473957,Sonepur,Odisha,Northern division,182.0,265.0,90.0,372.0,610183.0
+wikidataId/Q2296047,Sundargarh,Odisha,Northern division,346.0,404.0,106.0,522.0,2093437.0
+wikidataId/Q2363639,Boudh,Odisha,Southern division,80.0,74.0,32.0,128.0,441162.0
+wikidataId/Q1947292,Gajapati,Odisha,Southern division,157.0,179.0,53.0,247.0,577817.0
+wikidataId/Q776213,Ganjam,Odisha,Southern division,457.0,621.0,201.0,747.0,3529031.0
+wikidataId/Q1876588,Kalahandi,Odisha,Southern division,253.0,267.0,91.0,453.0,1576869.0
+wikidataId/Q2085500,Kandhamal,Odisha,Southern division,173.0,184.0,55.0,298.0,733110.0
+wikidataId/Q1947300,Koraput,Odisha,Southern division,189.0,305.0,97.0,360.0,1379647.0
+wikidataId/Q5122619,Malkangiri,Odisha,Southern division,151.0,139.0,42.0,194.0,613192.0
+wikidataId/Q2396798,Nabarangpur,Odisha,Southern division,232.0,244.0,85.0,327.0,1220946.0
+wikidataId/Q1810550,Nuapada,Odisha,Southern division,131.0,191.0,61.0,240.0,610382.0
+wikidataId/Q2577997,Rayagada,Odisha,Southern division,220.0,227.0,98.0,317.0,967911.0
+wikidataId/Q639264,Karaikal,Puducherry,,,,,,200222.0
+wikidataId/Q639279,Mahe,Puducherry,,,,,,41816.0
+wikidataId/Q984035,Pondicherry,Puducherry,,,,,,950289.0
+wikidataId/Q2126598,Yanam,Puducherry,,,,,,55626.0
+wikidataId/Q172488,Bathinda,Punjab,Faridkot division,204.0,220.0,188.0,631.0,1388525.0
+wikidataId/Q172494,Faridkot,Punjab,Faridkot division,111.0,172.0,129.0,348.0,617508.0
+wikidataId/Q172387,Mansa,Punjab,Faridkot division,116.0,170.0,125.0,320.0,769751.0
+wikidataId/Q188702,Fazilka,Punjab,Firozpur division,245.0,254.0,268.0,699.0,
+wikidataId/Q172385,Ferozepur,Punjab,Firozpur division,186.0,217.0,199.0,561.0,2029074.0
+wikidataId/Q1946896,Moga,Punjab,Firozpur division,206.0,219.0,181.0,645.0,995746.0
+wikidataId/Q1947359,Sri Muktsar Sahib,Punjab,Firozpur division,153.0,180.0,154.0,424.0,901896.0
+wikidataId/Q202822,Amritsar,Punjab,Jalandhar division,269.0,333.0,257.0,732.0,2490656.0
+wikidataId/Q146708,Gurdaspur,Punjab,Jalandhar division,296.0,332.0,231.0,893.0,2298323.0
+wikidataId/Q304800,Hoshiarpur,Punjab,Jalandhar division,411.0,584.0,352.0,1173.0,1586625.0
+wikidataId/Q1817425,Jalandhar,Punjab,Jalandhar division,335.0,389.0,285.0,970.0,2193590.0
+wikidataId/Q172363,Kapurthala,Punjab,Jalandhar division,167.0,162.0,136.0,487.0,815168.0
+wikidataId/Q172269,Pathankot,Punjab,Jalandhar division,112.0,158.0,123.0,325.0,
+wikidataId/Q2298993,Tarn Taran,Punjab,Jalandhar division,145.0,200.0,154.0,394.0,1119627.0
+wikidataId/Q2353293,Barnala,Punjab,Patiala division,110.0,109.0,104.0,345.0,595527.0
+wikidataId/Q172485,Fatehgarh Sahib,Punjab,Patiala division,170.0,251.0,181.0,523.0,600163.0
+wikidataId/Q172482,Ludhiana,Punjab,Patiala division,319.0,464.0,343.0,1066.0,3498739.0
+wikidataId/Q172391,Patiala,Punjab,Patiala division,336.0,390.0,308.0,921.0,1895686.0
+wikidataId/Q1945515,Sangrur,Punjab,Patiala division,311.0,321.0,284.0,964.0,1655169.0
+wikidataId/Q2037672,Mohali district,Punjab,Ropar division,81.0,92.0,84.0,275.0,994628.0
+wikidataId/Q196508,Rupnagar,Punjab,Ropar division,172.0,182.0,163.0,555.0,684627.0
+wikidataId/Q202710,Shahid Bhagat Singh Nagar,Punjab,Ropar division,144.0,193.0,152.0,441.0,612310.0
+wikidataId/Q413037,Ajmer,Rajasthan,Ajmer division,128.0,421.0,219.0,467.0,2583052.0
+wikidataId/Q41991,Bhilwara,Rajasthan,Ajmer division,95.0,470.0,215.0,528.0,2408523.0
+wikidataId/Q1507174,Nagaur,Rajasthan,Ajmer division,143.0,642.0,336.0,730.0,3307743.0
+wikidataId/Q915880,Tonk,Rajasthan,Ajmer division,200.0,327.0,185.0,451.0,1421326.0
+wikidataId/Q854861,Bharatpur,Rajasthan,Bharatpur division,123.0,481.0,260.0,553.0,2548462.0
+wikidataId/Q1207709,Dholpur,Rajasthan,Bharatpur division,49.0,189.0,104.0,214.0,1206516.0
+wikidataId/Q1419668,Karauli,Rajasthan,Bharatpur division,75.0,258.0,115.0,277.0,1458248.0
+wikidataId/Q1507166,Sawai Madhopur,Rajasthan,Bharatpur division,143.0,292.0,141.0,343.0,1335551.0
+wikidataId/Q778996,Bikaner,Rajasthan,Bikaner division,134.0,530.0,260.0,636.0,2363937.0
+wikidataId/Q1090006,Churu,Rajasthan,Bikaner division,96.0,400.0,195.0,399.0,2039547.0
+wikidataId/Q1419696,Ganganagar,Rajasthan,Bikaner division,85.0,459.0,186.0,483.0,1969168.0
+wikidataId/Q1356112,Hanumangarh,Rajasthan,Bikaner division,97.0,292.0,151.0,382.0,1774692.0
+wikidataId/Q449690,Alwar,Rajasthan,Jaipur division,222.0,656.0,338.0,778.0,3674179.0
+wikidataId/Q1173042,Dausa,Rajasthan,Jaipur division,86.0,360.0,163.0,392.0,1634409.0
+wikidataId/Q1134781,Jaipur,Rajasthan,Jaipur division,203.0,982.0,426.0,1026.0,6626178.0
+wikidataId/Q1471427,Jhunjhunu,Rajasthan,Jaipur division,126.0,470.0,277.0,593.0,2137045.0
+wikidataId/Q12945777,Sikar,Rajasthan,Jaipur division,154.0,576.0,284.0,720.0,2677333.0
+wikidataId/Q42016,Barmer,Rajasthan,Jodhpur division,140.0,545.0,235.0,609.0,2603751.0
+wikidataId/Q1419708,Jaisalmer,Rajasthan,Jodhpur division,48.0,273.0,130.0,318.0,669919.0
+wikidataId/Q1460832,Jalore,Rajasthan,Jodhpur division,112.0,486.0,216.0,555.0,1828730.0
+wikidataId/Q1434965,Jodhpur,Rajasthan,Jodhpur division,197.0,634.0,283.0,710.0,3687165.0
+wikidataId/Q46925,Pali,Rajasthan,Jodhpur division,142.0,402.0,185.0,444.0,2037573.0
+wikidataId/Q205719,Sirohi,Rajasthan,Jodhpur division,131.0,569.0,296.0,675.0,1036346.0
+wikidataId/Q2329717,Baran,Rajasthan,Kota division,101.0,318.0,139.0,379.0,1222755.0
+wikidataId/Q670405,Bundi,Rajasthan,Kota division,67.0,252.0,118.0,307.0,1110906.0
+wikidataId/Q1471417,Jhalawar,Rajasthan,Kota division,111.0,294.0,129.0,336.0,1411129.0
+wikidataId/Q999432,Kota,Rajasthan,Kota division,92.0,246.0,132.0,334.0,1951014.0
+wikidataId/Q806969,Banswara,Rajasthan,Udaipur division,108.0,488.0,222.0,500.0,1797485.0
+wikidataId/Q1075011,Chittorgarh,Rajasthan,Udaipur division,132.0,345.0,176.0,451.0,1544338.0
+wikidataId/Q1265687,Dungarpur,Rajasthan,Udaipur division,188.0,328.0,187.0,354.0,1388552.0
+wikidataId/Q1585433,Pratapgarh,Rajasthan,Udaipur division,48.0,176.0,90.0,181.0,867848.0
+wikidataId/Q596693,Rajsamand,Rajasthan,Udaipur division,82.0,242.0,120.0,263.0,1156597.0
+wikidataId/Q1321577,Udaipur,Rajasthan,Udaipur division,175.0,634.0,313.0,669.0,3068420.0
+wikidataId/Q1772832,East Sikkim district,Sikkim,,63.0,95.0,33.0,118.0,283583.0
+wikidataId/Q611357,Gyalshing,Sikkim,,56.0,66.0,39.0,106.0,136435.0
+wikidataId/Q1784149,Mangan,Sikkim,,19.0,23.0,7.0,38.0,43709.0
+wikidataId/Q1805051,Namchi,Sikkim,,68.0,91.0,44.0,138.0,146850.0
+wikidataId/Q15112,Ariyalur,Tamil Nadu,,62.0,114.0,68.0,335.0,754894.0
+wikidataId/Q15116,Chennai,Tamil Nadu,,,,,,4646732.0
+wikidataId/Q15136,Coimbatore,Tamil Nadu,,76.0,141.0,76.0,411.0,3458045.0
+wikidataId/Q15150,Cuddalore,Tamil Nadu,,125.0,198.0,100.0,670.0,2605914.0
+wikidataId/Q15152,Dharmapuri,Tamil Nadu,,91.0,181.0,106.0,560.0,1506843.0
+wikidataId/Q15154,Dindigul,Tamil Nadu,,102.0,159.0,118.0,571.0,2159775.0
+wikidataId/Q15155,Erode,Tamil Nadu,,65.0,104.0,84.0,396.0,2251744.0
+wikidataId/Q15157,Kanchipuram,Tamil Nadu,,135.0,263.0,155.0,812.0,3998252.0
+wikidataId/Q15158,Kanniyakumari,Tamil Nadu,,51.0,77.0,48.0,225.0,1870374.0
+wikidataId/Q15182,Karur,Tamil Nadu,,69.0,127.0,91.0,330.0,1064493.0
+wikidataId/Q15183,Krishnagiri,Tamil Nadu,,116.0,203.0,142.0,638.0,1879809.0
+wikidataId/Q15184,Madurai,Tamil Nadu,,105.0,191.0,102.0,520.0,3038252.0
+wikidataId/Q15185,Nagapattinam,Tamil Nadu,,89.0,165.0,98.0,476.0,1616450.0
+wikidataId/Q15187,Namakkal,Tamil Nadu,,75.0,121.0,83.0,435.0,1726601.0
+wikidataId/Q15188,Nilgiris district,Tamil Nadu,,20.0,30.0,26.0,120.0,735394.0
+wikidataId/Q15186,Perambalur,Tamil Nadu,,32.0,62.0,27.0,165.0,565223.0
+wikidataId/Q15190,Pudukkottai,Tamil Nadu,,88.0,169.0,105.0,627.0,1618345.0
+wikidataId/Q15191,Ramanathapuram,Tamil Nadu,,99.0,165.0,96.0,443.0,1353445.0
+wikidataId/Q15192,Salem,Tamil Nadu,,124.0,230.0,133.0,714.0,3482056.0
+wikidataId/Q15195,Sivaganga,Tamil Nadu,,97.0,207.0,155.0,738.0,1339101.0
+wikidataId/Q15194,Thanjavur,Tamil Nadu,,125.0,243.0,150.0,669.0,2405890.0
+wikidataId/Q15196,Theni,Tamil Nadu,,58.0,85.0,62.0,242.0,1245899.0
+wikidataId/Q15204,Thiruvallur,Tamil Nadu,,88.0,192.0,118.0,633.0,3728104.0
+wikidataId/Q15197,Thiruvarur,Tamil Nadu,,92.0,158.0,121.0,552.0,1264277.0
+wikidataId/Q15198,Thoothukudi district,Tamil Nadu,,74.0,130.0,73.0,421.0,1750176.0
+wikidataId/Q15201,Tiruchirappalli,Tamil Nadu,,119.0,180.0,101.0,585.0,2722290.0
+wikidataId/Q15200,Tirunelveli,Tamil Nadu,,77.0,192.0,113.0,530.0,3077233.0
+wikidataId/Q15202,Tiruppur,Tamil Nadu,,90.0,133.0,84.0,476.0,2479052.0
+wikidataId/Q15207,Tiruvannamalai,Tamil Nadu,,158.0,284.0,177.0,806.0,2464875.0
+wikidataId/Q15206,Vellore,Tamil Nadu,,146.0,300.0,192.0,838.0,3936331.0
+wikidataId/Q15205,Villupuram,Tamil Nadu,,227.0,375.0,251.0,1201.0,3458873.0
+wikidataId/Q15209,Virudhunagar,Tamil Nadu,,90.0,167.0,94.0,470.0,1942288.0
+wikidataId/Q15211,Adilabad,Telangana,,147.0,180.0,81.0,584.0,2741239.0
+wikidataId/Q28169767,Bhadradri Kothagudem,Telangana,,186.0,188.0,85.0,586.0,
+wikidataId/Q15340,Hyderabad,Telangana,,,1.0,2.0,2.0,3943323.0
+wikidataId/Q28169780,Jagitial,Telangana,,183.0,171.0,87.0,528.0,
+wikidataId/Q28170170,Jangaon district,Telangana,,234.0,241.0,111.0,690.0,
+wikidataId/Q28169775,Jayashankar Bhupalapally,Telangana,,193.0,214.0,93.0,611.0,
+wikidataId/Q27897618,Jogulamba Gadwal,Telangana,,82.0,93.0,49.0,265.0,
+wikidataId/Q27956125,Kamareddy,Telangana,,289.0,328.0,146.0,1041.0,
+wikidataId/Q15373,Karimnagar,Telangana,,264.0,332.0,145.0,905.0,3776269.0
+wikidataId/Q15371,Khammam,Telangana,,289.0,371.0,185.0,1037.0,2797370.0
+wikidataId/Q28170184,Kumaram Bheem Asifabad district,Telangana,,139.0,130.0,71.0,382.0,
+wikidataId/Q28169761,Mahabubabad,Telangana,,113.0,156.0,73.0,469.0,
+wikidataId/Q15380,Mahabubnagar,Telangana,,178.0,256.0,132.0,783.0,4053028.0
+wikidataId/Q28169747,Mancherial,Telangana,,159.0,163.0,62.0,468.0,
+wikidataId/Q15386,Medak,Telangana,,193.0,229.0,118.0,693.0,3033288.0
+wikidataId/Q27614841,Medchal Malkajgiri,Telangana,,112.0,131.0,44.0,337.0,
+wikidataId/Q28169773,Nagarkurnool,Telangana,,176.0,188.0,96.0,558.0,
+wikidataId/Q15384,Nalgonda,Telangana,,284.0,299.0,159.0,902.0,3488809.0
+wikidataId/Q28169750,Nirmal,Telangana,,175.0,201.0,93.0,596.0,
+wikidataId/Q15391,Nizamabad,Telangana,,381.0,423.0,243.0,1279.0,2551335.0
+wikidataId/Q27614797,Peddapalli,Telangana,,126.0,152.0,71.0,431.0,
+wikidataId/Q28172781,Rajanna Sircilla,Telangana,,161.0,150.0,90.0,506.0,
+wikidataId/Q15388,Ranga Reddy,Telangana,,285.0,307.0,165.0,887.0,5296741.0
+wikidataId/Q28169753,Sangareddy,Telangana,,222.0,224.0,137.0,779.0,
+wikidataId/Q28169756,Siddipet,Telangana,,329.0,373.0,157.0,1093.0,
+wikidataId/Q28169770,Suryapet,Telangana,,169.0,196.0,98.0,572.0,
+wikidataId/Q28170173,Vikarabad,Telangana,,178.0,238.0,107.0,698.0,
+wikidataId/Q28172504,Wanaparthy,Telangana,,122.0,126.0,61.0,379.0,
+wikidataId/Q28169759,Warangal,Telangana,,165.0,217.0,108.0,619.0,
+wikidataId/Q28169764,Yadadri Bhuvanagiri,Telangana,,211.0,242.0,127.0,742.0,
+wikidataId/Q2086546,Dhalai,Tripura,,174.0,131.0,23.0,196.0,378230.0
+wikidataId/Q16086497,Gomati,Tripura,,201.0,172.0,41.0,211.0,
+wikidataId/Q16086680,Khowai,Tripura,,137.0,98.0,24.0,158.0,
+wikidataId/Q1920978,North Tripura,Tripura,,137.0,109.0,18.0,192.0,693947.0
+wikidataId/Q16086076,Sepahijala,Tripura,,185.0,163.0,31.0,298.0,
+wikidataId/Q1822159,South Tripura,Tripura,,222.0,135.0,44.0,313.0,876001.0
+wikidataId/Q16087996,Unakoti,Tripura,,79.0,101.0,15.0,121.0,
+wikidataId/Q1947570,West Tripura,Tripura,,201.0,170.0,31.0,199.0,1725739.0
+wikidataId/Q606343,Agra,Uttar Pradesh,Agra division,299.0,459.0,189.0,796.0,4418797.0
+wikidataId/Q1946950,Firozabad,Uttar Pradesh,Agra division,304.0,418.0,158.0,789.0,2498156.0
+wikidataId/Q1816657,Mainpuri,Uttar Pradesh,Agra division,401.0,477.0,180.0,963.0,1868529.0
+wikidataId/Q1773422,Mathura,Uttar Pradesh,Agra division,168.0,391.0,129.0,628.0,2547184.0
+wikidataId/Q766918,Aligarh,Uttar Pradesh,Aligarh division,556.0,671.0,276.0,1299.0,3673889.0
+wikidataId/Q1773429,Etah,Uttar Pradesh,Aligarh division,217.0,293.0,115.0,607.0,1774480.0
+wikidataId/Q1814892,Hathras,Uttar Pradesh,Aligarh division,220.0,262.0,122.0,547.0,1564708.0
+wikidataId/Q890800,Kasganj,Uttar Pradesh,Aligarh division,178.0,321.0,124.0,507.0,1436719.0
+wikidataId/Q793553,Azamgarh,Uttar Pradesh,Azamgarh division,412.0,716.0,263.0,1213.0,4613913.0
+wikidataId/Q584644,Ballia,Uttar Pradesh,Azamgarh division,255.0,428.0,167.0,728.0,3239774.0
+wikidataId/Q1518847,Mau,Uttar Pradesh,Azamgarh division,151.0,247.0,95.0,427.0,2205968.0
+wikidataId/Q1797378,Bareilly,Uttar Pradesh,Bareilly division,208.0,301.0,121.0,532.0,4448359.0
+wikidataId/Q1815262,Budaun,Uttar Pradesh,Bareilly division,345.0,461.0,184.0,888.0,3681896.0
+wikidataId/Q2980705,Pilibhit,Uttar Pradesh,Bareilly division,219.0,333.0,115.0,636.0,2031007.0
+wikidataId/Q1812557,Shahjahanpur,Uttar Pradesh,Bareilly division,227.0,420.0,154.0,739.0,3006538.0
+wikidataId/Q715267,Basti,Uttar Pradesh,Basti division,272.0,414.0,178.0,740.0,2464464.0
+wikidataId/Q1945445,Sant Kabeer Nagar,Uttar Pradesh,Basti division,166.0,255.0,107.0,454.0,1715183.0
+wikidataId/Q1815339,Siddharth Nagar,Uttar Pradesh,Basti division,372.0,566.0,207.0,1012.0,2559297.0
+wikidataId/Q2131759,Banda,Uttar Pradesh,Chitrakoot division,137.0,247.0,76.0,438.0,1799410.0
+wikidataId/Q2089141,Chitrakoot,Uttar Pradesh,Chitrakoot division,90.0,161.0,58.0,282.0,991730.0
+wikidataId/Q2019757,Hamirpur,Uttar Pradesh,Chitrakoot division,96.0,163.0,53.0,250.0,1104285.0
+wikidataId/Q1815322,Mahoba,Uttar Pradesh,Chitrakoot division,61.0,120.0,44.0,162.0,875958.0
+wikidataId/Q1812548,Bahraich,Uttar Pradesh,Devipatan division,308.0,406.0,138.0,738.0,3487731.0
+wikidataId/Q1948380,Balrampur,Uttar Pradesh,Devipatan division,135.0,204.0,73.0,396.0,2148665.0
+wikidataId/Q1937857,Gonda,Uttar Pradesh,Devipatan division,275.0,459.0,156.0,774.0,3433919.0
+wikidataId/Q1945458,Shravasti,Uttar Pradesh,Devipatan division,70.0,192.0,73.0,262.0,1117361.0
+wikidataId/Q456764,Ambedkar Nagar,Uttar Pradesh,Faizabad division,244.0,393.0,144.0,730.0,2397888.0
+wikidataId/Q1071494,Amethi,Uttar Pradesh,Faizabad division,303.0,397.0,160.0,745.0,
+wikidataId/Q1814132,Ayodhya,Uttar Pradesh,Faizabad division,181.0,403.0,125.0,615.0,2470996.0
+wikidataId/Q633114,Barabanki,Uttar Pradesh,Faizabad division,334.0,583.0,207.0,1007.0,3260699.0
+wikidataId/Q1356154,Sultanpur,Uttar Pradesh,Faizabad division,342.0,479.0,175.0,835.0,3797117.0
+wikidataId/Q731746,Deoria,Uttar Pradesh,Gorakhpur division,381.0,529.0,226.0,982.0,3100946.0
+wikidataId/Q1144349,Gorakhpur,Uttar Pradesh,Gorakhpur division,346.0,448.0,196.0,887.0,4440895.0
+wikidataId/Q1840355,Kushi Nagar,Uttar Pradesh,Gorakhpur division,274.0,416.0,189.0,776.0,3564544.0
+wikidataId/Q1356139,Maharajganj,Uttar Pradesh,Gorakhpur division,306.0,513.0,209.0,849.0,2684703.0
+wikidataId/Q2089115,Jalaun,Uttar Pradesh,Jhansi division,128.0,229.0,89.0,408.0,1689974.0
+wikidataId/Q1937885,Jhansi,Uttar Pradesh,Jhansi division,130.0,232.0,89.0,370.0,1998603.0
+wikidataId/Q1947336,Lalitpur,Uttar Pradesh,Jhansi division,121.0,252.0,96.0,374.0,1221592.0
+wikidataId/Q1812533,Auraiya,Uttar Pradesh,Kanpur division,143.0,178.0,91.0,344.0,1379545.0
+wikidataId/Q1815288,Etawah,Uttar Pradesh,Kanpur division,136.0,243.0,57.0,379.0,1581810.0
+wikidataId/Q1897251,Farrukhabad,Uttar Pradesh,Kanpur division,123.0,238.0,96.0,453.0,1885204.0
+wikidataId/Q627979,Kannauj,Uttar Pradesh,Kanpur division,129.0,204.0,83.0,363.0,1656616.0
+wikidataId/Q610612,Kanpur Dehat,Uttar Pradesh,Kanpur division,148.0,230.0,76.0,389.0,1796184.0
+wikidataId/Q2089152,Kanpur Nagar,Uttar Pradesh,Kanpur division,216.0,286.0,122.0,552.0,4581268.0
+wikidataId/Q1772822,Hardoi,Uttar Pradesh,Lucknow Division,403.0,452.0,172.0,858.0,4092845.0
+wikidataId/Q1755447,Kheri,Uttar Pradesh,Lucknow Division,321.0,513.0,156.0,931.0,4021243.0
+wikidataId/Q1773416,Lucknow,Uttar Pradesh,Lucknow Division,203.0,294.0,111.0,567.0,4589838.0
+wikidataId/Q1321157,Rae Bareli,Uttar Pradesh,Lucknow Division,368.0,526.0,193.0,909.0,3405559.0
+wikidataId/Q1812539,Sitapur,Uttar Pradesh,Lucknow Division,458.0,552.0,192.0,970.0,4483992.0
+wikidataId/Q1937875,Unnao,Uttar Pradesh,Lucknow Division,313.0,572.0,203.0,914.0,3108367.0
+wikidataId/Q1797363,Baghpat,Uttar Pradesh,Meerut division,119.0,201.0,64.0,339.0,1303048.0
+wikidataId/Q1752328,Bulandshahr,Uttar Pradesh,Meerut division,462.0,445.0,179.0,947.0,3499171.0
+wikidataId/Q1785950,Gautam Buddh Nagar district,Uttar Pradesh,Meerut division,105.0,206.0,68.0,341.0,1648115.0
+wikidataId/Q1773444,Ghaziabad,Uttar Pradesh,Meerut division,73.0,127.0,65.0,218.0,4681645.0
+wikidataId/Q5653340,Hapur,Uttar Pradesh,Meerut division,93.0,177.0,60.0,244.0,
+wikidataId/Q1764627,Meerut,Uttar Pradesh,Meerut division,195.0,457.0,161.0,697.0,3443689.0
+wikidataId/Q127533,Bhadohi,Uttar Pradesh,Mirzapur division,148.0,228.0,94.0,429.0,1578213.0
+wikidataId/Q1143894,Mirzapur,Uttar Pradesh,Mirzapur division,267.0,338.0,134.0,708.0,2496970.0
+wikidataId/Q607798,Sonbhadra,Uttar Pradesh,Mirzapur division,198.0,288.0,114.0,542.0,1862559.0
+wikidataId/Q1891677,Amroha,Uttar Pradesh,Moradabad division,142.0,222.0,85.0,409.0,1840221.0
+wikidataId/Q1937865,Bijnor,Uttar Pradesh,Moradabad division,201.0,358.0,134.0,655.0,3682713.0
+wikidataId/Q1345006,Moradabad,Uttar Pradesh,Moradabad division,241.0,358.0,134.0,659.0,4772006.0
+wikidataId/Q1815331,Rampur,Uttar Pradesh,Moradabad division,181.0,297.0,137.0,511.0,2335819.0
+wikidataId/Q3000436,Sambhal,Uttar Pradesh,Moradabad division,279.0,360.0,153.0,730.0,
+wikidataId/Q1946829,Fatehpur,Uttar Pradesh,Prayagraj division,270.0,453.0,167.0,742.0,2632733.0
+wikidataId/Q1946937,Kaushambi,Uttar Pradesh,Prayagraj division,104.0,248.0,100.0,332.0,1599596.0
+wikidataId/Q1473962,Pratapgarh,Uttar Pradesh,Prayagraj division,138.0,287.0,101.0,437.0,3209141.0
+wikidataId/Q1773426,Prayagraj,Uttar Pradesh,Prayagraj division,451.0,715.0,249.0,1230.0,5954391.0
+wikidataId/Q2365710,Muzaffarnagar,Uttar Pradesh,Saharanpur division,200.0,398.0,167.0,653.0,4143512.0
+wikidataId/Q1797326,Saharanpur,Uttar Pradesh,Saharanpur division,170.0,365.0,143.0,560.0,3466382.0
+wikidataId/Q2999938,Shamli,Uttar Pradesh,Saharanpur division,116.0,254.0,90.0,372.0,
+wikidataId/Q2733369,Chandauli,Uttar Pradesh,Varanasi division,242.0,356.0,117.0,555.0,1952756.0
+wikidataId/Q1287993,Ghazipur,Uttar Pradesh,Varanasi division,241.0,357.0,131.0,693.0,3620268.0
+wikidataId/Q1356060,Jaunpur,Uttar Pradesh,Varanasi division,253.0,404.0,172.0,788.0,4494204.0
+wikidataId/Q1321140,Varanasi,Uttar Pradesh,Varanasi division,181.0,327.0,130.0,494.0,3676841.0
+wikidataId/Q1797372,Chamoli,Uttarakhand,Garhwal division,232.0,308.0,267.0,1493.0,391605.0
+wikidataId/Q1815740,Dehradun,Uttarakhand,Garhwal division,181.0,256.0,181.0,1082.0,1696694.0
+wikidataId/Q2270438,Haridwar,Uttarakhand,Garhwal division,76.0,110.0,105.0,460.0,1890422.0
+wikidataId/Q2085474,Pauri Garhwal,Uttarakhand,Garhwal division,496.0,705.0,603.0,3321.0,687271.0
+wikidataId/Q1805059,Rudra Prayag,Uttarakhand,Garhwal division,88.0,130.0,113.0,669.0,242285.0
+wikidataId/Q1357107,Tehri Garhwal,Uttarakhand,Garhwal division,308.0,452.0,301.0,1966.0,618931.0
+wikidataId/Q1773437,Uttar Kashi,Uttarakhand,Garhwal division,123.0,196.0,126.0,814.0,330086.0
+wikidataId/Q1805066,Almora,Uttarakhand,Kumaon division,221.0,319.0,284.0,1574.0,622506.0
+wikidataId/Q1815313,Bageshwar,Uttarakhand,Kumaon division,101.0,119.0,95.0,545.0,259898.0
+wikidataId/Q288278,Champawat,Uttarakhand,Kumaon division,85.0,105.0,73.0,530.0,259648.0
+wikidataId/Q1797306,Nainital,Uttarakhand,Kumaon division,193.0,260.0,215.0,1289.0,954605.0
+wikidataId/Q1945425,Pithoragarh,Uttarakhand,Kumaon division,156.0,238.0,172.0,1084.0,483439.0
+wikidataId/Q1805082,Udam Singh Nagar,Uttarakhand,Kumaon division,288.0,364.0,309.0,1593.0,1648902.0
+wikidataId/Q2088440,Birbhum,West Bengal,Burdwan division,287.0,311.0,73.0,905.0,3502404.0
+wikidataId/Q548518,Hooghly,West Bengal,Burdwan division,554.0,599.0,155.0,1664.0,5519145.0
+wikidataId/Q29215602,Paschim Bardhaman,West Bengal,Burdwan division,945.0,994.0,246.0,2813.0,
+wikidataId/Q2728658,Cooch Behar district,West Bengal,Jalpaiguri division,341.0,335.0,80.0,956.0,2819086.0
+wikidataId/Q1134759,Darjeeling,West Bengal,Jalpaiguri division,392.0,385.0,85.0,1026.0,1846823.0
+wikidataId/Q1351487,Jalpaiguri,West Bengal,Jalpaiguri division,402.0,425.0,104.0,1274.0,3872846.0
+wikidataId/Q533839,Dakshin Dinajpur district,West Bengal,Malda division,194.0,180.0,50.0,502.0,1676276.0
+wikidataId/Q2019766,Dinajpur Uttar,West Bengal,Malda division,306.0,262.0,72.0,777.0,3007134.0
+wikidataId/Q2049820,Malda district,West Bengal,Malda division,450.0,420.0,119.0,1279.0,3988845.0
+wikidataId/Q1546240,Murshidabad,West Bengal,Malda division,532.0,576.0,125.0,1508.0,7103807.0
+wikidataId/Q2088458,Bankura,West Bengal,Medinipur division,500.0,488.0,128.0,1354.0,3596674.0
+wikidataId/Q1431920,Medinipur East,West Bengal,Medinipur division,406.0,415.0,84.0,1175.0,5095875.0
+wikidataId/Q1855537,Medinipur West,West Bengal,Medinipur division,559.0,587.0,128.0,1627.0,5913457.0
+wikidataId/Q307474,Purulia,West Bengal,Medinipur division,360.0,388.0,96.0,1032.0,2930115.0
+wikidataId/Q338425,24 Paraganas North,West Bengal,Presidency division,713.0,673.0,157.0,2025.0,10009781.0
+wikidataId/Q2308319,24 Paraganas South,West Bengal,Presidency division,610.0,585.0,128.0,1778.0,8161961.0
+wikidataId/Q1478937,Howrah,West Bengal,Presidency division,366.0,375.0,92.0,956.0,4850029.0
+wikidataId/Q2088496,Kolkata,West Bengal,Presidency division,1.0,,,,4496694.0
+wikidataId/Q1143880,Nadia,West Bengal,Presidency division,389.0,416.0,109.0,1172.0,5167600.0
+wikidataId/Q10752928,Dadra & Nagar Haveli,,,,,,,343709.0

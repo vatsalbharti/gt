@@ -11,10 +11,14 @@ parts:
     title: Google Trends
   - file: Google-Mobility-Report
     title: Google Mobility Report and Google Popular times API
-  - file: Twitter Apis
-    title: Twitter Data
+  - file: Google-Data-Commons-Data-Search-Tool
+    title: Google Data Commons and Data Search Tool
   - file: Kaggle_Datasets
-    title: Kaggle Datasets
+    title: Kaggle and Google Dataset Research
+  - file: Google - Open Buildings 2.5D Temporal Dataset
+    title: Google Open Buildings 2.5D Temporal Dataset
+  - file: Vahan
+    title: Vahan - Tracking Vehicle Registrations
   - file: Restaurant Data
     title: Restaurant Data ( Zomato )
   - file: House Listing Data
